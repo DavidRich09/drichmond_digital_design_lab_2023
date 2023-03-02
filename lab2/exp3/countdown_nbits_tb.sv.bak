@@ -1,0 +1,63 @@
+module countdown_nbits_tb;
+
+
+parameter CLK_PERIOD = 10; 
+
+reg clk;
+reg rst;
+wire [N-1:0] out_count;
+
+
+countdown_timer dut (
+  .clk(clk),
+  .rst(rst),
+  .out_count(out_count)
+);
+
+
+initial begin
+  // Test 2-bit countdown timer
+  $display("Testing 2-bit countdown timer...");
+  parameter N = 2;
+  rst = 1'b1;
+  clk = 1'b0;
+  #2 rst = 1'b0;
+  repeat (4) @(posedge clk);
+  if (out_count !== 2'b01) $error("Test failed!");
+  repeat (4) @(posedge clk);
+  if (out_count !== 2'b00) $error("Test failed!");
+  $display("2-bit countdown timer test passed!");
+  
+  // Test 4-bit countdown timer
+  $display("Testing 4-bit countdown timer...");
+  parameter N = 4;
+  rst = 1'b1;
+  clk = 1'b0;
+  #2 rst = 1'b0;
+  repeat (8) @(posedge clk);
+  if (out_count !== 4'b0001) $error("Test failed!");
+  repeat (8) @(posedge clk);
+  if (out_count !== 4'b0000) $error("Test failed!");
+  $display("4-bit countdown timer test passed!");
+  
+  // Test 6-bit countdown timer
+  $display("Testing 6-bit countdown timer...");
+  parameter N = 6;
+  rst = 1'b1;
+  clk = 1'b0;
+  #2 rst = 1'b0;
+  repeat (12) @(posedge clk);
+  if (out_count !== 6'b000001) $error("Test failed!");
+  repeat (12) @(posedge clk);
+  if (out_count !== 6'b000000) $error("Test failed!");
+  $display("6-bit countdown timer test passed!");
+  
+  // Testbench finished
+  $display("All tests passed!");
+  $finish;
+end
+
+// Clock generation
+always #CLK_PERIOD/2 clk = ~clk;
+
+endmodule
