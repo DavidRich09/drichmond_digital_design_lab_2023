@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd.sv
-source_file = 1, D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd_tb.sv
-source_file = 1, D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/db/decodificador_bcd.cbx.xml
+source_file = 1, D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd.sv
+source_file = 1, D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd_tb.sv
+source_file = 1, D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab2/exp1/db/decodificador_bcd.cbx.xml
 design_name = decodificador_bcd
 instance = comp, \s[0]~output , s[0]~output, decodificador_bcd, 1
 instance = comp, \s[1]~output , s[1]~output, decodificador_bcd, 1
