@@ -1,5 +1,5 @@
 Analysis & Synthesis report for countdown_nbits
-Thu Mar 02 10:53:55 2023
+Sun Mar 05 17:41:35 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,8 +10,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |countdown_nbits
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,22 +44,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Thu Mar 02 10:53:55 2023           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; countdown_nbits                             ;
-; Top-level Entity Name       ; countdown_nbits                             ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sun Mar 05 17:41:35 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; countdown_nbits                             ;
+; Top-level Entity Name           ; countdown_nbits                             ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 14                                          ;
+; Total pins                      ; 22                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -58,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA6F31C6       ;                    ;
 ; Top-level entity name                                                           ; countdown_nbits    ; countdown_nbits    ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -149,11 +163,145 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; countdown_nbits.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 8         ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 9         ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 1         ;
+;     -- 5 input functions                    ; 1         ;
+;     -- 4 input functions                    ; 4         ;
+;     -- <=3 input functions                  ; 3         ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 14        ;
+;                                             ;           ;
+; I/O pins                                    ; 22        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 14        ;
+; Total fan-out                               ; 100       ;
+; Average fan-out                             ; 1.49      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+; |countdown_nbits           ; 9 (9)               ; 14 (14)                   ; 0                 ; 0          ; 22   ; 0            ; |countdown_nbits    ; countdown_nbits ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; led2[1]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[6]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[5]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[4]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[3]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[2]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led1[1]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led2[2]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led2[3]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led2[4]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led2[5]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; led2[6]~reg0                           ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 12 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 14    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |countdown_nbits|countdown[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |countdown_nbits ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 6     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 14                          ;
+;     ENA               ; 8                           ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 10                          ;
+;     normal            ; 10                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 1                           ;
+; boundary_port         ; 22                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.08                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -162,25 +310,51 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 02 10:53:45 2023
+    Info: Processing started: Sun Mar 05 17:41:28 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CountdownNBits -c countdown_nbits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file countdown_nbits.sv
-    Info (12023): Found entity 1: countdown_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/exp3/countdown_nbits.sv Line: 1
-Error (10170): Verilog HDL syntax error at countdown_nbits_tb.sv(31) near text: "endmodule";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/exp3/countdown_nbits_tb.sv Line: 31
+    Info (12023): Found entity 1: countdown_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file countdown_nbits_tb.sv
-Info (144001): Generated suppressed messages file C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/exp3/output_files/countdown_nbits.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4767 megabytes
-    Error: Processing ended: Thu Mar 02 10:53:55 2023
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:11
+Info (12127): Elaborating entity "countdown_nbits" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(34): truncated value with size 112 to match size of target (10) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(42): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(49): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 49
+Warning (10027): Verilog HDL or VHDL warning at the countdown_nbits.sv(51): index expression is not wide enough to address all of the elements in the array File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 51
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(56): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 56
+Warning (10027): Verilog HDL or VHDL warning at the countdown_nbits.sv(58): index expression is not wide enough to address all of the elements in the array File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 58
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led2[1]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led2[2]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led2[3]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led2[4]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led2[5]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led2[6]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[1]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[2]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[3]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[4]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[5]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+    Warning (13410): Pin "led1[6]" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/output_files/countdown_nbits.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4894 megabytes
+    Info: Processing ended: Sun Mar 05 17:41:35 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/exp3/output_files/countdown_nbits.map.smsg.
+The suppressed messages can be found in C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/output_files/countdown_nbits.map.smsg.
 
 

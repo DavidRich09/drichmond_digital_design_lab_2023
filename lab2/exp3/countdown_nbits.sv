@@ -1,7 +1,7 @@
 module countdown_nbits (
 
-	input clk,        
-	input reset,        
+	input logic clk,        
+	input logic reset,        
 	output reg[N-1:0] countdownOut,
 	output wire [6:0] led2,
 	output wire [6:0] led1
