@@ -1,5 +1,5 @@
 Flow report for countdown_nbits
-Sun Mar 05 20:35:07 2023
+Mon Mar 06 23:40:44 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,12 +41,12 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun Mar 05 20:35:07 2023       ;
+; Flow Status                 ; Successful - Mon Mar 06 23:40:44 2023       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; countdown_nbits                             ;
 ; Top-level Entity Name       ; countdown_nbits                             ;
 ; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA6F31C6                                ;
+; Device                      ; 5CSEMA5F31C6                                ;
 ; Timing Models               ; Final                                       ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/05/2023 20:35:01 ;
+; Start date & time ; 03/06/2023 23:40:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; countdown_nbits     ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 150241222109898.167807010114284        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 150241222109898.167816763807088        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; countdown_nbits_tb                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -104,8 +104,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4771 MB             ; 00:00:07                           ;
-; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:07                           ;
+; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4769 MB             ; 00:00:09                           ;
+; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:09                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for countdown_nbits
-Sun Mar 05 20:35:07 2023
+Mon Mar 06 23:40:44 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -11,8 +11,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   3. Parallel Compilation
   4. Parameter Settings for User Entity Instance: Top-level Entity: |countdown_nbits
   5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
-  7. Analysis & Elaboration Suppressed Messages
+  6. Port Connectivity Checks: "display_converter:converter4led2"
+  7. Analysis & Elaboration Messages
+  8. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -39,7 +40,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun Mar 05 20:35:07 2023       ;
+; Analysis & Elaboration Status ; Successful - Mon Mar 06 23:40:44 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; countdown_nbits                             ;
 ; Top-level Entity Name         ; countdown_nbits                             ;
@@ -85,7 +86,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA6F31C6       ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; countdown_nbits    ; countdown_nbits    ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -167,13 +168,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++--------------------------------------------------------------+
+; Port Connectivity Checks: "display_converter:converter4led2" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                       ;
+; B    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Mar 05 20:35:01 2023
+    Info: Processing started: Mon Mar 06 23:40:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CountdownNBits -c countdown_nbits --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -181,19 +192,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file countdo
     Info (12023): Found entity 1: countdown_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file countdown_nbits_tb.sv
     Info (12023): Found entity 1: countdown_2bits_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file display_converter.sv
+    Info (12023): Found entity 1: display_converter File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/display_converter.sv Line: 1
 Info (12127): Elaborating entity "countdown_nbits" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(35): truncated value with size 112 to match size of target (16) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 35
-Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(15): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(42): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(52): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 52
-Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(59): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 59
-Warning (10027): Verilog HDL or VHDL warning at the countdown_nbits.sv(61): index expression is not wide enough to address all of the elements in the array File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(16): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(25): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(33): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at countdown_nbits.sv(38): truncated value with size 32 to match size of target (6) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 38
+Info (12128): Elaborating entity "display_converter" for hierarchy "display_converter:converter4led1" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv Line: 18
 Info (144001): Generated suppressed messages file C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/output_files/countdown_nbits.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4771 megabytes
-    Info: Processing ended: Sun Mar 05 20:35:07 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4769 megabytes
+    Info: Processing ended: Mon Mar 06 23:40:44 2023
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +--------------------------------------------+

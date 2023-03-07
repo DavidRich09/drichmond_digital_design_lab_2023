@@ -9,6 +9,9 @@ parameter CLK = 10;
 	wire [1:0] countdownOut2bits;
 	wire [3:0] countdownOut4bits;
 	wire [5:0] countdownOut6bits;
+	wire [6:0] led1;
+	wire [6:0] led2;
+
 
 	countdown_nbits #(.N(2)) countdown2bits
 	
@@ -31,7 +34,10 @@ parameter CLK = 10;
 	(
 	  .clk(clk),
 	  .reset(reset),
-	  .countdownOut(countdownOut6bits)
+	  .countdownOut(countdownOut6bits),
+	  .led1(led1),
+	  .led2(led2)
+
 	);
 
 	initial begin

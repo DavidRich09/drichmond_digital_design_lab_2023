@@ -6,6 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/display_converter.sv}
 
 vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv}
 
