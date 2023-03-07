@@ -17,11 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-<<<<<<< Updated upstream
-// DATE "03/05/2023 17:38:33"
-=======
-// DATE "03/06/2023 22:27:54"
->>>>>>> Stashed changes
+// DATE "03/06/2023 22:43:13"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -177,7 +173,7 @@ defparam \s[4]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y4_N96
 cyclonev_io_obuf \dis[0]~output (
-	.i(\WideOr6~0_combout ),
+	.i(!\WideOr6~0_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -273,7 +269,7 @@ defparam \dis[5]~output .shift_series_termination_control = "false";
 
 // Location: IOOBUF_X89_Y8_N39
 cyclonev_io_obuf \dis[6]~output (
-	.i(!\WideOr0~0_combout ),
+	.i(\WideOr0~0_combout ),
 	.oe(vcc),
 	.dynamicterminationcontrol(gnd),
 	.seriesterminationcontrol(16'b0000000000000000),
@@ -403,11 +399,7 @@ defparam \s~2 .lut_mask = 64'h0000AAAA00000000;
 defparam \s~2 .shared_arith = "off";
 // synopsys translate_on
 
-<<<<<<< Updated upstream
-// Location: LABCELL_X88_Y8_N51
-=======
 // Location: LABCELL_X83_Y4_N18
->>>>>>> Stashed changes
 cyclonev_lcell_comb \s~3 (
 // Equation(s):
 // \s~3_combout  = ( \A~input_o  & ( \B~input_o  ) ) # ( \A~input_o  & ( !\B~input_o  & ( \C~input_o  ) ) )
@@ -431,18 +423,6 @@ defparam \s~3 .lut_mask = 64'h00000F0F0000FFFF;
 defparam \s~3 .shared_arith = "off";
 // synopsys translate_on
 
-<<<<<<< Updated upstream
-// Location: LABCELL_X88_Y8_N54
-cyclonev_lcell_comb \WideOr6~0 (
-// Equation(s):
-// \WideOr6~0_combout  = ( \A~input_o  & ( \B~input_o  & ( (!\D~input_o  & !\C~input_o ) ) ) ) # ( !\A~input_o  & ( \B~input_o  & ( (\D~input_o  & \C~input_o ) ) ) ) # ( !\A~input_o  & ( !\B~input_o  & ( (\D~input_o  & !\C~input_o ) ) ) )
-
-	.dataa(gnd),
-	.datab(!\D~input_o ),
-	.datac(gnd),
-	.datad(!\C~input_o ),
-	.datae(!\A~input_o ),
-=======
 // Location: LABCELL_X83_Y4_N57
 cyclonev_lcell_comb \WideOr6~0 (
 // Equation(s):
@@ -454,7 +434,6 @@ cyclonev_lcell_comb \WideOr6~0 (
 	.datac(!\A~input_o ),
 	.datad(gnd),
 	.datae(!\D~input_o ),
->>>>>>> Stashed changes
 	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
@@ -465,23 +444,6 @@ cyclonev_lcell_comb \WideOr6~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr6~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr6~0 .lut_mask = 64'h330000000033CC00;
-defparam \WideOr6~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N30
-cyclonev_lcell_comb \WideOr5~0 (
-// Equation(s):
-// \WideOr5~0_combout  = ( \A~input_o  & ( \B~input_o  & ( (\D~input_o  & !\C~input_o ) ) ) ) # ( !\A~input_o  & ( \B~input_o  & ( (\D~input_o  & \C~input_o ) ) ) ) # ( \A~input_o  & ( !\B~input_o  & ( (!\D~input_o  & !\C~input_o ) ) ) ) # ( !\A~input_o  & ( 
-// !\B~input_o  & ( \C~input_o  ) ) )
-
-	.dataa(gnd),
-	.datab(!\D~input_o ),
-	.datac(gnd),
-	.datad(!\C~input_o ),
-	.datae(!\A~input_o ),
-=======
 defparam \WideOr6~0 .lut_mask = 64'h5F5F5F5FF5F5AFAF;
 defparam \WideOr6~0 .shared_arith = "off";
 // synopsys translate_on
@@ -496,7 +458,6 @@ cyclonev_lcell_comb \WideOr5~0 (
 	.datac(!\A~input_o ),
 	.datad(gnd),
 	.datae(!\D~input_o ),
->>>>>>> Stashed changes
 	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
@@ -507,22 +468,6 @@ cyclonev_lcell_comb \WideOr5~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr5~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr5~0 .lut_mask = 64'h00FFCC0000333300;
-defparam \WideOr5~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N39
-cyclonev_lcell_comb \WideOr4~0 (
-// Equation(s):
-// \WideOr4~0_combout  = ( !\A~input_o  & ( \B~input_o  & ( (!\C~input_o ) # (\D~input_o ) ) ) ) # ( \A~input_o  & ( !\B~input_o  & ( !\C~input_o  ) ) ) # ( !\A~input_o  & ( !\B~input_o  & ( (\C~input_o  & \D~input_o ) ) ) )
-
-	.dataa(gnd),
-	.datab(!\C~input_o ),
-	.datac(!\D~input_o ),
-	.datad(gnd),
-	.datae(!\A~input_o ),
-=======
 defparam \WideOr5~0 .lut_mask = 64'h5050F0F000005A5A;
 defparam \WideOr5~0 .shared_arith = "off";
 // synopsys translate_on
@@ -537,7 +482,6 @@ cyclonev_lcell_comb \WideOr4~0 (
 	.datac(!\C~input_o ),
 	.datad(gnd),
 	.datae(!\D~input_o ),
->>>>>>> Stashed changes
 	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
@@ -548,23 +492,6 @@ cyclonev_lcell_comb \WideOr4~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr4~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr4~0 .lut_mask = 64'h0303CCCCCFCF0000;
-defparam \WideOr4~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N42
-cyclonev_lcell_comb \WideOr3~0 (
-// Equation(s):
-// \WideOr3~0_combout  = ( \C~input_o  & ( \B~input_o  & ( \D~input_o  ) ) ) # ( !\C~input_o  & ( \B~input_o  & ( (!\D~input_o  & !\A~input_o ) ) ) ) # ( \C~input_o  & ( !\B~input_o  & ( (!\D~input_o  & \A~input_o ) ) ) ) # ( !\C~input_o  & ( !\B~input_o  & 
-// ( (\D~input_o  & !\A~input_o ) ) ) )
-
-	.dataa(gnd),
-	.datab(!\D~input_o ),
-	.datac(gnd),
-	.datad(!\A~input_o ),
-	.datae(!\C~input_o ),
-=======
 defparam \WideOr4~0 .lut_mask = 64'h0000FCFCC0C0CCCC;
 defparam \WideOr4~0 .shared_arith = "off";
 // synopsys translate_on
@@ -579,7 +506,6 @@ cyclonev_lcell_comb \WideOr3~0 (
 	.datac(gnd),
 	.datad(!\D~input_o ),
 	.datae(gnd),
->>>>>>> Stashed changes
 	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
@@ -590,16 +516,6 @@ cyclonev_lcell_comb \WideOr3~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr3~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr3~0 .lut_mask = 64'h330000CCCC003333;
-defparam \WideOr3~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N18
-cyclonev_lcell_comb \WideOr2~0 (
-// Equation(s):
-// \WideOr2~0_combout  = ( \B~input_o  & ( (\A~input_o  & ((!\D~input_o ) # (\C~input_o ))) ) ) # ( !\B~input_o  & ( (!\A~input_o  & (!\C~input_o  $ (!\D~input_o ))) ) )
-=======
 defparam \WideOr3~0 .lut_mask = 64'h1188118888558855;
 defparam \WideOr3~0 .shared_arith = "off";
 // synopsys translate_on
@@ -608,7 +524,6 @@ defparam \WideOr3~0 .shared_arith = "off";
 cyclonev_lcell_comb \WideOr2~0 (
 // Equation(s):
 // \WideOr2~0_combout  = ( \B~input_o  & ( (\A~input_o  & ((!\D~input_o ) # (\C~input_o ))) ) ) # ( !\B~input_o  & ( (\C~input_o  & (!\A~input_o  & !\D~input_o )) ) )
->>>>>>> Stashed changes
 
 	.dataa(!\C~input_o ),
 	.datab(gnd),
@@ -625,16 +540,6 @@ cyclonev_lcell_comb \WideOr2~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr2~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr2~0 .lut_mask = 64'h6600660000DD00DD;
-defparam \WideOr2~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N21
-cyclonev_lcell_comb \WideOr1~0 (
-// Equation(s):
-// \WideOr1~0_combout  = ( \B~input_o  & ( (!\C~input_o  & (!\D~input_o  $ (!\A~input_o ))) # (\C~input_o  & ((!\D~input_o ) # (\A~input_o ))) ) ) # ( !\B~input_o  & ( (\D~input_o  & (!\C~input_o  $ (\A~input_o ))) ) )
-=======
 defparam \WideOr2~0 .lut_mask = 64'h500050000F050F05;
 defparam \WideOr2~0 .shared_arith = "off";
 // synopsys translate_on
@@ -643,7 +548,6 @@ defparam \WideOr2~0 .shared_arith = "off";
 cyclonev_lcell_comb \WideOr1~0 (
 // Equation(s):
 // \WideOr1~0_combout  = ( \D~input_o  & ( \B~input_o  & ( !\A~input_o  $ (\C~input_o ) ) ) ) # ( !\D~input_o  & ( \B~input_o  & ( (\C~input_o ) # (\A~input_o ) ) ) ) # ( \D~input_o  & ( !\B~input_o  & ( (\A~input_o  & \C~input_o ) ) ) )
->>>>>>> Stashed changes
 
 	.dataa(gnd),
 	.datab(!\A~input_o ),
@@ -660,23 +564,6 @@ cyclonev_lcell_comb \WideOr1~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr1~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr1~0 .lut_mask = 64'h212121216D6D6D6D;
-defparam \WideOr1~0 .shared_arith = "off";
-// synopsys translate_on
-
-// Location: LABCELL_X88_Y8_N27
-cyclonev_lcell_comb \WideOr0~0 (
-// Equation(s):
-// \WideOr0~0_combout  = ( \A~input_o  & ( \B~input_o  & ( (!\D~input_o ) # (\C~input_o ) ) ) ) # ( !\A~input_o  & ( \B~input_o  & ( (\D~input_o ) # (\C~input_o ) ) ) ) # ( \A~input_o  & ( !\B~input_o  & ( (!\C~input_o ) # (!\D~input_o ) ) ) ) # ( 
-// !\A~input_o  & ( !\B~input_o  & ( \C~input_o  ) ) )
-
-	.dataa(gnd),
-	.datab(!\C~input_o ),
-	.datac(!\D~input_o ),
-	.datad(gnd),
-	.datae(!\A~input_o ),
-=======
 defparam \WideOr1~0 .lut_mask = 64'h000003033F3FC3C3;
 defparam \WideOr1~0 .shared_arith = "off";
 // synopsys translate_on
@@ -691,7 +578,6 @@ cyclonev_lcell_comb \WideOr0~0 (
 	.datac(!\A~input_o ),
 	.datad(gnd),
 	.datae(!\D~input_o ),
->>>>>>> Stashed changes
 	.dataf(!\B~input_o ),
 	.datag(gnd),
 	.cin(gnd),
@@ -702,11 +588,7 @@ cyclonev_lcell_comb \WideOr0~0 (
 	.shareout());
 // synopsys translate_off
 defparam \WideOr0~0 .extended_lut = "off";
-<<<<<<< Updated upstream
-defparam \WideOr0~0 .lut_mask = 64'h3333FCFC3F3FF3F3;
-=======
 defparam \WideOr0~0 .lut_mask = 64'h0000A5A5A0A00A0A;
->>>>>>> Stashed changes
 defparam \WideOr0~0 .shared_arith = "off";
 // synopsys translate_on
 

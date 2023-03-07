@@ -1,9 +1,5 @@
 Analysis & Synthesis report for decodificador_bcd
-<<<<<<< Updated upstream
-Sun Mar 05 17:37:39 2023
-=======
-Mon Mar 06 22:27:03 2023
->>>>>>> Stashed changes
+Mon Mar 06 22:42:10 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -47,11 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< Updated upstream
-; Analysis & Synthesis Status     ; Successful - Sun Mar 05 17:37:39 2023       ;
-=======
-; Analysis & Synthesis Status     ; Successful - Mon Mar 06 22:27:03 2023       ;
->>>>>>> Stashed changes
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 22:42:10 2023       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; decodificador_bcd                           ;
 ; Top-level Entity Name           ; decodificador_bcd                           ;
@@ -267,11 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-<<<<<<< Updated upstream
-    Info: Processing started: Sun Mar 05 17:37:29 2023
-=======
-    Info: Processing started: Mon Mar 06 22:26:54 2023
->>>>>>> Stashed changes
+    Info: Processing started: Mon Mar 06 22:41:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decodificador_bcd -c decodificador_bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -288,16 +276,9 @@ Info (21057): Implemented 27 device resources after synthesis - the final resour
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 11 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-<<<<<<< Updated upstream
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Sun Mar 05 17:37:39 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
-=======
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Mon Mar 06 22:27:03 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:11
->>>>>>> Stashed changes
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Mon Mar 06 22:42:10 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
 
 
