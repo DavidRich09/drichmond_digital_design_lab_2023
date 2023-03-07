@@ -1,5 +1,9 @@
 Assembler report for decodificador_bcd
+<<<<<<< Updated upstream
 Sun Mar 05 17:38:25 2023
+=======
+Mon Mar 06 22:27:46 2023
+>>>>>>> Stashed changes
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,7 +42,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< Updated upstream
 ; Assembler Status      ; Successful - Sun Mar 05 17:38:25 2023 ;
+=======
+; Assembler Status      ; Successful - Mon Mar 06 22:27:46 2023 ;
+>>>>>>> Stashed changes
 ; Revision Name         ; decodificador_bcd                     ;
 ; Top-level Entity Name ; decodificador_bcd                     ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +75,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-----------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                               ;
 +----------------+-----------------------------------------------------------------------------------------------------------------------+
+<<<<<<< Updated upstream
 ; JTAG usercode  ; 0x00AF9338                                                                                                            ;
 ; Checksum       ; 0x00AF9338                                                                                                            ;
+=======
+; JTAG usercode  ; 0x00AF907C                                                                                                            ;
+; Checksum       ; 0x00AF907C                                                                                                            ;
+>>>>>>> Stashed changes
 +----------------+-----------------------------------------------------------------------------------------------------------------------+
 
 
@@ -78,13 +91,22 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Sun Mar 05 17:38:19 2023
+=======
+    Info: Processing started: Mon Mar 06 22:27:40 2023
+>>>>>>> Stashed changes
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off decodificador_bcd -c decodificador_bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< Updated upstream
     Info: Peak virtual memory: 4845 megabytes
     Info: Processing ended: Sun Mar 05 17:38:25 2023
+=======
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Mon Mar 06 22:27:46 2023
+>>>>>>> Stashed changes
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
 
