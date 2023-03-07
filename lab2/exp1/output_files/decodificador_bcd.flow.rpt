@@ -1,6 +1,6 @@
 Flow report for decodificador_bcd
-Sun Mar  5 16:48:16 2023
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Mon Mar 06 23:12:52 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,29 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Sun Mar  5 16:48:16 2023          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; decodificador_bcd                              ;
-; Top-level Entity Name           ; decodificador_bcd                              ;
-; Family                          ; Cyclone V                                      ;
-; Device                          ; 5CSEMA5F31C6                                   ;
-; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 6 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 16 / 457 ( 4 % )                               ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Mon Mar 06 23:12:52 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; decodificador_bcd                           ;
+; Top-level Entity Name           ; decodificador_bcd                           ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 6 / 32,070 ( < 1 % )                        ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 16 / 457 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/05/2023 16:46:51 ;
+; Start date & time ; 03/06/2023 23:11:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; decodificador_bcd   ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 5311875933440.167805641108856          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 5311882514389.167816589911688          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; decodificador_bcd_tb              ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -109,12 +109,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4837 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:50     ; 1.0                     ; 6680 MB             ; 00:00:30                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4872 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 5139 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4729 MB             ; 00:00:01                           ;
-; Total                ; 00:01:19     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4824 MB             ; 00:00:10                           ;
+; Fitter               ; 00:00:42     ; 1.0                     ; 6700 MB             ; 00:00:34                           ;
+; Assembler            ; 00:00:09     ; 1.0                     ; 4843 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 5135 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4725 MB             ; 00:00:00                           ;
+; Total                ; 00:01:08     ; --                      ; --                  ; 00:00:49                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,11 +123,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-NC9N754L  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-NC9N754L  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-NC9N754L  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-NC9N754L  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-NC9N754L  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

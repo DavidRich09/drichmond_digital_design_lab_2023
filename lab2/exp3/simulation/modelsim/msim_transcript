@@ -1,0 +1,94 @@
+# Reading pref.tcl
+# do countdown_nbits_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:40:51 on Mar 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits.sv 
+# -- Compiling module countdown_nbits
+# 
+# Top level modules:
+# 	countdown_nbits
+# End time: 23:40:51 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/display_converter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:40:51 on Mar 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/display_converter.sv 
+# -- Compiling module display_converter
+# 
+# Top level modules:
+# 	display_converter
+# End time: 23:40:51 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:40:51 on Mar 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv 
+# -- Compiling module countdown_2bits_tb
+# 
+# Top level modules:
+# 	countdown_2bits_tb
+# End time: 23:40:51 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  countdown_nbits_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" countdown_nbits_tb 
+# Start time: 23:40:51 on Mar 06,2023
+# ** Error: (vsim-3170) Could not find 'countdown_nbits_tb'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
+#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/simulation/modelsim/rtl_work
+#             C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./countdown_nbits_run_msim_rtl_verilog.do PAUSED at line 13
+vsim work.countdown_2bits_tb
+# vsim work.countdown_2bits_tb 
+# Start time: 23:40:51 on Mar 06,2023
+# Loading sv_std.std
+# Loading work.countdown_2bits_tb
+# Loading work.countdown_nbits
+# Loading work.display_converter
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'countdown2bits'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /countdown_2bits_tb/countdown2bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 16
+# ** Warning: (vsim-3722) C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv(16): [TFMPC] - Missing connection for port 'led2'.
+# ** Warning: (vsim-3722) C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv(16): [TFMPC] - Missing connection for port 'led1'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'countdown4bits'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /countdown_2bits_tb/countdown4bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 24
+# ** Warning: (vsim-3722) C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv(24): [TFMPC] - Missing connection for port 'led2'.
+# ** Warning: (vsim-3722) C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv(24): [TFMPC] - Missing connection for port 'led1'.
+add wave sim:/countdown_2bits_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Joseff01  Hostname: LAPTOP-DBQ7SAL4  ProcessID: 23492
+#           Attempting to use alternate WLF file "./wlftwznqfr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwznqfr
+run
+# Testing countdown timers...
+# activating reset...
+# ** Error: 4-bit countdown reset failed!!!!
+#    Time: 610 ps  Scope: countdown_2bits_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 59
+# ** Error: 6-bit countdown reset failed!!!!
+#    Time: 610 ps  Scope: countdown_2bits_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 60
+# Countdown timer test finished!
+# End time: 23:42:28 on Mar 06,2023, Elapsed time: 0:01:37
+# Errors: 3, Warnings: 8

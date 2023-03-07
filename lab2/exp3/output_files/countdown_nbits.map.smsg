@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at countdown_nbits.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/exp3/countdown_nbits.sv Line: 38
+Info (10281): Verilog HDL Declaration information at countdown_nbits_tb.sv(5): object "CLK" differs only in case from object "clk" in the same scope File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab2/exp3/countdown_nbits_tb.sv Line: 5

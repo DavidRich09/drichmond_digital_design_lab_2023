@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY decodificador_bcd
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:28:15  MARCH 05, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -72,11 +72,11 @@ set_global_assignment -name BOARD "DE1-SoC Board"
 set_location_assignment PIN_AC12 -to B
 set_location_assignment PIN_AF9 -to C
 set_location_assignment PIN_AF10 -to D
-set_location_assignment PIN_AE26 -to dis[0]
-set_location_assignment PIN_AE27 -to dis[1]
-set_location_assignment PIN_AE28 -to dis[2]
+set_location_assignment PIN_AH28 -to dis[0]
+set_location_assignment PIN_AG28 -to dis[1]
+set_location_assignment PIN_AF28 -to dis[2]
 set_location_assignment PIN_AG27 -to dis[3]
-set_location_assignment PIN_AF28 -to dis[4]
-set_location_assignment PIN_AG28 -to dis[5]
-set_location_assignment PIN_AH28 -to dis[6]
+set_location_assignment PIN_AE28 -to dis[4]
+set_location_assignment PIN_AE27 -to dis[5]
+set_location_assignment PIN_AE26 -to dis[6]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

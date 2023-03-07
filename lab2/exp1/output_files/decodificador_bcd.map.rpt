@@ -1,6 +1,6 @@
 Analysis & Synthesis report for decodificador_bcd
-Sun Mar  5 16:47:03 2023
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Mon Mar 06 23:11:49 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,27 +40,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Mar  5 16:47:03 2023          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; decodificador_bcd                              ;
-; Top-level Entity Name           ; decodificador_bcd                              ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 16                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Mar 06 23:11:49 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; decodificador_bcd                           ;
+; Top-level Entity Name           ; decodificador_bcd                           ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 16                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; decodificador_bcd.sv             ; yes             ; User SystemVerilog HDL File  ; D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
+; decodificador_bcd.sv             ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/exp1/decodificador_bcd.sv ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -258,15 +258,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Mar  5 16:46:50 2023
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Mar 06 23:11:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off decodificador_bcd -c decodificador_bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file decodificador_bcd.sv
-    Info (12023): Found entity 1: decodificador_bcd File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd.sv Line: 1
+    Info (12023): Found entity 1: decodificador_bcd File: D:/Quartus_proyectos/exp1/decodificador_bcd.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decodificador_bcd_tb.sv
-    Info (12023): Found entity 1: decodificador_bcd_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab2/exp1/decodificador_bcd_tb.sv Line: 1
+    Info (12023): Found entity 1: decodificador_bcd_tb File: D:/Quartus_proyectos/exp1/decodificador_bcd_tb.sv Line: 1
 Info (12127): Elaborating entity "decodificador_bcd" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +276,9 @@ Info (21057): Implemented 27 device resources after synthesis - the final resour
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 11 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Sun Mar  5 16:47:03 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Mon Mar 06 23:11:49 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:10
 
 
