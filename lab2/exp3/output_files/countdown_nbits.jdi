@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="fb8aab0d39c77c94ff53"/>
+    <hash md5_digest_80b="b538d25b15b4fb0b538d"/>
   </project>
   <file_info>
-    <file device="5CSEMA6F31C6" path="countdown_nbits.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CSEMA5F31C6" path="countdown_nbits.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

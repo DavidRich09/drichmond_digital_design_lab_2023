@@ -23,26 +23,26 @@ reset => countdown[2].PRESET
 reset => countdown[3].PRESET
 reset => countdown[4].PRESET
 reset => countdown[5].PRESET
-countdownOut[0] <= countdownOut[0].DB_MAX_OUTPUT_PORT_TYPE
-countdownOut[1] <= countdownOut[1].DB_MAX_OUTPUT_PORT_TYPE
-countdownOut[2] <= countdownOut[2].DB_MAX_OUTPUT_PORT_TYPE
-countdownOut[3] <= countdownOut[3].DB_MAX_OUTPUT_PORT_TYPE
-countdownOut[4] <= countdownOut[4].DB_MAX_OUTPUT_PORT_TYPE
-countdownOut[5] <= countdownOut[5].DB_MAX_OUTPUT_PORT_TYPE
-led2[0] <= display_converter:converter4led2.port4
-led2[1] <= display_converter:converter4led2.port4
-led2[2] <= display_converter:converter4led2.port4
-led2[3] <= display_converter:converter4led2.port4
-led2[4] <= display_converter:converter4led2.port4
-led2[5] <= display_converter:converter4led2.port4
-led2[6] <= display_converter:converter4led2.port4
-led1[0] <= display_converter:converter4led1.port4
-led1[1] <= display_converter:converter4led1.port4
-led1[2] <= display_converter:converter4led1.port4
-led1[3] <= display_converter:converter4led1.port4
-led1[4] <= display_converter:converter4led1.port4
-led1[5] <= display_converter:converter4led1.port4
-led1[6] <= display_converter:converter4led1.port4
+countdownOut[0] << countdownOut[0].DB_MAX_OUTPUT_PORT_TYPE
+countdownOut[1] << countdownOut[1].DB_MAX_OUTPUT_PORT_TYPE
+countdownOut[2] << countdownOut[2].DB_MAX_OUTPUT_PORT_TYPE
+countdownOut[3] << countdownOut[3].DB_MAX_OUTPUT_PORT_TYPE
+countdownOut[4] << countdownOut[4].DB_MAX_OUTPUT_PORT_TYPE
+countdownOut[5] << countdownOut[5].DB_MAX_OUTPUT_PORT_TYPE
+led2[0] << display_converter:converter4led2.port4
+led2[1] << display_converter:converter4led2.port4
+led2[2] << display_converter:converter4led2.port4
+led2[3] << display_converter:converter4led2.port4
+led2[4] << display_converter:converter4led2.port4
+led2[5] << display_converter:converter4led2.port4
+led2[6] << display_converter:converter4led2.port4
+led1[0] << display_converter:converter4led1.port4
+led1[1] << display_converter:converter4led1.port4
+led1[2] << display_converter:converter4led1.port4
+led1[3] << display_converter:converter4led1.port4
+led1[4] << display_converter:converter4led1.port4
+led1[5] << display_converter:converter4led1.port4
+led1[6] << display_converter:converter4led1.port4
 
 
 |countdown_nbits|display_converter:converter4led1
