@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Wed Mar 22 02:36:41 2023
+Analysis & Synthesis Status : Successful - Wed Mar 22 14:31:19 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ALU
-Top-level Entity Name : adder_nbits
+Top-level Entity Name : substractor_nbits
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
