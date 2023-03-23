@@ -20,6 +20,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "result[7]",
+					"strict" : false
+				},
+				{
 					"name" : "neg_flag",
 					"strict" : false
 				},
@@ -32,23 +48,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "of_flag",
-					"strict" : false
-				},
-				{
-					"name" : "a[0]",
-					"strict" : false
-				},
-				{
-					"name" : "b[0]",
-					"strict" : false
-				},
-				{
 					"name" : "a[1]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "deco_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "deco_in[1]",
 					"strict" : false
 				},
 				{
@@ -56,7 +64,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[2]",
+					"name" : "a[0]",
 					"strict" : false
 				},
 				{
@@ -64,7 +72,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[3]",
+					"name" : "a[4]",
+					"strict" : false
+				},
+				{
+					"name" : "a[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a[6]",
+					"strict" : false
+				},
+				{
+					"name" : "a[7]",
 					"strict" : false
 				}
 			]
