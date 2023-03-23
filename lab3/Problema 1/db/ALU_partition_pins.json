@@ -20,22 +20,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "result[4]",
-					"strict" : false
-				},
-				{
-					"name" : "result[5]",
-					"strict" : false
-				},
-				{
-					"name" : "result[6]",
-					"strict" : false
-				},
-				{
-					"name" : "result[7]",
-					"strict" : false
-				},
-				{
 					"name" : "neg_flag",
 					"strict" : false
 				},
@@ -69,22 +53,6 @@
 				},
 				{
 					"name" : "a[3]",
-					"strict" : false
-				},
-				{
-					"name" : "a[4]",
-					"strict" : false
-				},
-				{
-					"name" : "a[5]",
-					"strict" : false
-				},
-				{
-					"name" : "a[6]",
-					"strict" : false
-				},
-				{
-					"name" : "a[7]",
 					"strict" : false
 				}
 			]

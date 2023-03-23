@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Wed Mar 22 18:51:04 2023
+Wed Mar 22 22:45:19 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -44,14 +44,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 22 18:51:04 2023       ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 22 22:45:19 2023       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; ALU                                         ;
 ; Top-level Entity Name           ; shifter_nbits                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 22                                          ;
+; Total pins                      ; 14                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -156,8 +156,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -167,14 +167,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; deco_2_4.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv      ;         ;
-; shifter_nbits.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; deco_2_4.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv      ;         ;
+; shifter_nbits.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -182,25 +182,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------+
 ; Resource                                    ; Usage            ;
 +---------------------------------------------+------------------+
-; Estimate of Logic utilization (ALMs needed) ; 6                ;
+; Estimate of Logic utilization (ALMs needed) ; 4                ;
 ;                                             ;                  ;
-; Combinational ALUT usage for logic          ; 11               ;
+; Combinational ALUT usage for logic          ; 6                ;
 ;     -- 7 input functions                    ; 0                ;
 ;     -- 6 input functions                    ; 1                ;
-;     -- 5 input functions                    ; 1                ;
-;     -- 4 input functions                    ; 8                ;
+;     -- 5 input functions                    ; 0                ;
+;     -- 4 input functions                    ; 4                ;
 ;     -- <=3 input functions                  ; 1                ;
 ;                                             ;                  ;
 ; Dedicated logic registers                   ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 22               ;
+; I/O pins                                    ; 14               ;
 ;                                             ;                  ;
 ; Total DSP Blocks                            ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; deco_in[0]~input ;
-; Maximum fan-out                             ; 10               ;
-; Total fan-out                               ; 79               ;
-; Average fan-out                             ; 1.44             ;
+; Maximum fan-out                             ; 6                ;
+; Total fan-out                               ; 46               ;
+; Average fan-out                             ; 1.35             ;
 +---------------------------------------------+------------------+
 
 
@@ -209,7 +209,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
-; |shifter_nbits             ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 22   ; 0            ; |shifter_nbits      ; shifter_nbits ; work         ;
+; |shifter_nbits             ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |shifter_nbits      ; shifter_nbits ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,7 +234,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                 ;
 +----------------+-------+------------------------------------------------------+
-; N              ; 8     ; Signed Integer                                       ;
+; N              ; 4     ; Signed Integer                                       ;
 +----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -244,17 +244,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 12                          ;
-;     normal            ; 12                          ;
+; arriav_lcell_comb     ; 7                           ;
+;     normal            ; 7                           ;
 ;         0 data inputs ; 1                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
 ;         6 data inputs ; 1                           ;
-; boundary_port         ; 22                          ;
+; boundary_port         ; 14                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.68                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -273,40 +272,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 22 18:50:57 2023
+    Info: Processing started: Wed Mar 22 22:45:01 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 2 entities, in source file xor_module.sv
+    Info (12023): Found entity 1: xor_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv Line: 1
+    Info (12023): Found entity 2: xor_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file or_module.sv
+    Info (12023): Found entity 1: or_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv Line: 1
+    Info (12023): Found entity 2: or_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file not_module.sv
+    Info (12023): Found entity 1: not_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv Line: 1
+    Info (12023): Found entity 2: not_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv Line: 20
+Info (12021): Found 2 design units, including 2 entities, in source file and_module.sv
+    Info (12023): Found entity 1: and_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv Line: 1
+    Info (12023): Found entity 2: and_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file deco_2_4.sv
-    Info (12023): Found entity 1: deco_2_3 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv Line: 1
+    Info (12023): Found entity 1: deco_2_3 File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_nbits.sv
-    Info (12023): Found entity 1: adder_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 1
+    Info (12023): Found entity 1: adder_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_substractor.sv
-    Info (12023): Found entity 1: full_substractor File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv Line: 1
+    Info (12023): Found entity 1: full_substractor File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file substractor_nbits.sv
-    Info (12023): Found entity 1: substractor_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 1
+    Info (12023): Found entity 1: substractor_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter_nbits.sv
-    Info (12023): Found entity 1: shifter_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 1
+    Info (12023): Found entity 1: shifter_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 1
 Info (12127): Elaborating entity "shifter_nbits" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 52
-Info (12128): Elaborating entity "deco_2_3" for hierarchy "deco_2_3:deco" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 52
+Info (12128): Elaborating entity "deco_2_3" for hierarchy "deco_2_3:deco" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "of_flag" is stuck at GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 13
+    Warning (13410): Pin "of_flag" is stuck at GND File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 11 logic cells
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 6 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4837 megabytes
-    Info: Processing ended: Wed Mar 22 18:51:04 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Wed Mar 22 22:45:19 2023
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:13
 
 

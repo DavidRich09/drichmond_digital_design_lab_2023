@@ -1,0 +1,34 @@
+|shifter_nbits
+a[0] => generate_shifter_nbits[3].and0.IN1
+a[0] => generate_shifter_nbits[3].and1.IN1
+a[1] => generate_shifter_nbits[2].and0.IN1
+a[1] => generate_shifter_nbits[2].and1.IN1
+a[2] => generate_shifter_nbits[1].and0.IN1
+a[2] => generate_shifter_nbits[1].and1.IN1
+a[3] => ars_and.IN1
+a[3] => generate_shifter_nbits[0].and0.IN1
+a[3] => generate_shifter_nbits[0].and1.IN1
+deco_in[0] => deco_in[0].IN1
+deco_in[1] => deco_in[1].IN1
+result[0] <= generate_shifter_nbits[2].and1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= generate_shifter_nbits[2].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= generate_shifter_nbits[1].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= generate_shifter_nbits[0].or0.DB_MAX_OUTPUT_PORT_TYPE
+neg_flag <= generate_shifter_nbits[0].or0.DB_MAX_OUTPUT_PORT_TYPE
+zr_flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+cry_flag <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
+of_flag <= <GND>
+
+
+|shifter_nbits|deco_2_3:deco
+a0 => and1.IN0
+a0 => and0.IN0
+a0 => and2.IN0
+a1 => and2.IN1
+a1 => and0.IN1
+a1 => and1.IN1
+y0 <= and0.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= and1.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= and2.DB_MAX_OUTPUT_PORT_TYPE
+
+
