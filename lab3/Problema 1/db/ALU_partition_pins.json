@@ -4,6 +4,22 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "neg_flag",
+					"strict" : false
+				},
+				{
+					"name" : "zr_flag",
+					"strict" : false
+				},
+				{
+					"name" : "cry_flag",
+					"strict" : false
+				},
+				{
+					"name" : "of_flag",
+					"strict" : false
+				},
+				{
 					"name" : "result[0]",
 					"strict" : false
 				},
@@ -20,31 +36,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "neg_flag",
+					"name" : "led_disp[0]",
 					"strict" : false
 				},
 				{
-					"name" : "zr_flag",
+					"name" : "led_disp[1]",
 					"strict" : false
 				},
 				{
-					"name" : "cry_flag",
+					"name" : "led_disp[2]",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "led_disp[3]",
 					"strict" : false
 				},
 				{
-					"name" : "deco_in[0]",
+					"name" : "led_disp[4]",
 					"strict" : false
 				},
 				{
-					"name" : "deco_in[1]",
+					"name" : "led_disp[5]",
 					"strict" : false
 				},
 				{
-					"name" : "a[2]",
+					"name" : "led_disp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "s[3]",
 					"strict" : false
 				},
 				{
@@ -52,7 +72,43 @@
 					"strict" : false
 				},
 				{
+					"name" : "b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b[2]",
+					"strict" : false
+				},
+				{
 					"name" : "a[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "s[2]",
+					"strict" : false
+				},
+				{
+					"name" : "s[1]",
+					"strict" : false
+				},
+				{
+					"name" : "s[0]",
 					"strict" : false
 				}
 			]
