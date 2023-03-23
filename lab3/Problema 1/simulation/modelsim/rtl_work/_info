@@ -1,0 +1,481 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/simulation/modelsim
+vadder_nbits
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1679561649
+!i10b 1
+!s100 JMY3G^S:D>4JNjR[_eCkb2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfdC>abZS_zoSZMHUJkAfj0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1679556310
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv
+!i122 7
+Z5 L0 1 35
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1679561649.000000
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work {+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1}
+Z10 tCvgOpt 0
+vALU
+R1
+R2
+!i10b 1
+!s100 zJkgSnA6Kf9Dk<]Y>hDag2
+R3
+IGEIe0GZi;g9[H<TaOIh]c0
+R4
+S1
+R0
+w1679561621
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv
+!i122 8
+L0 1 46
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u
+vALU_tb
+R1
+Z11 !s110 1679561651
+!i10b 1
+!s100 7QVA5IJffJn6E<KndEFG<1
+R3
+IeF>LoSz@H7KG6EnZ1Ho_]0
+R4
+S1
+R0
+w1679558077
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU_tb.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU_tb.sv
+!i122 13
+L0 1 152
+R6
+r1
+!s85 0
+31
+!s108 1679561651.000000
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU_tb.sv|
+!i113 1
+R8
+R9
+R10
+n@a@l@u_tb
+vand_gate_single
+R1
+Z12 !s110 1679561648
+!i10b 1
+!s100 XMj6BMjBi8L3[38[O1]jD0
+R3
+Ilm^>>Kn>ITGP?@B0k7J8C1
+R4
+S1
+R0
+Z13 w1679545898
+Z14 8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv
+Z15 FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv
+!i122 5
+L0 19 8
+R6
+r1
+!s85 0
+31
+Z16 !s108 1679561648.000000
+Z17 !s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv|
+!i113 1
+R8
+R9
+R10
+vand_module
+R1
+R12
+!i10b 1
+!s100 `mF3;XMHcaeB2`@2WIXz<3
+R3
+I?:B1fh?Y`RM6fhBD]QZhb1
+R4
+S1
+R0
+R13
+R14
+R15
+!i122 5
+Z19 L0 1 17
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R8
+R9
+R10
+vdeco_2_3
+R1
+R12
+!i10b 1
+!s100 I`mlV7D;I0iVG1oYmJm5c3
+R3
+Ia`BVQN<>ed?SMlCHkmZz22
+R4
+S1
+R0
+w1679561219
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv
+!i122 6
+L0 1 23
+R6
+r1
+!s85 0
+31
+R16
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv|
+!i113 1
+R8
+R9
+R10
+vdisplay_converter
+R1
+!s110 1679561645
+!i10b 1
+!s100 l=i1k_dHgRU[1o=F_@[ek0
+R3
+IHGDOKih]aLPQFj:lK6^R;1
+R4
+S1
+R0
+w1679550937
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv
+!i122 0
+L0 1 11
+R6
+r1
+!s85 0
+31
+!s108 1679561645.000000
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv|
+!i113 1
+R8
+R9
+R10
+vfull_adder
+R1
+R2
+!i10b 1
+!s100 8=`VYX=:?SG3VTJMXSd=73
+R3
+I9HijnSO?[QggmAO9B[Q?A1
+R4
+S1
+R0
+w1679504967
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv
+!i122 9
+L0 1 20
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv|
+!i113 1
+R8
+R9
+R10
+vfull_substractor
+R1
+Z20 !s110 1679561650
+!i10b 1
+!s100 j?GBkoeA0`h^]JjYbdcSU2
+R3
+I_31Za0HB8f9MTg<B5V]JC2
+R4
+S1
+R0
+w1679515351
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv
+!i122 10
+L0 1 25
+R6
+r1
+!s85 0
+31
+Z21 !s108 1679561650.000000
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv|
+!i113 1
+R8
+R9
+R10
+vmux_10to1
+R1
+!s110 1679561646
+!i10b 1
+!s100 gPOX2W@ZjGiE^]OiZOLHn1
+R3
+IcjKh:8OSn;jXAk_PXJM=i3
+R4
+S1
+R0
+w1679557924
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv
+!i122 1
+L0 1 27
+R6
+r1
+!s85 0
+31
+Z22 !s108 1679561646.000000
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv|
+!i113 1
+R8
+R9
+R10
+vnot_gate_single
+R1
+Z23 !s110 1679561647
+!i10b 1
+!s100 m>m>F<kk2@WNmNAol_GS^2
+R3
+IS1@ObnP4ZlP^]gkzUmZ[[1
+R4
+S1
+R0
+Z24 w1679545899
+Z25 8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv
+Z26 FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv
+!i122 4
+Z27 L0 20 8
+R6
+r1
+!s85 0
+31
+Z28 !s108 1679561647.000000
+Z29 !s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv|
+Z30 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv|
+!i113 1
+R8
+R9
+R10
+vnot_module
+R1
+R23
+!i10b 1
+!s100 ^WbT1?S9]U@bVKLhFEZQa3
+R3
+IZ4Z3oEPnn?gjQzf`KaiR91
+R4
+S1
+R0
+R24
+R25
+R26
+!i122 4
+R19
+R6
+r1
+!s85 0
+31
+R28
+R29
+R30
+!i113 1
+R8
+R9
+R10
+vor_gate_single
+R1
+R23
+!i10b 1
+!s100 7?eRnC^3:XEZ=:c;2J`ih3
+R3
+ISmfckg52R:eB?0BBo:QY_0
+R4
+S1
+R0
+R24
+Z31 8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv
+Z32 FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv
+!i122 3
+R27
+R6
+r1
+!s85 0
+31
+R28
+Z33 !s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv|
+Z34 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv|
+!i113 1
+R8
+R9
+R10
+vor_module
+R1
+R23
+!i10b 1
+!s100 =96bVz[I;3dE4[0e>LGSO0
+R3
+IkECSZXelTL5]aG;JS:P;z2
+R4
+S1
+R0
+R24
+R31
+R32
+!i122 3
+R19
+R6
+r1
+!s85 0
+31
+R28
+R33
+R34
+!i113 1
+R8
+R9
+R10
+vshifter_nbits
+R1
+R11
+!i10b 1
+!s100 2KTL]SE>7EN@eBTYXcFYo3
+R3
+IIO8bdQZAnjfbCBm1D6Gd?1
+R4
+S1
+R0
+w1679532882
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv
+!i122 12
+L0 1 58
+R6
+r1
+!s85 0
+31
+R21
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv|
+!i113 1
+R8
+R9
+R10
+vsubstractor_nbits
+R1
+R20
+!i10b 1
+!s100 ?ghBC1aGPU4ZVGR]jmOZi3
+R3
+IPeLUh;8=0Vk5:c_Pa^6RQ0
+R4
+S1
+R0
+w1679557252
+8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv
+FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv
+!i122 11
+R5
+R6
+r1
+!s85 0
+31
+R21
+!s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv|
+!i113 1
+R8
+R9
+R10
+vxor_gate_single
+R1
+R23
+!i10b 1
+!s100 QjHeLiBn3HX=ae[?ejAKF1
+R3
+IWkbfUV]GRc^:YG8D4IKOW2
+R4
+S1
+R0
+Z35 w1679542821
+Z36 8D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv
+Z37 FD:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv
+!i122 2
+R27
+R6
+r1
+!s85 0
+31
+R22
+Z38 !s107 D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1|D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv|
+!i113 1
+R8
+R9
+R10
+vxor_module
+R1
+R23
+!i10b 1
+!s100 YQ4dhj55Z945k^QEf8?Mz3
+R3
+I9Fz7VjM4m7Ia]i0fTQ>mE3
+R4
+S1
+R0
+R35
+R36
+R37
+!i122 2
+R19
+R6
+r1
+!s85 0
+31
+R22
+R38
+R39
+!i113 1
+R8
+R9
+R10

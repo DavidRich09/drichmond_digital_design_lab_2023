@@ -11,21 +11,21 @@ s[0] => s[0].IN5
 s[1] => s[1].IN5
 s[2] => s[2].IN5
 s[3] => s[3].IN5
-neg_flag <= mux_10to1:mux_neg_flag.port0
-zr_flag <= mux_10to1:mux_zr_flag.port0
-cry_flag <= mux_10to1:mux_cry_flag.port0
-of_flag <= mux_10to1:mux_of_flag.port0
-result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
-led_disp[0] <= display_converter:hex_converter.port4
-led_disp[1] <= display_converter:hex_converter.port4
-led_disp[2] <= display_converter:hex_converter.port4
-led_disp[3] <= display_converter:hex_converter.port4
-led_disp[4] <= display_converter:hex_converter.port4
-led_disp[5] <= display_converter:hex_converter.port4
-led_disp[6] <= display_converter:hex_converter.port4
+neg_flag << mux_10to1:mux_neg_flag.port0
+zr_flag << mux_10to1:mux_zr_flag.port0
+cry_flag << mux_10to1:mux_cry_flag.port0
+of_flag << mux_10to1:mux_of_flag.port0
+result[0] << result[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] << result[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] << result[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] << result[3].DB_MAX_OUTPUT_PORT_TYPE
+led_disp[0] << display_converter:hex_converter.port4
+led_disp[1] << display_converter:hex_converter.port4
+led_disp[2] << display_converter:hex_converter.port4
+led_disp[3] << display_converter:hex_converter.port4
+led_disp[4] << display_converter:hex_converter.port4
+led_disp[5] << display_converter:hex_converter.port4
+led_disp[6] << display_converter:hex_converter.port4
 
 
 |ALU|display_converter:hex_converter
@@ -80,10 +80,10 @@ led_disp[6] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|mux_10to1:muxresult
-out_mux[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 out_suma[0] => Mux3.IN0
 out_suma[0] => Mux3.IN1
 out_suma[0] => Mux3.IN2
@@ -463,22 +463,22 @@ of_flag <= <GND>
 
 
 |ALU|shifter_nbits:shifter|deco_2_3:deco
-a0 => and1.IN0
-a0 => and0.IN0
 a0 => and2.IN0
-a1 => and2.IN1
-a1 => and0.IN1
+a0 => and0.IN0
+a0 => and1.IN0
 a1 => and1.IN1
+a1 => and0.IN1
+a1 => and2.IN1
 y0 <= and0.DB_MAX_OUTPUT_PORT_TYPE
 y1 <= and1.DB_MAX_OUTPUT_PORT_TYPE
 y2 <= and2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ALU|mux_10to1:mux_neg_flag
-out_mux[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 out_suma[0] => Mux3.IN0
 out_suma[0] => Mux3.IN1
 out_suma[0] => Mux3.IN2
@@ -562,10 +562,10 @@ select[3] => Mux3.IN16
 
 
 |ALU|mux_10to1:mux_zr_flag
-out_mux[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 out_suma[0] => Mux3.IN0
 out_suma[0] => Mux3.IN1
 out_suma[0] => Mux3.IN2
@@ -649,10 +649,10 @@ select[3] => Mux3.IN16
 
 
 |ALU|mux_10to1:mux_cry_flag
-out_mux[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 out_suma[0] => Mux3.IN0
 out_suma[0] => Mux3.IN1
 out_suma[0] => Mux3.IN2
@@ -736,10 +736,10 @@ select[3] => Mux3.IN16
 
 
 |ALU|mux_10to1:mux_of_flag
-out_mux[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
-out_mux[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 out_suma[0] => Mux3.IN0
 out_suma[0] => Mux3.IN1
 out_suma[0] => Mux3.IN2

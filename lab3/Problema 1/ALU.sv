@@ -27,7 +27,7 @@ module ALU
 	mux_10to1 muxresult(result,out_suma,out_rest, out_not, out_and, out_or, out_xor, out_shifter, out_shifter, out_shifter, out_shifter,s);
 	
 	and and_decoder0(d[0],~s[0],s[1],s[2],~s[3]);
-	and and_decoder1(d[1],~s[0],s[1],s[2],s[3]);
+	and and_decoder1(d[1],s[0],s[1],s[2],~s[3]);
 	
 	adder_nbits #(.N(N)) adder(a,b,out_suma,module_flags_out[0],module_flags_out[1],module_flags_out[2],module_flags_out[3]);
 	substractor_nbits #(.N(N)) substractor(a,b,out_rest,module_flags_out[4],module_flags_out[5],module_flags_out[6],module_flags_out[7]);

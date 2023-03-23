@@ -28,8 +28,8 @@ module substractor_nbits
 	assign zr_flag = (result == 0) ? 1 : 0;
 	assign neg_flag = result[N-1];
 	assign cry_flag = carries[N-1];
-	assign of_flag = (a[N-1] == b[N-1] && a[N-1] != result[N-1]) ? 0 : 1;
-	
+	assign of_flag = (a[N-1] == b[N-1] && a[N-1] != result[N-1]) ? 1 : 0;
+	 
 	endgenerate
 	
 endmodule
