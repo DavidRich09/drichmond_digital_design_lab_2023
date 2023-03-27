@@ -1,49 +1,42 @@
-Analysis & Synthesis report for ALU
-Thu Mar 23 02:56:22 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Elaboration report for ALU
+Sun Mar 26 21:53:25 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
- 11. Parameter Settings for User Entity Instance: mux_10to1:muxresult
- 12. Parameter Settings for User Entity Instance: adder_nbits:adder
- 13. Parameter Settings for User Entity Instance: substractor_nbits:substractor
- 14. Parameter Settings for User Entity Instance: not_module:notmodule
- 15. Parameter Settings for User Entity Instance: and_module:andmodule
- 16. Parameter Settings for User Entity Instance: or_module:ormodule
- 17. Parameter Settings for User Entity Instance: xor_module:xormodule
- 18. Parameter Settings for User Entity Instance: shifter_nbits:shifter
- 19. Parameter Settings for User Entity Instance: mux_10to1:mux_neg_flag
- 20. Parameter Settings for User Entity Instance: mux_10to1:mux_zr_flag
- 21. Parameter Settings for User Entity Instance: mux_10to1:mux_cry_flag
- 22. Parameter Settings for User Entity Instance: mux_10to1:mux_of_flag
- 23. Port Connectivity Checks: "mux_10to1:mux_of_flag"
- 24. Port Connectivity Checks: "mux_10to1:mux_cry_flag"
- 25. Port Connectivity Checks: "mux_10to1:mux_zr_flag"
- 26. Port Connectivity Checks: "mux_10to1:mux_neg_flag"
- 27. Port Connectivity Checks: "substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f"
- 28. Port Connectivity Checks: "adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f"
- 29. Post-Synthesis Netlist Statistics for Top Partition
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |ALU
+  5. Parameter Settings for User Entity Instance: mux_10to1:muxresult
+  6. Parameter Settings for User Entity Instance: adder_nbits:adder
+  7. Parameter Settings for User Entity Instance: substractor_nbits:substractor
+  8. Parameter Settings for User Entity Instance: not_module:notmodule
+  9. Parameter Settings for User Entity Instance: and_module:andmodule
+ 10. Parameter Settings for User Entity Instance: or_module:ormodule
+ 11. Parameter Settings for User Entity Instance: xor_module:xormodule
+ 12. Parameter Settings for User Entity Instance: shifter_nbits:shifter
+ 13. Parameter Settings for User Entity Instance: mux_10to1:mux_neg_flag
+ 14. Parameter Settings for User Entity Instance: mux_10to1:mux_zr_flag
+ 15. Parameter Settings for User Entity Instance: mux_10to1:mux_cry_flag
+ 16. Parameter Settings for User Entity Instance: mux_10to1:mux_of_flag
+ 17. Analysis & Elaboration Settings
+ 18. Port Connectivity Checks: "mux_10to1:mux_of_flag"
+ 19. Port Connectivity Checks: "mux_10to1:mux_cry_flag"
+ 20. Port Connectivity Checks: "mux_10to1:mux_zr_flag"
+ 21. Port Connectivity Checks: "mux_10to1:mux_neg_flag"
+ 22. Port Connectivity Checks: "substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f"
+ 23. Port Connectivity Checks: "adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f"
+ 24. Analysis & Elaboration Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -60,114 +53,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 23 02:56:22 2023       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                   ; ALU                                         ;
-; Top-level Entity Name           ; ALU                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 27                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                          ; Setting            ; Default Value      ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; ALU                ; ALU                ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
-; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
-; Enable compact report table                                                     ; Off                ; Off                ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
-; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                        ; Auto               ; Auto               ;
-; Safe State Machine                                                              ; Off                ; Off                ;
-; Extract Verilog State Machines                                                  ; On                 ; On                 ;
-; Extract VHDL State Machines                                                     ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
-; Parallel Synthesis                                                              ; On                 ; On                 ;
-; DSP Block Balancing                                                             ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                              ; On                 ; On                 ;
-; Power-Up Don't Care                                                             ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
-; Remove Duplicate Registers                                                      ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
-; Optimization Technique                                                          ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                              ; 70                 ; 70                 ;
-; Auto Carry Chains                                                               ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
-; Auto ROM Replacement                                                            ; On                 ; On                 ;
-; Auto RAM Replacement                                                            ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
-; Strict RAM Replacement                                                          ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                           ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
-; Report Parameter Settings                                                       ; On                 ; On                 ;
-; Report Source Assignments                                                       ; On                 ; On                 ;
-; Report Connectivity Checks                                                      ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
-; HDL message level                                                               ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
-; Clock MUX Protection                                                            ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
-; Block Design Naming                                                             ; Auto               ; Auto               ;
-; SDC constraint protection                                                       ; Off                ; Off                ;
-; Synthesis Effort                                                                ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
-+---------------------------------------------------------------------------------+--------------------+--------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Sun Mar 26 21:53:25 2023          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; ALU                                            ;
+; Top-level Entity Name         ; ALU                                            ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -184,104 +85,6 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 +----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; display_converter.sv             ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv ;         ;
-; mux_10to1.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv         ;         ;
-; xor_module.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv        ;         ;
-; or_module.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv         ;         ;
-; not_module.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv        ;         ;
-; and_module.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv        ;         ;
-; deco_2_4.sv                      ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv          ;         ;
-; adder_nbits.sv                   ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv       ;         ;
-; ALU.sv                           ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv               ;         ;
-; full_adder.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv        ;         ;
-; full_substractor.sv              ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv  ;         ;
-; substractor_nbits.sv             ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv ;         ;
-; shifter_nbits.sv                 ; yes             ; User SystemVerilog HDL File  ; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 33         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 49         ;
-;     -- 7 input functions                    ; 2          ;
-;     -- 6 input functions                    ; 14         ;
-;     -- 5 input functions                    ; 11         ;
-;     -- 4 input functions                    ; 17         ;
-;     -- <=3 input functions                  ; 5          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 27         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; s[1]~input ;
-; Maximum fan-out                             ; 18         ;
-; Total fan-out                               ; 276        ;
-; Average fan-out                             ; 2.68       ;
-+---------------------------------------------+------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Entity Name       ; Library Name ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-------------------+--------------+
-; |ALU                                               ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 27   ; 0            ; |ALU                                                                          ; ALU               ; work         ;
-;    |adder_nbits:adder|                             ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder_nbits:adder                                                        ; adder_nbits       ; work         ;
-;       |full_adder:generate_N_bit_Adder[0].f|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f                   ; full_adder        ; work         ;
-;       |full_adder:generate_N_bit_Adder[1].f|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder_nbits:adder|full_adder:generate_N_bit_Adder[1].f                   ; full_adder        ; work         ;
-;       |full_adder:generate_N_bit_Adder[2].f|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder_nbits:adder|full_adder:generate_N_bit_Adder[2].f                   ; full_adder        ; work         ;
-;       |full_adder:generate_N_bit_Adder[3].f|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|adder_nbits:adder|full_adder:generate_N_bit_Adder[3].f                   ; full_adder        ; work         ;
-;    |display_converter:hex_converter|               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|display_converter:hex_converter                                          ; display_converter ; work         ;
-;    |mux_10to1:mux_cry_flag|                        ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_10to1:mux_cry_flag                                                   ; mux_10to1         ; work         ;
-;    |mux_10to1:mux_neg_flag|                        ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_10to1:mux_neg_flag                                                   ; mux_10to1         ; work         ;
-;    |mux_10to1:mux_of_flag|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_10to1:mux_of_flag                                                    ; mux_10to1         ; work         ;
-;    |mux_10to1:mux_zr_flag|                         ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_10to1:mux_zr_flag                                                    ; mux_10to1         ; work         ;
-;    |mux_10to1:muxresult|                           ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux_10to1:muxresult                                                      ; mux_10to1         ; work         ;
-;    |shifter_nbits:shifter|                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|shifter_nbits:shifter                                                    ; shifter_nbits     ; work         ;
-;    |substractor_nbits:substractor|                 ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|substractor_nbits:substractor                                            ; substractor_nbits ; work         ;
-;       |full_substractor:generate_N_bit_Adder[1].f| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[1].f ; full_substractor  ; work         ;
-;       |full_substractor:generate_N_bit_Adder[2].f| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |ALU|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[2].f ; full_substractor  ; work         ;
-+----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+-------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 16:1               ; 2 bits    ; 20 LEs        ; 6 LEs                ; 14 LEs                 ; No         ; |ALU|mux_10to1:mux_zr_flag|Mux3 ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; No         ; |ALU|mux_10to1:muxresult|Mux2   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 
 
 +---------------------------------------------------------------------+
@@ -414,6 +217,93 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; ALU                ; ALU                ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "mux_10to1:mux_of_flag"                                                                                                                                                                      ;
 +---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -526,113 +416,79 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 50                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 48                          ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 17                          ;
-;         5 data inputs ; 11                          ;
-;         6 data inputs ; 14                          ;
-; boundary_port         ; 27                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.66                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Mar 23 02:56:11 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Sun Mar 26 21:53:14 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file display_converter.sv
-    Info (12023): Found entity 1: display_converter File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/display_converter.sv Line: 1
+    Info (12023): Found entity 1: display_converter File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/display_converter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_10to1.sv
-    Info (12023): Found entity 1: mux_10to1 File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/mux_10to1.sv Line: 1
+    Info (12023): Found entity 1: mux_10to1 File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/mux_10to1.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file xor_module.sv
-    Info (12023): Found entity 1: xor_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv Line: 1
-    Info (12023): Found entity 2: xor_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv Line: 20
+    Info (12023): Found entity 1: xor_module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/xor_module.sv Line: 1
+    Info (12023): Found entity 2: xor_gate_single File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/xor_module.sv Line: 20
 Info (12021): Found 2 design units, including 2 entities, in source file or_module.sv
-    Info (12023): Found entity 1: or_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv Line: 1
-    Info (12023): Found entity 2: or_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv Line: 20
+    Info (12023): Found entity 1: or_module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/or_module.sv Line: 1
+    Info (12023): Found entity 2: or_gate_single File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/or_module.sv Line: 20
 Info (12021): Found 2 design units, including 2 entities, in source file not_module.sv
-    Info (12023): Found entity 1: not_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv Line: 1
-    Info (12023): Found entity 2: not_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv Line: 20
+    Info (12023): Found entity 1: not_module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/not_module.sv Line: 1
+    Info (12023): Found entity 2: not_gate_single File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/not_module.sv Line: 20
 Info (12021): Found 2 design units, including 2 entities, in source file and_module.sv
-    Info (12023): Found entity 1: and_module File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv Line: 1
-    Info (12023): Found entity 2: and_gate_single File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv Line: 19
+    Info (12023): Found entity 1: and_module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/and_module.sv Line: 1
+    Info (12023): Found entity 2: and_gate_single File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/and_module.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file deco_2_4.sv
-    Info (12023): Found entity 1: deco_2_3 File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/deco_2_4.sv Line: 1
+    Info (12023): Found entity 1: deco_2_3 File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/deco_2_4.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_nbits.sv
-    Info (12023): Found entity 1: adder_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 1
+    Info (12023): Found entity 1: adder_nbits File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/adder_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_substractor.sv
-    Info (12023): Found entity 1: full_substractor File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/full_substractor.sv Line: 1
+    Info (12023): Found entity 1: full_substractor File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/full_substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file substractor_nbits.sv
-    Info (12023): Found entity 1: substractor_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 1
+    Info (12023): Found entity 1: substractor_nbits File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/substractor_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter_nbits.sv
-    Info (12023): Found entity 1: shifter_nbits File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 1
+    Info (12023): Found entity 1: shifter_nbits File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/shifter_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu_tb.sv
-    Info (12023): Found entity 1: ALU_tb File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU_tb.sv Line: 1
+    Info (12023): Found entity 1: ALU_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_input.sv
+    Info (12023): Found entity 1: register_input File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/register_input.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_output.sv
+    Info (12023): Found entity 1: register_output File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/register_output.sv Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Info (12128): Elaborating entity "display_converter" for hierarchy "display_converter:hex_converter" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 25
-Info (12128): Elaborating entity "mux_10to1" for hierarchy "mux_10to1:muxresult" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 27
-Info (12128): Elaborating entity "adder_nbits" for hierarchy "adder_nbits:adder" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 32
-Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 31
-Info (12128): Elaborating entity "full_adder" for hierarchy "adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/adder_nbits.sv Line: 23
-Info (12128): Elaborating entity "substractor_nbits" for hierarchy "substractor_nbits:substractor" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 33
-Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 31
-Info (12128): Elaborating entity "full_substractor" for hierarchy "substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/substractor_nbits.sv Line: 23
-Info (12128): Elaborating entity "not_module" for hierarchy "not_module:notmodule" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 34
-Info (12128): Elaborating entity "not_gate_single" for hierarchy "not_module:notmodule|not_gate_single:generate_bit_to_bit[0].notgate" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/not_module.sv Line: 11
-Info (12128): Elaborating entity "and_module" for hierarchy "and_module:andmodule" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 35
-Info (12128): Elaborating entity "and_gate_single" for hierarchy "and_module:andmodule|and_gate_single:generate_bit_to_bit[0].gateand" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/and_module.sv Line: 11
-Info (12128): Elaborating entity "or_module" for hierarchy "or_module:ormodule" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 36
-Info (12128): Elaborating entity "or_gate_single" for hierarchy "or_module:ormodule|or_gate_single:generate_bit_to_bit[0].gateor" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/or_module.sv Line: 11
-Info (12128): Elaborating entity "xor_module" for hierarchy "xor_module:xormodule" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 37
-Info (12128): Elaborating entity "xor_gate_single" for hierarchy "xor_module:xormodule|xor_gate_single:generate_bit_to_bit[0].gatexor" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/xor_module.sv Line: 11
-Info (12128): Elaborating entity "shifter_nbits" for hierarchy "shifter_nbits:shifter" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/ALU.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 52
-Info (12128): Elaborating entity "deco_2_3" for hierarchy "shifter_nbits:shifter|deco_2_3:deco" File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab3/Problema 1/shifter_nbits.sv Line: 24
+Info (12128): Elaborating entity "display_converter" for hierarchy "display_converter:hex_converter" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 25
+Info (12128): Elaborating entity "mux_10to1" for hierarchy "mux_10to1:muxresult" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 27
+Info (12128): Elaborating entity "adder_nbits" for hierarchy "adder_nbits:adder" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/adder_nbits.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/adder_nbits.sv Line: 31
+Info (12128): Elaborating entity "full_adder" for hierarchy "adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/adder_nbits.sv Line: 23
+Info (12128): Elaborating entity "substractor_nbits" for hierarchy "substractor_nbits:substractor" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 33
+Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/substractor_nbits.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/substractor_nbits.sv Line: 31
+Info (12128): Elaborating entity "full_substractor" for hierarchy "substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/substractor_nbits.sv Line: 23
+Info (12128): Elaborating entity "not_module" for hierarchy "not_module:notmodule" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 34
+Info (12128): Elaborating entity "not_gate_single" for hierarchy "not_module:notmodule|not_gate_single:generate_bit_to_bit[0].notgate" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/not_module.sv Line: 11
+Info (12128): Elaborating entity "and_module" for hierarchy "and_module:andmodule" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 35
+Info (12128): Elaborating entity "and_gate_single" for hierarchy "and_module:andmodule|and_gate_single:generate_bit_to_bit[0].gateand" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/and_module.sv Line: 11
+Info (12128): Elaborating entity "or_module" for hierarchy "or_module:ormodule" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 36
+Info (12128): Elaborating entity "or_gate_single" for hierarchy "or_module:ormodule|or_gate_single:generate_bit_to_bit[0].gateor" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/or_module.sv Line: 11
+Info (12128): Elaborating entity "xor_module" for hierarchy "xor_module:xormodule" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 37
+Info (12128): Elaborating entity "xor_gate_single" for hierarchy "xor_module:xormodule|xor_gate_single:generate_bit_to_bit[0].gatexor" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/xor_module.sv Line: 11
+Info (12128): Elaborating entity "shifter_nbits" for hierarchy "shifter_nbits:shifter" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/ALU.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/shifter_nbits.sv Line: 52
+Info (12128): Elaborating entity "deco_2_3" for hierarchy "shifter_nbits:shifter|deco_2_3:deco" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab3/Problema 2/shifter_nbits.sv Line: 24
 Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Thu Mar 23 02:56:22 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Sun Mar 26 21:53:25 2023
     Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:16
 
 
