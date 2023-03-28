@@ -3,10 +3,66 @@ a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 s[0] => s[0].IN1
 s[1] => s[1].IN1
 s[2] => s[2].IN1
@@ -17,6 +73,34 @@ output_reg[0] <= register_output:regOut.port11
 output_reg[1] <= register_output:regOut.port11
 output_reg[2] <= register_output:regOut.port11
 output_reg[3] <= register_output:regOut.port11
+output_reg[4] <= register_output:regOut.port11
+output_reg[5] <= register_output:regOut.port11
+output_reg[6] <= register_output:regOut.port11
+output_reg[7] <= register_output:regOut.port11
+output_reg[8] <= register_output:regOut.port11
+output_reg[9] <= register_output:regOut.port11
+output_reg[10] <= register_output:regOut.port11
+output_reg[11] <= register_output:regOut.port11
+output_reg[12] <= register_output:regOut.port11
+output_reg[13] <= register_output:regOut.port11
+output_reg[14] <= register_output:regOut.port11
+output_reg[15] <= register_output:regOut.port11
+output_reg[16] <= register_output:regOut.port11
+output_reg[17] <= register_output:regOut.port11
+output_reg[18] <= register_output:regOut.port11
+output_reg[19] <= register_output:regOut.port11
+output_reg[20] <= register_output:regOut.port11
+output_reg[21] <= register_output:regOut.port11
+output_reg[22] <= register_output:regOut.port11
+output_reg[23] <= register_output:regOut.port11
+output_reg[24] <= register_output:regOut.port11
+output_reg[25] <= register_output:regOut.port11
+output_reg[26] <= register_output:regOut.port11
+output_reg[27] <= register_output:regOut.port11
+output_reg[28] <= register_output:regOut.port11
+output_reg[29] <= register_output:regOut.port11
+output_reg[30] <= register_output:regOut.port11
+output_reg[31] <= register_output:regOut.port11
 flags_aux_out[0] <= register_output:regOut.port7
 flags_aux_out[1] <= register_output:regOut.port8
 flags_aux_out[2] <= register_output:regOut.port9
@@ -32,10 +116,66 @@ a[0] => regA[0]~reg0.DATAIN
 a[1] => regA[1]~reg0.DATAIN
 a[2] => regA[2]~reg0.DATAIN
 a[3] => regA[3]~reg0.DATAIN
+a[4] => regA[4]~reg0.DATAIN
+a[5] => regA[5]~reg0.DATAIN
+a[6] => regA[6]~reg0.DATAIN
+a[7] => regA[7]~reg0.DATAIN
+a[8] => regA[8]~reg0.DATAIN
+a[9] => regA[9]~reg0.DATAIN
+a[10] => regA[10]~reg0.DATAIN
+a[11] => regA[11]~reg0.DATAIN
+a[12] => regA[12]~reg0.DATAIN
+a[13] => regA[13]~reg0.DATAIN
+a[14] => regA[14]~reg0.DATAIN
+a[15] => regA[15]~reg0.DATAIN
+a[16] => regA[16]~reg0.DATAIN
+a[17] => regA[17]~reg0.DATAIN
+a[18] => regA[18]~reg0.DATAIN
+a[19] => regA[19]~reg0.DATAIN
+a[20] => regA[20]~reg0.DATAIN
+a[21] => regA[21]~reg0.DATAIN
+a[22] => regA[22]~reg0.DATAIN
+a[23] => regA[23]~reg0.DATAIN
+a[24] => regA[24]~reg0.DATAIN
+a[25] => regA[25]~reg0.DATAIN
+a[26] => regA[26]~reg0.DATAIN
+a[27] => regA[27]~reg0.DATAIN
+a[28] => regA[28]~reg0.DATAIN
+a[29] => regA[29]~reg0.DATAIN
+a[30] => regA[30]~reg0.DATAIN
+a[31] => regA[31]~reg0.DATAIN
 b[0] => regB[0]~reg0.DATAIN
 b[1] => regB[1]~reg0.DATAIN
 b[2] => regB[2]~reg0.DATAIN
 b[3] => regB[3]~reg0.DATAIN
+b[4] => regB[4]~reg0.DATAIN
+b[5] => regB[5]~reg0.DATAIN
+b[6] => regB[6]~reg0.DATAIN
+b[7] => regB[7]~reg0.DATAIN
+b[8] => regB[8]~reg0.DATAIN
+b[9] => regB[9]~reg0.DATAIN
+b[10] => regB[10]~reg0.DATAIN
+b[11] => regB[11]~reg0.DATAIN
+b[12] => regB[12]~reg0.DATAIN
+b[13] => regB[13]~reg0.DATAIN
+b[14] => regB[14]~reg0.DATAIN
+b[15] => regB[15]~reg0.DATAIN
+b[16] => regB[16]~reg0.DATAIN
+b[17] => regB[17]~reg0.DATAIN
+b[18] => regB[18]~reg0.DATAIN
+b[19] => regB[19]~reg0.DATAIN
+b[20] => regB[20]~reg0.DATAIN
+b[21] => regB[21]~reg0.DATAIN
+b[22] => regB[22]~reg0.DATAIN
+b[23] => regB[23]~reg0.DATAIN
+b[24] => regB[24]~reg0.DATAIN
+b[25] => regB[25]~reg0.DATAIN
+b[26] => regB[26]~reg0.DATAIN
+b[27] => regB[27]~reg0.DATAIN
+b[28] => regB[28]~reg0.DATAIN
+b[29] => regB[29]~reg0.DATAIN
+b[30] => regB[30]~reg0.DATAIN
+b[31] => regB[31]~reg0.DATAIN
 clk => regSel[0]~reg0.CLK
 clk => regSel[1]~reg0.CLK
 clk => regSel[2]~reg0.CLK
@@ -44,10 +184,66 @@ clk => regB[0]~reg0.CLK
 clk => regB[1]~reg0.CLK
 clk => regB[2]~reg0.CLK
 clk => regB[3]~reg0.CLK
+clk => regB[4]~reg0.CLK
+clk => regB[5]~reg0.CLK
+clk => regB[6]~reg0.CLK
+clk => regB[7]~reg0.CLK
+clk => regB[8]~reg0.CLK
+clk => regB[9]~reg0.CLK
+clk => regB[10]~reg0.CLK
+clk => regB[11]~reg0.CLK
+clk => regB[12]~reg0.CLK
+clk => regB[13]~reg0.CLK
+clk => regB[14]~reg0.CLK
+clk => regB[15]~reg0.CLK
+clk => regB[16]~reg0.CLK
+clk => regB[17]~reg0.CLK
+clk => regB[18]~reg0.CLK
+clk => regB[19]~reg0.CLK
+clk => regB[20]~reg0.CLK
+clk => regB[21]~reg0.CLK
+clk => regB[22]~reg0.CLK
+clk => regB[23]~reg0.CLK
+clk => regB[24]~reg0.CLK
+clk => regB[25]~reg0.CLK
+clk => regB[26]~reg0.CLK
+clk => regB[27]~reg0.CLK
+clk => regB[28]~reg0.CLK
+clk => regB[29]~reg0.CLK
+clk => regB[30]~reg0.CLK
+clk => regB[31]~reg0.CLK
 clk => regA[0]~reg0.CLK
 clk => regA[1]~reg0.CLK
 clk => regA[2]~reg0.CLK
 clk => regA[3]~reg0.CLK
+clk => regA[4]~reg0.CLK
+clk => regA[5]~reg0.CLK
+clk => regA[6]~reg0.CLK
+clk => regA[7]~reg0.CLK
+clk => regA[8]~reg0.CLK
+clk => regA[9]~reg0.CLK
+clk => regA[10]~reg0.CLK
+clk => regA[11]~reg0.CLK
+clk => regA[12]~reg0.CLK
+clk => regA[13]~reg0.CLK
+clk => regA[14]~reg0.CLK
+clk => regA[15]~reg0.CLK
+clk => regA[16]~reg0.CLK
+clk => regA[17]~reg0.CLK
+clk => regA[18]~reg0.CLK
+clk => regA[19]~reg0.CLK
+clk => regA[20]~reg0.CLK
+clk => regA[21]~reg0.CLK
+clk => regA[22]~reg0.CLK
+clk => regA[23]~reg0.CLK
+clk => regA[24]~reg0.CLK
+clk => regA[25]~reg0.CLK
+clk => regA[26]~reg0.CLK
+clk => regA[27]~reg0.CLK
+clk => regA[28]~reg0.CLK
+clk => regA[29]~reg0.CLK
+clk => regA[30]~reg0.CLK
+clk => regA[31]~reg0.CLK
 reset => regSel[0]~reg0.ACLR
 reset => regSel[1]~reg0.ACLR
 reset => regSel[2]~reg0.ACLR
@@ -56,18 +252,130 @@ reset => regB[0]~reg0.ACLR
 reset => regB[1]~reg0.ACLR
 reset => regB[2]~reg0.ACLR
 reset => regB[3]~reg0.ACLR
+reset => regB[4]~reg0.ACLR
+reset => regB[5]~reg0.ACLR
+reset => regB[6]~reg0.ACLR
+reset => regB[7]~reg0.ACLR
+reset => regB[8]~reg0.ACLR
+reset => regB[9]~reg0.ACLR
+reset => regB[10]~reg0.ACLR
+reset => regB[11]~reg0.ACLR
+reset => regB[12]~reg0.ACLR
+reset => regB[13]~reg0.ACLR
+reset => regB[14]~reg0.ACLR
+reset => regB[15]~reg0.ACLR
+reset => regB[16]~reg0.ACLR
+reset => regB[17]~reg0.ACLR
+reset => regB[18]~reg0.ACLR
+reset => regB[19]~reg0.ACLR
+reset => regB[20]~reg0.ACLR
+reset => regB[21]~reg0.ACLR
+reset => regB[22]~reg0.ACLR
+reset => regB[23]~reg0.ACLR
+reset => regB[24]~reg0.ACLR
+reset => regB[25]~reg0.ACLR
+reset => regB[26]~reg0.ACLR
+reset => regB[27]~reg0.ACLR
+reset => regB[28]~reg0.ACLR
+reset => regB[29]~reg0.ACLR
+reset => regB[30]~reg0.ACLR
+reset => regB[31]~reg0.ACLR
 reset => regA[0]~reg0.ACLR
 reset => regA[1]~reg0.ACLR
 reset => regA[2]~reg0.ACLR
 reset => regA[3]~reg0.ACLR
+reset => regA[4]~reg0.ACLR
+reset => regA[5]~reg0.ACLR
+reset => regA[6]~reg0.ACLR
+reset => regA[7]~reg0.ACLR
+reset => regA[8]~reg0.ACLR
+reset => regA[9]~reg0.ACLR
+reset => regA[10]~reg0.ACLR
+reset => regA[11]~reg0.ACLR
+reset => regA[12]~reg0.ACLR
+reset => regA[13]~reg0.ACLR
+reset => regA[14]~reg0.ACLR
+reset => regA[15]~reg0.ACLR
+reset => regA[16]~reg0.ACLR
+reset => regA[17]~reg0.ACLR
+reset => regA[18]~reg0.ACLR
+reset => regA[19]~reg0.ACLR
+reset => regA[20]~reg0.ACLR
+reset => regA[21]~reg0.ACLR
+reset => regA[22]~reg0.ACLR
+reset => regA[23]~reg0.ACLR
+reset => regA[24]~reg0.ACLR
+reset => regA[25]~reg0.ACLR
+reset => regA[26]~reg0.ACLR
+reset => regA[27]~reg0.ACLR
+reset => regA[28]~reg0.ACLR
+reset => regA[29]~reg0.ACLR
+reset => regA[30]~reg0.ACLR
+reset => regA[31]~reg0.ACLR
 regA[0] <= regA[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regA[1] <= regA[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regA[2] <= regA[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regA[3] <= regA[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[4] <= regA[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[5] <= regA[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[6] <= regA[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[7] <= regA[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[8] <= regA[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[9] <= regA[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[10] <= regA[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[11] <= regA[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[12] <= regA[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[13] <= regA[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[14] <= regA[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[15] <= regA[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[16] <= regA[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[17] <= regA[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[18] <= regA[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[19] <= regA[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[20] <= regA[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[21] <= regA[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[22] <= regA[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[23] <= regA[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[24] <= regA[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[25] <= regA[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[26] <= regA[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[27] <= regA[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[28] <= regA[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[29] <= regA[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[30] <= regA[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regA[31] <= regA[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regB[0] <= regB[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regB[1] <= regB[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regB[2] <= regB[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regB[3] <= regB[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[4] <= regB[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[5] <= regB[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[6] <= regB[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[7] <= regB[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[8] <= regB[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[9] <= regB[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[10] <= regB[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[11] <= regB[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[12] <= regB[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[13] <= regB[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[14] <= regB[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[15] <= regB[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[16] <= regB[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[17] <= regB[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[18] <= regB[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[19] <= regB[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[20] <= regB[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[21] <= regB[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[22] <= regB[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[23] <= regB[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[24] <= regB[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[25] <= regB[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[26] <= regB[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[27] <= regB[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[28] <= regB[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[29] <= regB[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[30] <= regB[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regB[31] <= regB[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regSel[0] <= regSel[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regSel[1] <= regSel[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 regSel[2] <= regSel[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -79,10 +387,66 @@ a[0] => a[0].IN7
 a[1] => a[1].IN7
 a[2] => a[2].IN7
 a[3] => a[3].IN7
+a[4] => a[4].IN7
+a[5] => a[5].IN7
+a[6] => a[6].IN7
+a[7] => a[7].IN7
+a[8] => a[8].IN7
+a[9] => a[9].IN7
+a[10] => a[10].IN7
+a[11] => a[11].IN7
+a[12] => a[12].IN7
+a[13] => a[13].IN7
+a[14] => a[14].IN7
+a[15] => a[15].IN7
+a[16] => a[16].IN7
+a[17] => a[17].IN7
+a[18] => a[18].IN7
+a[19] => a[19].IN7
+a[20] => a[20].IN7
+a[21] => a[21].IN7
+a[22] => a[22].IN7
+a[23] => a[23].IN7
+a[24] => a[24].IN7
+a[25] => a[25].IN7
+a[26] => a[26].IN7
+a[27] => a[27].IN7
+a[28] => a[28].IN7
+a[29] => a[29].IN7
+a[30] => a[30].IN7
+a[31] => a[31].IN7
 b[0] => b[0].IN5
 b[1] => b[1].IN5
 b[2] => b[2].IN5
 b[3] => b[3].IN5
+b[4] => b[4].IN5
+b[5] => b[5].IN5
+b[6] => b[6].IN5
+b[7] => b[7].IN5
+b[8] => b[8].IN5
+b[9] => b[9].IN5
+b[10] => b[10].IN5
+b[11] => b[11].IN5
+b[12] => b[12].IN5
+b[13] => b[13].IN5
+b[14] => b[14].IN5
+b[15] => b[15].IN5
+b[16] => b[16].IN5
+b[17] => b[17].IN5
+b[18] => b[18].IN5
+b[19] => b[19].IN5
+b[20] => b[20].IN5
+b[21] => b[21].IN5
+b[22] => b[22].IN5
+b[23] => b[23].IN5
+b[24] => b[24].IN5
+b[25] => b[25].IN5
+b[26] => b[26].IN5
+b[27] => b[27].IN5
+b[28] => b[28].IN5
+b[29] => b[29].IN5
+b[30] => b[30].IN5
+b[31] => b[31].IN5
 s[0] => s[0].IN5
 s[1] => s[1].IN5
 s[2] => s[2].IN5
@@ -91,68 +455,45 @@ neg_flag <= mux_10to1:mux_neg_flag.port0
 zr_flag <= mux_10to1:mux_zr_flag.port0
 cry_flag <= mux_10to1:mux_cry_flag.port0
 of_flag <= mux_10to1:mux_of_flag.port0
-result[0] <= result[0].DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1].DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= result[2].DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= result[3].DB_MAX_OUTPUT_PORT_TYPE
-led_disp[0] <= display_converter:hex_converter.port4
-led_disp[1] <= display_converter:hex_converter.port4
-led_disp[2] <= display_converter:hex_converter.port4
-led_disp[3] <= display_converter:hex_converter.port4
-led_disp[4] <= display_converter:hex_converter.port4
-led_disp[5] <= display_converter:hex_converter.port4
-led_disp[6] <= display_converter:hex_converter.port4
-
-
-|RegistroCargaTop|ALU:DUT|display_converter:hex_converter
-A => led_disp.IN0
-A => led_disp.IN0
-A => led_disp.IN0
-A => led_disp.IN0
-A => led_disp.IN0
-A => led_disp.IN0
-A => led_disp.IN0
-B => led_disp.IN0
-B => led_disp.IN1
-B => led_disp.IN1
-B => led_disp.IN1
-B => led_disp.IN0
-B => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-C => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-D => led_disp.IN1
-led_disp[0] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[1] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[2] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[3] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[4] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[5] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
-led_disp[6] <= led_disp.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= mux_10to1:muxresult.port0
+result[1] <= mux_10to1:muxresult.port0
+result[2] <= mux_10to1:muxresult.port0
+result[3] <= mux_10to1:muxresult.port0
+result[4] <= mux_10to1:muxresult.port0
+result[5] <= mux_10to1:muxresult.port0
+result[6] <= mux_10to1:muxresult.port0
+result[7] <= mux_10to1:muxresult.port0
+result[8] <= mux_10to1:muxresult.port0
+result[9] <= mux_10to1:muxresult.port0
+result[10] <= mux_10to1:muxresult.port0
+result[11] <= mux_10to1:muxresult.port0
+result[12] <= mux_10to1:muxresult.port0
+result[13] <= mux_10to1:muxresult.port0
+result[14] <= mux_10to1:muxresult.port0
+result[15] <= mux_10to1:muxresult.port0
+result[16] <= mux_10to1:muxresult.port0
+result[17] <= mux_10to1:muxresult.port0
+result[18] <= mux_10to1:muxresult.port0
+result[19] <= mux_10to1:muxresult.port0
+result[20] <= mux_10to1:muxresult.port0
+result[21] <= mux_10to1:muxresult.port0
+result[22] <= mux_10to1:muxresult.port0
+result[23] <= mux_10to1:muxresult.port0
+result[24] <= mux_10to1:muxresult.port0
+result[25] <= mux_10to1:muxresult.port0
+result[26] <= mux_10to1:muxresult.port0
+result[27] <= mux_10to1:muxresult.port0
+result[28] <= mux_10to1:muxresult.port0
+result[29] <= mux_10to1:muxresult.port0
+result[30] <= mux_10to1:muxresult.port0
+result[31] <= mux_10to1:muxresult.port0
+led_disp[0] <= <GND>
+led_disp[1] <= <GND>
+led_disp[2] <= <GND>
+led_disp[3] <= <GND>
+led_disp[4] <= <GND>
+led_disp[5] <= <GND>
+led_disp[6] <= <GND>
 
 
 |RegistroCargaTop|ALU:DUT|mux_10to1:muxresult
@@ -247,17 +588,101 @@ a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 result[0] <= full_adder:generate_N_bit_Adder[0].f.port3
 result[1] <= full_adder:generate_N_bit_Adder[1].f.port3
 result[2] <= full_adder:generate_N_bit_Adder[2].f.port3
 result[3] <= full_adder:generate_N_bit_Adder[3].f.port3
-neg_flag <= full_adder:generate_N_bit_Adder[3].f.port3
+result[4] <= full_adder:generate_N_bit_Adder[4].f.port3
+result[5] <= full_adder:generate_N_bit_Adder[5].f.port3
+result[6] <= full_adder:generate_N_bit_Adder[6].f.port3
+result[7] <= full_adder:generate_N_bit_Adder[7].f.port3
+result[8] <= full_adder:generate_N_bit_Adder[8].f.port3
+result[9] <= full_adder:generate_N_bit_Adder[9].f.port3
+result[10] <= full_adder:generate_N_bit_Adder[10].f.port3
+result[11] <= full_adder:generate_N_bit_Adder[11].f.port3
+result[12] <= full_adder:generate_N_bit_Adder[12].f.port3
+result[13] <= full_adder:generate_N_bit_Adder[13].f.port3
+result[14] <= full_adder:generate_N_bit_Adder[14].f.port3
+result[15] <= full_adder:generate_N_bit_Adder[15].f.port3
+result[16] <= full_adder:generate_N_bit_Adder[16].f.port3
+result[17] <= full_adder:generate_N_bit_Adder[17].f.port3
+result[18] <= full_adder:generate_N_bit_Adder[18].f.port3
+result[19] <= full_adder:generate_N_bit_Adder[19].f.port3
+result[20] <= full_adder:generate_N_bit_Adder[20].f.port3
+result[21] <= full_adder:generate_N_bit_Adder[21].f.port3
+result[22] <= full_adder:generate_N_bit_Adder[22].f.port3
+result[23] <= full_adder:generate_N_bit_Adder[23].f.port3
+result[24] <= full_adder:generate_N_bit_Adder[24].f.port3
+result[25] <= full_adder:generate_N_bit_Adder[25].f.port3
+result[26] <= full_adder:generate_N_bit_Adder[26].f.port3
+result[27] <= full_adder:generate_N_bit_Adder[27].f.port3
+result[28] <= full_adder:generate_N_bit_Adder[28].f.port3
+result[29] <= full_adder:generate_N_bit_Adder[29].f.port3
+result[30] <= full_adder:generate_N_bit_Adder[30].f.port3
+result[31] <= full_adder:generate_N_bit_Adder[31].f.port3
+neg_flag <= full_adder:generate_N_bit_Adder[31].f.port3
 zr_flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-cry_flag <= full_adder:generate_N_bit_Adder[3].f.port4
+cry_flag <= full_adder:generate_N_bit_Adder[31].f.port4
 of_flag <= of_flag.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -305,22 +730,414 @@ result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[4].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[5].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[6].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[7].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[8].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[9].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[10].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[11].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[12].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[13].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[14].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[15].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[16].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[17].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[18].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[19].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[20].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[21].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[22].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[23].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[24].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[25].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[26].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[27].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[28].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[29].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[30].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|adder_nbits:adder|full_adder:generate_N_bit_Adder[31].f
+a => xor1.IN0
+a => and2.IN0
+b => xor1.IN1
+b => and2.IN1
+c_in => xor2.IN1
+c_in => and1.IN1
+result <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|substractor_nbits:substractor
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 result[0] <= full_substractor:generate_N_bit_Adder[0].f.port3
 result[1] <= full_substractor:generate_N_bit_Adder[1].f.port3
 result[2] <= full_substractor:generate_N_bit_Adder[2].f.port3
 result[3] <= full_substractor:generate_N_bit_Adder[3].f.port3
-neg_flag <= full_substractor:generate_N_bit_Adder[3].f.port3
+result[4] <= full_substractor:generate_N_bit_Adder[4].f.port3
+result[5] <= full_substractor:generate_N_bit_Adder[5].f.port3
+result[6] <= full_substractor:generate_N_bit_Adder[6].f.port3
+result[7] <= full_substractor:generate_N_bit_Adder[7].f.port3
+result[8] <= full_substractor:generate_N_bit_Adder[8].f.port3
+result[9] <= full_substractor:generate_N_bit_Adder[9].f.port3
+result[10] <= full_substractor:generate_N_bit_Adder[10].f.port3
+result[11] <= full_substractor:generate_N_bit_Adder[11].f.port3
+result[12] <= full_substractor:generate_N_bit_Adder[12].f.port3
+result[13] <= full_substractor:generate_N_bit_Adder[13].f.port3
+result[14] <= full_substractor:generate_N_bit_Adder[14].f.port3
+result[15] <= full_substractor:generate_N_bit_Adder[15].f.port3
+result[16] <= full_substractor:generate_N_bit_Adder[16].f.port3
+result[17] <= full_substractor:generate_N_bit_Adder[17].f.port3
+result[18] <= full_substractor:generate_N_bit_Adder[18].f.port3
+result[19] <= full_substractor:generate_N_bit_Adder[19].f.port3
+result[20] <= full_substractor:generate_N_bit_Adder[20].f.port3
+result[21] <= full_substractor:generate_N_bit_Adder[21].f.port3
+result[22] <= full_substractor:generate_N_bit_Adder[22].f.port3
+result[23] <= full_substractor:generate_N_bit_Adder[23].f.port3
+result[24] <= full_substractor:generate_N_bit_Adder[24].f.port3
+result[25] <= full_substractor:generate_N_bit_Adder[25].f.port3
+result[26] <= full_substractor:generate_N_bit_Adder[26].f.port3
+result[27] <= full_substractor:generate_N_bit_Adder[27].f.port3
+result[28] <= full_substractor:generate_N_bit_Adder[28].f.port3
+result[29] <= full_substractor:generate_N_bit_Adder[29].f.port3
+result[30] <= full_substractor:generate_N_bit_Adder[30].f.port3
+result[31] <= full_substractor:generate_N_bit_Adder[31].f.port3
+neg_flag <= full_substractor:generate_N_bit_Adder[31].f.port3
 zr_flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
-cry_flag <= full_substractor:generate_N_bit_Adder[3].f.port4
+cry_flag <= full_substractor:generate_N_bit_Adder[31].f.port4
 of_flag <= of_flag.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -368,15 +1185,379 @@ result <= u2.DB_MAX_OUTPUT_PORT_TYPE
 c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[4].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[5].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[6].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[7].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[8].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[9].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[10].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[11].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[12].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[13].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[14].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[15].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[16].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[17].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[18].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[19].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[20].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[21].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[22].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[23].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[24].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[25].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[26].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[27].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[28].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[29].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[30].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[31].f
+a => u1.IN0
+a => u3.IN0
+b => u1.IN1
+b => u3.IN1
+c_in => u2.IN1
+c_in => u4.IN1
+result <= u2.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= u7.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|not_module:notmodule
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 y[0] <= not_gate_single:generate_bit_to_bit[0].notgate.port1
 y[1] <= not_gate_single:generate_bit_to_bit[1].notgate.port1
 y[2] <= not_gate_single:generate_bit_to_bit[2].notgate.port1
 y[3] <= not_gate_single:generate_bit_to_bit[3].notgate.port1
+y[4] <= not_gate_single:generate_bit_to_bit[4].notgate.port1
+y[5] <= not_gate_single:generate_bit_to_bit[5].notgate.port1
+y[6] <= not_gate_single:generate_bit_to_bit[6].notgate.port1
+y[7] <= not_gate_single:generate_bit_to_bit[7].notgate.port1
+y[8] <= not_gate_single:generate_bit_to_bit[8].notgate.port1
+y[9] <= not_gate_single:generate_bit_to_bit[9].notgate.port1
+y[10] <= not_gate_single:generate_bit_to_bit[10].notgate.port1
+y[11] <= not_gate_single:generate_bit_to_bit[11].notgate.port1
+y[12] <= not_gate_single:generate_bit_to_bit[12].notgate.port1
+y[13] <= not_gate_single:generate_bit_to_bit[13].notgate.port1
+y[14] <= not_gate_single:generate_bit_to_bit[14].notgate.port1
+y[15] <= not_gate_single:generate_bit_to_bit[15].notgate.port1
+y[16] <= not_gate_single:generate_bit_to_bit[16].notgate.port1
+y[17] <= not_gate_single:generate_bit_to_bit[17].notgate.port1
+y[18] <= not_gate_single:generate_bit_to_bit[18].notgate.port1
+y[19] <= not_gate_single:generate_bit_to_bit[19].notgate.port1
+y[20] <= not_gate_single:generate_bit_to_bit[20].notgate.port1
+y[21] <= not_gate_single:generate_bit_to_bit[21].notgate.port1
+y[22] <= not_gate_single:generate_bit_to_bit[22].notgate.port1
+y[23] <= not_gate_single:generate_bit_to_bit[23].notgate.port1
+y[24] <= not_gate_single:generate_bit_to_bit[24].notgate.port1
+y[25] <= not_gate_single:generate_bit_to_bit[25].notgate.port1
+y[26] <= not_gate_single:generate_bit_to_bit[26].notgate.port1
+y[27] <= not_gate_single:generate_bit_to_bit[27].notgate.port1
+y[28] <= not_gate_single:generate_bit_to_bit[28].notgate.port1
+y[29] <= not_gate_single:generate_bit_to_bit[29].notgate.port1
+y[30] <= not_gate_single:generate_bit_to_bit[30].notgate.port1
+y[31] <= not_gate_single:generate_bit_to_bit[31].notgate.port1
 
 
 |RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[0].notgate
@@ -399,19 +1580,243 @@ a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[4].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[5].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[6].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[7].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[8].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[9].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[10].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[11].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[12].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[13].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[14].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[15].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[16].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[17].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[18].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[19].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[20].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[21].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[22].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[23].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[24].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[25].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[26].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[27].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[28].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[29].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[30].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|not_module:notmodule|not_gate_single:generate_bit_to_bit[31].notgate
+a => y.DATAIN
+y <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|and_module:andmodule
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 y[0] <= and_gate_single:generate_bit_to_bit[0].gateand.port2
 y[1] <= and_gate_single:generate_bit_to_bit[1].gateand.port2
 y[2] <= and_gate_single:generate_bit_to_bit[2].gateand.port2
 y[3] <= and_gate_single:generate_bit_to_bit[3].gateand.port2
+y[4] <= and_gate_single:generate_bit_to_bit[4].gateand.port2
+y[5] <= and_gate_single:generate_bit_to_bit[5].gateand.port2
+y[6] <= and_gate_single:generate_bit_to_bit[6].gateand.port2
+y[7] <= and_gate_single:generate_bit_to_bit[7].gateand.port2
+y[8] <= and_gate_single:generate_bit_to_bit[8].gateand.port2
+y[9] <= and_gate_single:generate_bit_to_bit[9].gateand.port2
+y[10] <= and_gate_single:generate_bit_to_bit[10].gateand.port2
+y[11] <= and_gate_single:generate_bit_to_bit[11].gateand.port2
+y[12] <= and_gate_single:generate_bit_to_bit[12].gateand.port2
+y[13] <= and_gate_single:generate_bit_to_bit[13].gateand.port2
+y[14] <= and_gate_single:generate_bit_to_bit[14].gateand.port2
+y[15] <= and_gate_single:generate_bit_to_bit[15].gateand.port2
+y[16] <= and_gate_single:generate_bit_to_bit[16].gateand.port2
+y[17] <= and_gate_single:generate_bit_to_bit[17].gateand.port2
+y[18] <= and_gate_single:generate_bit_to_bit[18].gateand.port2
+y[19] <= and_gate_single:generate_bit_to_bit[19].gateand.port2
+y[20] <= and_gate_single:generate_bit_to_bit[20].gateand.port2
+y[21] <= and_gate_single:generate_bit_to_bit[21].gateand.port2
+y[22] <= and_gate_single:generate_bit_to_bit[22].gateand.port2
+y[23] <= and_gate_single:generate_bit_to_bit[23].gateand.port2
+y[24] <= and_gate_single:generate_bit_to_bit[24].gateand.port2
+y[25] <= and_gate_single:generate_bit_to_bit[25].gateand.port2
+y[26] <= and_gate_single:generate_bit_to_bit[26].gateand.port2
+y[27] <= and_gate_single:generate_bit_to_bit[27].gateand.port2
+y[28] <= and_gate_single:generate_bit_to_bit[28].gateand.port2
+y[29] <= and_gate_single:generate_bit_to_bit[29].gateand.port2
+y[30] <= and_gate_single:generate_bit_to_bit[30].gateand.port2
+y[31] <= and_gate_single:generate_bit_to_bit[31].gateand.port2
 
 
 |RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[0].gateand
@@ -438,19 +1843,271 @@ b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[4].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[5].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[6].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[7].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[8].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[9].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[10].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[11].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[12].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[13].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[14].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[15].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[16].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[17].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[18].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[19].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[20].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[21].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[22].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[23].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[24].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[25].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[26].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[27].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[28].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[29].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[30].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|and_module:andmodule|and_gate_single:generate_bit_to_bit[31].gateand
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|or_module:ormodule
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 y[0] <= or_gate_single:generate_bit_to_bit[0].gateor.port2
 y[1] <= or_gate_single:generate_bit_to_bit[1].gateor.port2
 y[2] <= or_gate_single:generate_bit_to_bit[2].gateor.port2
 y[3] <= or_gate_single:generate_bit_to_bit[3].gateor.port2
+y[4] <= or_gate_single:generate_bit_to_bit[4].gateor.port2
+y[5] <= or_gate_single:generate_bit_to_bit[5].gateor.port2
+y[6] <= or_gate_single:generate_bit_to_bit[6].gateor.port2
+y[7] <= or_gate_single:generate_bit_to_bit[7].gateor.port2
+y[8] <= or_gate_single:generate_bit_to_bit[8].gateor.port2
+y[9] <= or_gate_single:generate_bit_to_bit[9].gateor.port2
+y[10] <= or_gate_single:generate_bit_to_bit[10].gateor.port2
+y[11] <= or_gate_single:generate_bit_to_bit[11].gateor.port2
+y[12] <= or_gate_single:generate_bit_to_bit[12].gateor.port2
+y[13] <= or_gate_single:generate_bit_to_bit[13].gateor.port2
+y[14] <= or_gate_single:generate_bit_to_bit[14].gateor.port2
+y[15] <= or_gate_single:generate_bit_to_bit[15].gateor.port2
+y[16] <= or_gate_single:generate_bit_to_bit[16].gateor.port2
+y[17] <= or_gate_single:generate_bit_to_bit[17].gateor.port2
+y[18] <= or_gate_single:generate_bit_to_bit[18].gateor.port2
+y[19] <= or_gate_single:generate_bit_to_bit[19].gateor.port2
+y[20] <= or_gate_single:generate_bit_to_bit[20].gateor.port2
+y[21] <= or_gate_single:generate_bit_to_bit[21].gateor.port2
+y[22] <= or_gate_single:generate_bit_to_bit[22].gateor.port2
+y[23] <= or_gate_single:generate_bit_to_bit[23].gateor.port2
+y[24] <= or_gate_single:generate_bit_to_bit[24].gateor.port2
+y[25] <= or_gate_single:generate_bit_to_bit[25].gateor.port2
+y[26] <= or_gate_single:generate_bit_to_bit[26].gateor.port2
+y[27] <= or_gate_single:generate_bit_to_bit[27].gateor.port2
+y[28] <= or_gate_single:generate_bit_to_bit[28].gateor.port2
+y[29] <= or_gate_single:generate_bit_to_bit[29].gateor.port2
+y[30] <= or_gate_single:generate_bit_to_bit[30].gateor.port2
+y[31] <= or_gate_single:generate_bit_to_bit[31].gateor.port2
 
 
 |RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[0].gateor
@@ -477,19 +2134,271 @@ b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[4].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[5].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[6].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[7].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[8].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[9].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[10].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[11].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[12].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[13].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[14].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[15].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[16].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[17].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[18].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[19].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[20].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[21].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[22].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[23].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[24].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[25].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[26].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[27].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[28].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[29].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[30].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|or_module:ormodule|or_gate_single:generate_bit_to_bit[31].gateor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|xor_module:xormodule
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
 a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
 b[0] => b[0].IN1
 b[1] => b[1].IN1
 b[2] => b[2].IN1
 b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
 y[0] <= xor_gate_single:generate_bit_to_bit[0].gatexor.port2
 y[1] <= xor_gate_single:generate_bit_to_bit[1].gatexor.port2
 y[2] <= xor_gate_single:generate_bit_to_bit[2].gatexor.port2
 y[3] <= xor_gate_single:generate_bit_to_bit[3].gatexor.port2
+y[4] <= xor_gate_single:generate_bit_to_bit[4].gatexor.port2
+y[5] <= xor_gate_single:generate_bit_to_bit[5].gatexor.port2
+y[6] <= xor_gate_single:generate_bit_to_bit[6].gatexor.port2
+y[7] <= xor_gate_single:generate_bit_to_bit[7].gatexor.port2
+y[8] <= xor_gate_single:generate_bit_to_bit[8].gatexor.port2
+y[9] <= xor_gate_single:generate_bit_to_bit[9].gatexor.port2
+y[10] <= xor_gate_single:generate_bit_to_bit[10].gatexor.port2
+y[11] <= xor_gate_single:generate_bit_to_bit[11].gatexor.port2
+y[12] <= xor_gate_single:generate_bit_to_bit[12].gatexor.port2
+y[13] <= xor_gate_single:generate_bit_to_bit[13].gatexor.port2
+y[14] <= xor_gate_single:generate_bit_to_bit[14].gatexor.port2
+y[15] <= xor_gate_single:generate_bit_to_bit[15].gatexor.port2
+y[16] <= xor_gate_single:generate_bit_to_bit[16].gatexor.port2
+y[17] <= xor_gate_single:generate_bit_to_bit[17].gatexor.port2
+y[18] <= xor_gate_single:generate_bit_to_bit[18].gatexor.port2
+y[19] <= xor_gate_single:generate_bit_to_bit[19].gatexor.port2
+y[20] <= xor_gate_single:generate_bit_to_bit[20].gatexor.port2
+y[21] <= xor_gate_single:generate_bit_to_bit[21].gatexor.port2
+y[22] <= xor_gate_single:generate_bit_to_bit[22].gatexor.port2
+y[23] <= xor_gate_single:generate_bit_to_bit[23].gatexor.port2
+y[24] <= xor_gate_single:generate_bit_to_bit[24].gatexor.port2
+y[25] <= xor_gate_single:generate_bit_to_bit[25].gatexor.port2
+y[26] <= xor_gate_single:generate_bit_to_bit[26].gatexor.port2
+y[27] <= xor_gate_single:generate_bit_to_bit[27].gatexor.port2
+y[28] <= xor_gate_single:generate_bit_to_bit[28].gatexor.port2
+y[29] <= xor_gate_single:generate_bit_to_bit[29].gatexor.port2
+y[30] <= xor_gate_single:generate_bit_to_bit[30].gatexor.port2
+y[31] <= xor_gate_single:generate_bit_to_bit[31].gatexor.port2
 
 
 |RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[0].gatexor
@@ -516,22 +2425,274 @@ b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[4].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[5].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[6].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[7].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[8].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[9].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[10].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[11].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[12].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[13].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[14].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[15].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[16].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[17].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[18].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[19].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[20].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[21].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[22].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[23].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[24].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[25].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[26].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[27].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[28].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[29].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[30].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RegistroCargaTop|ALU:DUT|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[31].gatexor
+a => y.IN0
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
 |RegistroCargaTop|ALU:DUT|shifter_nbits:shifter
-a[0] => generate_shifter_nbits[3].and0.IN1
-a[0] => generate_shifter_nbits[3].and1.IN1
-a[1] => generate_shifter_nbits[2].and0.IN1
-a[1] => generate_shifter_nbits[2].and1.IN1
-a[2] => generate_shifter_nbits[1].and0.IN1
-a[2] => generate_shifter_nbits[1].and1.IN1
-a[3] => ars_and.IN1
-a[3] => generate_shifter_nbits[0].and0.IN1
-a[3] => generate_shifter_nbits[0].and1.IN1
+a[0] => generate_shifter_nbits[31].and0.IN1
+a[0] => generate_shifter_nbits[31].and1.IN1
+a[1] => generate_shifter_nbits[30].and0.IN1
+a[1] => generate_shifter_nbits[30].and1.IN1
+a[2] => generate_shifter_nbits[29].and0.IN1
+a[2] => generate_shifter_nbits[29].and1.IN1
+a[3] => generate_shifter_nbits[28].and0.IN1
+a[3] => generate_shifter_nbits[28].and1.IN1
+a[4] => generate_shifter_nbits[27].and0.IN1
+a[4] => generate_shifter_nbits[27].and1.IN1
+a[5] => generate_shifter_nbits[26].and0.IN1
+a[5] => generate_shifter_nbits[26].and1.IN1
+a[6] => generate_shifter_nbits[25].and0.IN1
+a[6] => generate_shifter_nbits[25].and1.IN1
+a[7] => generate_shifter_nbits[24].and0.IN1
+a[7] => generate_shifter_nbits[24].and1.IN1
+a[8] => generate_shifter_nbits[23].and0.IN1
+a[8] => generate_shifter_nbits[23].and1.IN1
+a[9] => generate_shifter_nbits[22].and0.IN1
+a[9] => generate_shifter_nbits[22].and1.IN1
+a[10] => generate_shifter_nbits[21].and0.IN1
+a[10] => generate_shifter_nbits[21].and1.IN1
+a[11] => generate_shifter_nbits[20].and0.IN1
+a[11] => generate_shifter_nbits[20].and1.IN1
+a[12] => generate_shifter_nbits[19].and0.IN1
+a[12] => generate_shifter_nbits[19].and1.IN1
+a[13] => generate_shifter_nbits[18].and0.IN1
+a[13] => generate_shifter_nbits[18].and1.IN1
+a[14] => generate_shifter_nbits[17].and0.IN1
+a[14] => generate_shifter_nbits[17].and1.IN1
+a[15] => generate_shifter_nbits[16].and0.IN1
+a[15] => generate_shifter_nbits[16].and1.IN1
+a[16] => generate_shifter_nbits[15].and0.IN1
+a[16] => generate_shifter_nbits[15].and1.IN1
+a[17] => generate_shifter_nbits[14].and0.IN1
+a[17] => generate_shifter_nbits[14].and1.IN1
+a[18] => generate_shifter_nbits[13].and0.IN1
+a[18] => generate_shifter_nbits[13].and1.IN1
+a[19] => generate_shifter_nbits[12].and0.IN1
+a[19] => generate_shifter_nbits[12].and1.IN1
+a[20] => generate_shifter_nbits[11].and0.IN1
+a[20] => generate_shifter_nbits[11].and1.IN1
+a[21] => generate_shifter_nbits[10].and0.IN1
+a[21] => generate_shifter_nbits[10].and1.IN1
+a[22] => generate_shifter_nbits[9].and0.IN1
+a[22] => generate_shifter_nbits[9].and1.IN1
+a[23] => generate_shifter_nbits[8].and0.IN1
+a[23] => generate_shifter_nbits[8].and1.IN1
+a[24] => generate_shifter_nbits[7].and0.IN1
+a[24] => generate_shifter_nbits[7].and1.IN1
+a[25] => generate_shifter_nbits[6].and0.IN1
+a[25] => generate_shifter_nbits[6].and1.IN1
+a[26] => generate_shifter_nbits[5].and0.IN1
+a[26] => generate_shifter_nbits[5].and1.IN1
+a[27] => generate_shifter_nbits[4].and0.IN1
+a[27] => generate_shifter_nbits[4].and1.IN1
+a[28] => generate_shifter_nbits[3].and0.IN1
+a[28] => generate_shifter_nbits[3].and1.IN1
+a[29] => generate_shifter_nbits[2].and0.IN1
+a[29] => generate_shifter_nbits[2].and1.IN1
+a[30] => generate_shifter_nbits[1].and0.IN1
+a[30] => generate_shifter_nbits[1].and1.IN1
+a[31] => ars_and.IN1
+a[31] => generate_shifter_nbits[0].and0.IN1
+a[31] => generate_shifter_nbits[0].and1.IN1
 deco_in[0] => deco_in[0].IN1
 deco_in[1] => deco_in[1].IN1
-result[0] <= generate_shifter_nbits[2].and1.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= generate_shifter_nbits[2].or0.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= generate_shifter_nbits[1].or0.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= generate_shifter_nbits[0].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[0] <= generate_shifter_nbits[30].and1.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= generate_shifter_nbits[30].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= generate_shifter_nbits[29].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= generate_shifter_nbits[28].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= generate_shifter_nbits[27].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= generate_shifter_nbits[26].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= generate_shifter_nbits[25].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= generate_shifter_nbits[24].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[8] <= generate_shifter_nbits[23].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[9] <= generate_shifter_nbits[22].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[10] <= generate_shifter_nbits[21].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[11] <= generate_shifter_nbits[20].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[12] <= generate_shifter_nbits[19].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[13] <= generate_shifter_nbits[18].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[14] <= generate_shifter_nbits[17].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[15] <= generate_shifter_nbits[16].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[16] <= generate_shifter_nbits[15].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[17] <= generate_shifter_nbits[14].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[18] <= generate_shifter_nbits[13].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[19] <= generate_shifter_nbits[12].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[20] <= generate_shifter_nbits[11].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[21] <= generate_shifter_nbits[10].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[22] <= generate_shifter_nbits[9].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[23] <= generate_shifter_nbits[8].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[24] <= generate_shifter_nbits[7].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[25] <= generate_shifter_nbits[6].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[26] <= generate_shifter_nbits[5].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[27] <= generate_shifter_nbits[4].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[28] <= generate_shifter_nbits[3].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[29] <= generate_shifter_nbits[2].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[30] <= generate_shifter_nbits[1].or0.DB_MAX_OUTPUT_PORT_TYPE
+result[31] <= generate_shifter_nbits[0].or0.DB_MAX_OUTPUT_PORT_TYPE
 neg_flag <= generate_shifter_nbits[0].or0.DB_MAX_OUTPUT_PORT_TYPE
 zr_flag <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 cry_flag <= or_carry.DB_MAX_OUTPUT_PORT_TYPE
@@ -903,6 +3064,34 @@ res[0] => ~NO_FANOUT~
 res[1] => ~NO_FANOUT~
 res[2] => ~NO_FANOUT~
 res[3] => ~NO_FANOUT~
+res[4] => ~NO_FANOUT~
+res[5] => ~NO_FANOUT~
+res[6] => ~NO_FANOUT~
+res[7] => ~NO_FANOUT~
+res[8] => ~NO_FANOUT~
+res[9] => ~NO_FANOUT~
+res[10] => ~NO_FANOUT~
+res[11] => ~NO_FANOUT~
+res[12] => ~NO_FANOUT~
+res[13] => ~NO_FANOUT~
+res[14] => ~NO_FANOUT~
+res[15] => ~NO_FANOUT~
+res[16] => ~NO_FANOUT~
+res[17] => ~NO_FANOUT~
+res[18] => ~NO_FANOUT~
+res[19] => ~NO_FANOUT~
+res[20] => ~NO_FANOUT~
+res[21] => ~NO_FANOUT~
+res[22] => ~NO_FANOUT~
+res[23] => ~NO_FANOUT~
+res[24] => ~NO_FANOUT~
+res[25] => ~NO_FANOUT~
+res[26] => ~NO_FANOUT~
+res[27] => ~NO_FANOUT~
+res[28] => ~NO_FANOUT~
+res[29] => ~NO_FANOUT~
+res[30] => ~NO_FANOUT~
+res[31] => ~NO_FANOUT~
 clk => reg_of_flag~reg0.CLK
 clk => reg_cry_flag~reg0.CLK
 clk => reg_zr_flag~reg0.CLK
@@ -923,5 +3112,33 @@ regOutput[0] <= <GND>
 regOutput[1] <= <GND>
 regOutput[2] <= <GND>
 regOutput[3] <= <GND>
+regOutput[4] <= <GND>
+regOutput[5] <= <GND>
+regOutput[6] <= <GND>
+regOutput[7] <= <GND>
+regOutput[8] <= <GND>
+regOutput[9] <= <GND>
+regOutput[10] <= <GND>
+regOutput[11] <= <GND>
+regOutput[12] <= <GND>
+regOutput[13] <= <GND>
+regOutput[14] <= <GND>
+regOutput[15] <= <GND>
+regOutput[16] <= <GND>
+regOutput[17] <= <GND>
+regOutput[18] <= <GND>
+regOutput[19] <= <GND>
+regOutput[20] <= <GND>
+regOutput[21] <= <GND>
+regOutput[22] <= <GND>
+regOutput[23] <= <GND>
+regOutput[24] <= <GND>
+regOutput[25] <= <GND>
+regOutput[26] <= <GND>
+regOutput[27] <= <GND>
+regOutput[28] <= <GND>
+regOutput[29] <= <GND>
+regOutput[30] <= <GND>
+regOutput[31] <= <GND>
 
 

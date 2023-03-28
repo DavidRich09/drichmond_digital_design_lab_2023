@@ -22,7 +22,7 @@ module ALU
 	
 	wire [1:0] d;
 	
-	display_converter hex_converter(result[3],result[2],result[1],result[0],led_disp);
+	//display_converter hex_converter(result[3],result[2],result[1],result[0],led_disp);
 	
 	mux_10to1 muxresult(result,out_suma,out_rest, out_not, out_and, out_or, out_xor, out_shifter, out_shifter, out_shifter, out_shifter,s);
 	

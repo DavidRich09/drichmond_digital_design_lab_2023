@@ -1,4 +1,4 @@
-module RegistroCargaTop #(parameter N=4) (input[N-1:0] a, b, input [3:0] s, input clk, rst, output [N-1:0] output_reg, output [3:0] flags_aux_out);
+module TimingAnalysisSystem #(parameter N=32) (input[N-1:0] a, b, input [3:0] s, input clk, rst, output [N-1:0] output_reg, output [3:0] flags_aux_out);
 	
 	logic [3:0] sel_reg_input;
 	logic [N-1:0] a_reg_input;
