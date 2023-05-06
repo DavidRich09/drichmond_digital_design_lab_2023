@@ -1,0 +1,28 @@
+module up_slide_tb;
+
+	logic up_state;
+	logic [15:0][3:0] cell_matrix_in;
+	logic [15:0][3:0] cell_matrix_out;
+
+
+	up_slide upModule
+	
+	(
+	  .up_state(up_state),
+	  .cell_matrix_in(cell_matrix_in),
+	  .cell_matrix_out(cell_matrix_out)
+	);
+	
+
+
+	initial begin
+	
+		$display("Testing up slide...");
+		$display("initiating up_state...");
+		up_state = 1;
+		$display("up_state = 1");
+		
+
+	end
+
+endmodule

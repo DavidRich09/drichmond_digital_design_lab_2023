@@ -1,0 +1,58 @@
+# Reading pref.tcl
+# do 2048_game_top_module_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:58:50 on May 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv 
+# -- Compiling module up_slide
+# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv(5): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# 
+# Top level modules:
+# 	up_slide
+# End time: 01:58:50 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:58:50 on May 06,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv 
+# -- Compiling module up_slide_tb
+# 
+# Top level modules:
+# 	up_slide_tb
+# End time: 01:58:50 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  up_slide_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" up_slide_tb 
+# Start time: 01:58:50 on May 06,2023
+# Loading sv_std.std
+# Loading work.up_slide_tb
+# Loading work.up_slide
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Joseff01  Hostname: LAPTOP-DBQ7SAL4  ProcessID: 20432
+#           Attempting to use alternate WLF file "./wlftzgqbei".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftzgqbei
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testing up slide...
+# initiating up_state...
+# up_state = 1
+# End time: 02:02:56 on May 06,2023, Elapsed time: 0:04:06
+# Errors: 0, Warnings: 2
