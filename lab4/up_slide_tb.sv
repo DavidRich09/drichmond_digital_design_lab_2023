@@ -3,19 +3,26 @@ module up_slide_tb;
 	logic up_state;
 	logic [15:0][3:0] cell_matrix_in;
 	logic [15:0][3:0] cell_matrix_out;
+   logic [12:0] points_in;
+	logic [12:0] points_out;
 
 
-	up_slide upModule
+	down_slide downModule
 	
 	(
-	  .up_state(up_state),
+	  .down_state(up_state),
+	  .points_in(points_in),
 	  .cell_matrix_in(cell_matrix_in),
-	  .cell_matrix_out(cell_matrix_out)
+	  .cell_matrix_out(cell_matrix_out),
+	  .points_out(points_out)
 	);
 	
 
 
 	initial begin
+		
+		points_in = 0;
+		points_out = 0;
 		
 		cell_matrix_in [0] = 4'd1;
 		cell_matrix_in [1] = 4'd1;

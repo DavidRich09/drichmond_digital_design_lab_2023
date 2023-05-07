@@ -1,21 +1,26 @@
 module up_slide
 (
-	input logic up_state,        
+	input logic up_state,
 
-	input logic [15:0][3:0] cell_matrix_in,
-	output logic [15:0][3:0] cell_matrix_out
+	input logic [12:0] points_in,
 	
-	//input logic clk (????)   
+	input logic [15:0][3:0] cell_matrix_in,
+	output logic [15:0][3:0] cell_matrix_out,
+	
+	output logic [12:0] points_out
 	
 );	
 
 	integer i;
 	logic [15:0][3:0] cell_matrix_variable;
+	logic [12:0] points;
 	
 
 	always @(posedge up_state) begin
 	
 		cell_matrix_variable = cell_matrix_in;
+		
+		points = points_in;
 		
 		//luego de que se ejecute el "for" 4 veces, SIEMPRE va a quedar todo combinado al máximo y ordenado
 		
@@ -43,6 +48,8 @@ module up_slide
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+12];
 					cell_matrix_variable[i+12] = 4'd0;
 					
+					points = points + 1;
+					
 				end
 				
 				//second row and third row comparison
@@ -60,6 +67,8 @@ module up_slide
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+12];
 					cell_matrix_variable[i+12] = 4'd0;
 					
+					points = points + 1;
+					
 				end
 				
 				//third row and forth row comparison
@@ -74,6 +83,8 @@ module up_slide
 				
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+8] + 4'd1;
 					cell_matrix_variable[i+12] = 4'd0;
+					
+					points = points + 1;
 				
 				end
 
@@ -82,6 +93,7 @@ module up_slide
 		end
 		
 	cell_matrix_out = cell_matrix_variable;
+	points_out = points;
 	
 	end
 
