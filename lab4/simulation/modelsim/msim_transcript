@@ -10,69 +10,45 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv}
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:45:00 on May 07,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv 
-# -- Compiling module add_random
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv(4): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# Start time: 14:30:14 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv 
+# -- Compiling module maquina_Estados
 # 
 # Top level modules:
-# 	add_random
-# End time: 00:45:00 on May 07,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:45:00 on May 07,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv 
-# -- Compiling module up_slide_tb
-# 
-# Top level modules:
-# 	up_slide_tb
-# End time: 00:45:00 on May 07,2023, Elapsed time: 0:00:00
+# 	maquina_Estados
+# End time: 14:30:14 on May 07,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  up_slide_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" up_slide_tb 
-# Start time: 00:45:00 on May 07,2023
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:30:15 on May 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv 
+# -- Compiling module maquina_Estados_tb
+# 
+# Top level modules:
+# 	maquina_Estados_tb
+# End time: 14:30:15 on May 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  maquina_Estados_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" maquina_Estados_tb 
+# Start time: 14:30:15 on May 07,2023
 # Loading sv_std.std
-# Loading work.up_slide_tb
-# Loading work.add_random
+# Loading work.maquina_Estados_tb
+# Loading work.maquina_Estados
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Joseff01  Hostname: LAPTOP-DBQ7SAL4  ProcessID: 20432
-#           Attempting to use alternate WLF file "./wlftfin2j5".
+#           Attempting to use alternate WLF file "./wlft5j45d0".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfin2j5
+#           Using alternate file: ./wlft5j45d0
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# pepe1
-#  0
-#           3
-#           0
-# pepe2
-#  1
-#           3
-#           0
-# Testing up slide...
-# initiating up_state...
-# up_state = 1
-# pepe1
-#  1
-#           3
-#           0
-# pepe1
-#  0
-#          10
-#           1
-# pepe2
-#  1
-#          10
-#           1
-# End time: 00:47:51 on May 07,2023, Elapsed time: 0:02:51
+# End time: 14:31:27 on May 07,2023, Elapsed time: 0:01:12
 # Errors: 0, Warnings: 2

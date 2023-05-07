@@ -9,55 +9,57 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/simulation/modelsim
-vadd_random
+vmaquina_Estados
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683441900
+!s110 1683491414
 !i10b 1
-!s100 9:2m:NXJ^3[MUP]RAU8iR2
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I6ioL2EZkT55=1VcAnFz@12
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 ED:S0`oC97Zmb35=PBmbC2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I`S]W5iCVP[8639P15o<ND0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1683441662
-8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv
-FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv
+w1683490973
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv
 !i122 0
-L0 1 42
-Z5 OV;L;2020.1;71
+L0 1 89
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1683441900.000000
-!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv|
+!s108 1683491414.000000
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4
-Z9 tCvgOpt 0
-vup_slide_tb
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4
+Z7 tCvgOpt 0
+nmaquina_@estados
+vmaquina_Estados_tb
 R1
-R2
+!s110 1683491415
 !i10b 1
-!s100 f8KY:n6j6;9zb;H^`X4=m1
+!s100 GE7HXERaB_Ch25dhZlN8=2
+R2
+IHW@SMj8[SY[loWl]mX7;g1
 R3
-IY5KXkbkg1Qc9zi@gofA_62
-R4
 S1
 R0
-w1683441822
-8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv
-FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv
+w1683491391
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv
 !i122 1
-L0 1 76
-R5
+L0 1 125
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv|
+!s108 1683491415.000000
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv|
 !i113 1
+R5
+R6
 R7
-R8
-R9
+nmaquina_@estados_tb
