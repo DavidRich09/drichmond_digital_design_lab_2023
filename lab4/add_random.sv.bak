@@ -1,0 +1,30 @@
+module add_random
+(
+
+	input logic [15:0][3:0] cell_matrix_in,
+	output logic [15:0][3:0] cell_matrix_out
+	
+);	
+
+	rand integer random_square_pos;
+	int empty_spaces[$];
+	logic [15:0][3:0] cell_matrix_variable;
+	
+
+	always_comb begin
+	
+		cell_matrix_variable = cell_matrix_in;
+		
+		empty_spaces = cell_matrix_variable.find_index with (item == 4'd0)
+		
+		random_square_pos = $urandom_range(0,empty_spaces.size);
+
+		cell_matrix_variable[random_square_pos] = 4'd1
+		
+		cell_matrix_out = cell_matrix_variable;
+
+		
+	end
+
+	
+endmodule
