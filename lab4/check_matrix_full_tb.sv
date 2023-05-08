@@ -1,0 +1,74 @@
+module check_matrix_full_tb;
+
+  // Definir los puertos del módulo de prueba
+  logic [15:0][3:0] cell_matrix_in;
+  logic all_values_zero;
+
+  // Instanciar el módulo que se está probando
+  check_matrix_full dut (
+    .cell_matrix_in(cell_matrix_in),
+    .all_values_zero(all_values_zero)
+  );
+
+  // Inicializar los valores de entrada
+  initial begin
+    
+		cell_matrix_in [0] = 4'd1;
+		cell_matrix_in [1] = 4'd1;
+		cell_matrix_in [2] = 4'd0;
+		cell_matrix_in [3] = 4'd0;
+		cell_matrix_in [4] = 4'd0;
+		cell_matrix_in [5] = 4'd0;
+		cell_matrix_in [6] = 4'd0;
+		cell_matrix_in [7] = 4'd0;
+		cell_matrix_in [8] = 4'd0;
+		cell_matrix_in [9] = 4'd0;
+		cell_matrix_in [10] = 4'd0;
+		cell_matrix_in [11] = 4'd0;
+		cell_matrix_in [12] = 4'd0;
+		cell_matrix_in [13] = 4'd0;
+		cell_matrix_in [14] = 4'd0;
+		cell_matrix_in [15] = 4'd0;
+		
+		#200
+		
+		cell_matrix_in [0] = 4'd1;
+		cell_matrix_in [1] = 4'd1;
+		cell_matrix_in [2] = 4'd1;
+		cell_matrix_in [3] = 4'd1;
+		cell_matrix_in [4] = 4'd1;
+		cell_matrix_in [5] = 4'd1;
+		cell_matrix_in [6] = 4'd1;
+		cell_matrix_in [7] = 4'd1;
+		cell_matrix_in [8] = 4'd1;
+		cell_matrix_in [9] = 4'd1;
+		cell_matrix_in [10] = 4'd1;
+		cell_matrix_in [11] = 4'd1;
+		cell_matrix_in [12] = 4'd1;
+		cell_matrix_in [13] = 4'd1;
+		cell_matrix_in [14] = 4'd1;
+		cell_matrix_in [15] = 4'd1;
+		
+		#200
+		
+		cell_matrix_in [0] = 4'd0;
+		cell_matrix_in [1] = 4'd0;
+		cell_matrix_in [2] = 4'd0;
+		cell_matrix_in [3] = 4'd0;
+		cell_matrix_in [4] = 4'd0;
+		cell_matrix_in [5] = 4'd0;
+		cell_matrix_in [6] = 4'd0;
+		cell_matrix_in [7] = 4'd0;
+		cell_matrix_in [8] = 4'd0;
+		cell_matrix_in [9] = 4'd0;
+		cell_matrix_in [10] = 4'd0;
+		cell_matrix_in [11] = 4'd0;
+		cell_matrix_in [12] = 4'd1;
+		cell_matrix_in [13] = 4'd0;
+		cell_matrix_in [14] = 4'd0;
+		cell_matrix_in [15] = 4'd0;
+	 
+	 
+  end
+
+endmodule

@@ -1,0 +1,35 @@
+module win_or_lose(
+	
+	input logic a,b,c,d,
+   input logic [15:0][3:0] cell_matrix_in,
+	output logic [15:0][3:0] cell_matrix_out,
+   output logic win, lose
+  
+  );
+  
+  assign cell_matrix_out = cell_matrix_in;
+  logic all_zeros, move, winner; 
+  
+  have_move h_move (
+    .cell_matrix_in(cell_matrix_in),
+    .move(move)
+  );
+
+  check_matrix_full matrix_complete (
+    .cell_matrix_in(cell_matrix_in),
+    .all_values_zero(all_zeros)
+  );
+  
+  win win_ver (
+    .cell_matrix_in(cell_matrix_in),
+    .a(a),
+	 .b(b),
+	 .c(c),
+	 .d(d),
+	 .winner(winner)
+  );
+  
+ 
+  
+endmodule
+

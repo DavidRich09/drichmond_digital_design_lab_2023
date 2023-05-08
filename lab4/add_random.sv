@@ -9,7 +9,7 @@ module add_random
 	integer i;
 	int pseudo_random_order[15:0];
 	logic [15:0][3:0] cell_matrix_variable;
-	
+
 			
 	always @(cell_matrix_in) begin
 		

@@ -1,0 +1,29 @@
+module check_matrix_full_tb;
+
+  // Definir los puertos del módulo de prueba
+  logic [15:0][3:0] cell_matrix_in;
+  logic all_values_nonzero;
+
+  // Instanciar el módulo que se está probando
+  check_matrix dut (
+    .cell_matrix_in(cell_matrix_in),
+    .all_values_nonzero(all_values_nonzero)
+  );
+
+  // Inicializar los valores de entrada
+  initial begin
+    cell_matrix_in = '{16{4'd0}};
+    #10;
+    cell_matrix_in = '{16{4'd1}};
+    #10;
+    cell_matrix_in = '{16{4'd2}};
+    #10;
+    cell_matrix_in = '{16{4'd0}};
+    #10;
+    cell_matrix_in = '{16{4'd3}};
+    #10;
+    cell_matrix_in = '{16{4'd4}};
+    #10;
+  end
+
+endmodule

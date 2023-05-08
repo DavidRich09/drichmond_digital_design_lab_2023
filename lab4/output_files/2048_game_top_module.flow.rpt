@@ -1,6 +1,6 @@
 Flow report for 2048_game_top_module
-Sun May 07 14:30:00 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon May  8 00:01:40 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,24 +38,24 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Sun May 07 14:30:00 2023       ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; 2048_game_top_module                        ;
-; Top-level Entity Name       ; maquina_Estados                             ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CGXFC7C7F23C8                              ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++-----------------------------+------------------------------------------------+
+; Flow Status                 ; Successful - Mon May  8 00:01:40 2023          ;
+; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name               ; 2048_game_top_module                           ;
+; Top-level Entity Name       ; win                                            ;
+; Family                      ; Cyclone V                                      ;
+; Device                      ; 5CGXFC7C7F23C8                                 ;
+; Timing Models               ; Final                                          ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -63,45 +63,65 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------+
 ; Option            ; Setting              ;
 +-------------------+----------------------+
-; Start date & time ; 05/07/2023 14:29:54  ;
+; Start date & time ; 05/08/2023 00:01:29  ;
 ; Main task         ; Compilation          ;
 ; Revision Name     ; 2048_game_top_module ;
 +-------------------+----------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                           ;
-+--------------------------------------+----------------------------------------+----------------------+-----------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value        ; Entity Name     ; Section Id                        ;
-+--------------------------------------+----------------------------------------+----------------------+-----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 134660529511812.168349139400392        ; --                   ; --              ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --              ; maquina_Estados_tb                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --              ; up_slide_tb                       ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --              ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --              ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --              ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --              ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; maquina_Estados_tb                     ; --                   ; --              ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --                   ; --              ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>               ; --              ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                   ; --              ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; maquina_Estados_tb.sv                  ; --                   ; --              ; maquina_Estados_tb                ;
-; EDA_TEST_BENCH_FILE                  ; up_slide_tb.sv                         ; --                   ; --              ; up_slide_tb                       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; maquina_Estados_tb                     ; --                   ; --              ; maquina_Estados_tb                ;
-; EDA_TEST_BENCH_MODULE_NAME           ; up_slide_tb                            ; --                   ; --              ; up_slide_tb                       ;
-; EDA_TEST_BENCH_NAME                  ; up_slide_tb                            ; --                   ; --              ; eda_simulation                    ;
-; EDA_TEST_BENCH_NAME                  ; maquina_Estados_tb                     ; --                   ; --              ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --                   ; --              ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                   ; --              ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                   ; --              ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                   ; maquina_Estados ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                   ; maquina_Estados ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                   ; maquina_Estados ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                   ; --              ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                   ; --              ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                   ; --              ; --                                ;
-; TOP_LEVEL_ENTITY                     ; maquina_Estados                        ; 2048_game_top_module ; --              ; --                                ;
-+--------------------------------------+----------------------------------------+----------------------+-----------------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                       ;
++--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value        ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 5311875933440.168352568809296          ; --                   ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; reset_tb                          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; win_tb                            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; maquina_Estados_tb                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; right_slide_tb                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; have_move_tb                      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; check_matrix_full_tb              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --                   ; --          ; up_slide_tb                       ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --                   ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; win_tb                                 ; --                   ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --                   ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                     ; <None>               ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; reset_tb.sv                            ; --                   ; --          ; reset_tb                          ;
+; EDA_TEST_BENCH_FILE                  ; win_tb.sv                              ; --                   ; --          ; win_tb                            ;
+; EDA_TEST_BENCH_FILE                  ; maquina_Estados_tb.sv                  ; --                   ; --          ; maquina_Estados_tb                ;
+; EDA_TEST_BENCH_FILE                  ; right_slide_tb.sv                      ; --                   ; --          ; right_slide_tb                    ;
+; EDA_TEST_BENCH_FILE                  ; have_move_tb.sv                        ; --                   ; --          ; have_move_tb                      ;
+; EDA_TEST_BENCH_FILE                  ; check_matrix_full_tb.sv                ; --                   ; --          ; check_matrix_full_tb              ;
+; EDA_TEST_BENCH_FILE                  ; up_slide_tb.sv                         ; --                   ; --          ; up_slide_tb                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; reset_tb                               ; --                   ; --          ; reset_tb                          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; win_tb                                 ; --                   ; --          ; win_tb                            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; maquina_Estados_tb                     ; --                   ; --          ; maquina_Estados_tb                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; right_slide_tb                         ; --                   ; --          ; right_slide_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; have_move_tb                           ; --                   ; --          ; have_move_tb                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; check_matrix_full_tb                   ; --                   ; --          ; check_matrix_full_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; up_slide_tb                            ; --                   ; --          ; up_slide_tb                       ;
+; EDA_TEST_BENCH_NAME                  ; up_slide_tb                            ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; maquina_Estados_tb                     ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; reset_tb                               ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; right_slide_tb                         ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; check_matrix_full_tb                   ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; have_move_tb                           ; --                   ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; win_tb                                 ; --                   ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --                   ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --                   ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --                   ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --                   ; win         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --                   ; win         ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --                   ; win         ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --                   ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                   ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --                   ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; win                                    ; 2048_game_top_module ; --          ; --                                ;
++--------------------------------------+----------------------------------------+----------------------+-------------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -109,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:06     ; 1.0                     ; 4766 MB             ; 00:00:08                           ;
-; Total                  ; 00:00:06     ; --                      ; --                  ; 00:00:08                           ;
+; Analysis & Elaboration ; 00:00:12     ; 1.0                     ; 4781 MB             ; 00:00:17                           ;
+; Total                  ; 00:00:12     ; --                      ; --                  ; 00:00:17                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,7 +139,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+------------------+------------+------------+----------------+
 ; Module Name            ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +------------------------+------------------+------------+------------+----------------+
-; Analysis & Elaboration ; LAPTOP-DBQ7SAL4  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Elaboration ; Richmond         ; Windows 10 ; 10.0       ; x86_64         ;
 +------------------------+------------------+------------+------------+----------------+
 
 

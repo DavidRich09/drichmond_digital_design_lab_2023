@@ -1,6 +1,6 @@
 Analysis & Elaboration report for 2048_game_top_module
-Sun May 07 14:30:00 2023
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Mon May  8 00:01:40 2023
+Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
 ---------------------
@@ -11,13 +11,14 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
   5. Analysis & Elaboration Messages
+  6. Analysis & Elaboration Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -34,22 +35,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sun May 07 14:30:00 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; 2048_game_top_module                        ;
-; Top-level Entity Name         ; maquina_Estados                             ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                 ;
++-------------------------------+------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon May  8 00:01:40 2023          ;
+; Quartus Prime Version         ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Revision Name                 ; 2048_game_top_module                           ;
+; Top-level Entity Name         ; win                                            ;
+; Family                        ; Cyclone V                                      ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
+; Total registers               ; N/A until Partition Merge                      ;
+; Total pins                    ; N/A until Partition Merge                      ;
+; Total virtual pins            ; N/A until Partition Merge                      ;
+; Total block memory bits       ; N/A until Partition Merge                      ;
+; Total PLLs                    ; N/A until Partition Merge                      ;
+; Total DLLs                    ; N/A until Partition Merge                      ;
++-------------------------------+------------------------------------------------+
 
 
 +------------------------------------------+
@@ -57,8 +58,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -74,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value        ;
 +---------------------------------------------------------------------------------+--------------------+----------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                      ;
-; Top-level entity name                                                           ; maquina_Estados    ; 2048_game_top_module ;
+; Top-level entity name                                                           ; win                ; 2048_game_top_module ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V            ;
 ; Use smart compilation                                                           ; Off                ; Off                  ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                   ;
@@ -160,35 +161,66 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 07 14:29:54 2023
+    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+    Info: Processing started: Mon May  8 00:01:28 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 2048_game -c 2048_game_top_module --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file game_2048_top_module.sv
-    Info (12023): Found entity 1: game_2048_top_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/game_2048_top_module.sv Line: 1
+    Info (12023): Found entity 1: game_2048_top_module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/game_2048_top_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_estados.sv
-    Info (12023): Found entity 1: maquina_Estados File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv Line: 1
+    Info (12023): Found entity 1: maquina_Estados File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file logic_module.sv
-    Info (12023): Found entity 1: logic_Module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv Line: 1
+    Info (12023): Found entity 1: logic_Module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/logic_Module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_main_module.sv
-    Info (12023): Found entity 1: VGA_Main_Module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/VGA_Main_Module.sv Line: 1
+    Info (12023): Found entity 1: VGA_Main_Module File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/VGA_Main_Module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file up_slide.sv
-    Info (12023): Found entity 1: up_slide File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv Line: 1
+    Info (12023): Found entity 1: up_slide File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/up_slide.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file up_slide_tb.sv
-    Info (12023): Found entity 1: up_slide_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv Line: 1
+    Info (12023): Found entity 1: up_slide_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/up_slide_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file down_slide.sv
-    Info (12023): Found entity 1: down_slide File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv Line: 1
+    Info (12023): Found entity 1: down_slide File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/down_slide.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add_random.sv
-    Info (12023): Found entity 1: add_random File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv Line: 1
+    Info (12023): Found entity 1: add_random File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/add_random.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquina_estados_tb.sv
-    Info (12023): Found entity 1: maquina_Estados_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at game_2048_top_module.sv(25): created implicit net for "clk" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/game_2048_top_module.sv Line: 25
-Info (12127): Elaborating entity "maquina_Estados" for the top level hierarchy
+    Info (12023): Found entity 1: maquina_Estados_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reset.sv
+    Info (12023): Found entity 1: reset File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/reset.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file reset_tb.sv
+    Info (12023): Found entity 1: reset_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/reset_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file right_slide.sv
+    Info (12023): Found entity 1: right_slide File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/right_slide.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file right_slide_tb.sv
+    Info (12023): Found entity 1: right_slide_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/right_slide_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file left_slide.sv
+    Info (12023): Found entity 1: left_slide File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/left_slide.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file check_matrix_full.sv
+    Info (12023): Found entity 1: check_matrix_full File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file check_matrix_full_tb.sv
+    Info (12023): Found entity 1: check_matrix_full_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/check_matrix_full_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file have_move.sv
+    Info (12023): Found entity 1: have_move File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/have_move.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file have_move_tb.sv
+    Info (12023): Found entity 1: have_move_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/have_move_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file win.sv
+    Info (12023): Found entity 1: win File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file win_tb.sv
+    Info (12023): Found entity 1: win_tb File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file win_or_lose.sv
+    Info (12023): Found entity 1: win_or_lose File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at game_2048_top_module.sv(25): created implicit net for "clk" File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/game_2048_top_module.sv Line: 25
+Info (12127): Elaborating entity "win" for the top level hierarchy
+Info (144001): Generated suppressed messages file D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Sun May 07 14:30:00 2023
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Mon May  8 00:01:40 2023
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:17
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.map.smsg.
 
 

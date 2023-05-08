@@ -1,0 +1,18 @@
+module check_matrix_full;
+  input logic [15:0][3:0] cell_matrix_in;
+  output logic all_values_nonzero;
+
+  // Definir un array temporal para almacenar los valores de la matriz
+  logic [15:0] temp[0:15];
+
+  // Asignar los valores de la matriz al array temporal
+  always_comb begin
+    for (int i = 0; i < 16; i++) begin
+      temp[i] = cell_matrix_in[i];
+    end
+  end
+
+  // Verificar que todos los valores del array temporal sean distintos de 4'd0
+  assign all_values_nonzero = (temp != '{16{4'd0}});
+
+endmodule

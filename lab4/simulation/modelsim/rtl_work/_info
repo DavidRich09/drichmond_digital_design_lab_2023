@@ -8,58 +8,56 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/simulation/modelsim
-vmaquina_Estados
+Z0 dD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/simulation/modelsim
+vwin
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1683491414
+Z2 !s110 1683519802
 !i10b 1
-!s100 ED:S0`oC97Zmb35=PBmbC2
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I`S]W5iCVP[8639P15o<ND0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 l@cS3:CAI]gi]0ioZL=6f2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGoI`9HZ=C0RaF?4Ln<R^P1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1683490973
-8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv
-FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv
+w1683519630
+8D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv
+FD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv
 !i122 0
-L0 1 89
-Z4 OV;L;2020.1;71
+L0 1 30
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1683491414.000000
-!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv|
+!s108 1683519801.000000
+!s107 D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4|D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv|
 !i113 1
-Z5 o-sv -work work
-Z6 !s92 -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4
-Z7 tCvgOpt 0
-nmaquina_@estados
-vmaquina_Estados_tb
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4
+Z8 tCvgOpt 0
+vwin_tb
 R1
-!s110 1683491415
-!i10b 1
-!s100 GE7HXERaB_Ch25dhZlN8=2
 R2
-IHW@SMj8[SY[loWl]mX7;g1
+!i10b 1
+!s100 `1NY0FgcYjJbjnh=GOZZ23
 R3
+I5B;g_Dl`MaMdHOaTS`TlC0
+R4
 S1
 R0
-w1683491391
-8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv
-FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv
+w1683519749
+8D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv
+FD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv
 !i122 1
-L0 1 125
-R4
+L0 1 82
+R5
 r1
 !s85 0
 31
-!s108 1683491415.000000
-!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv|
+!s108 1683519802.000000
+!s107 D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4|D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv|
 !i113 1
-R5
 R6
 R7
-nmaquina_@estados_tb
+R8

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at reset.sv(14): always construct contains both blocking and non-blocking assignments File: D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/reset.sv Line: 14

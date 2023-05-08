@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Sun May 07 14:30:00 2023
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Analysis & Elaboration Status : Successful - Mon May  8 00:01:40 2023
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : 2048_game_top_module
-Top-level Entity Name : maquina_Estados
+Top-level Entity Name : win
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge
