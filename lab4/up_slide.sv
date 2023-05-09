@@ -48,7 +48,7 @@ module up_slide
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+12];
 					cell_matrix_variable[i+12] = 4'd0;
 					
-					points = points + 1;
+					points = points + 13'd1;
 					
 				end
 				
@@ -67,7 +67,7 @@ module up_slide
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+12];
 					cell_matrix_variable[i+12] = 4'd0;
 					
-					points = points + 1;
+					points = points + 13'd1;
 					
 				end
 				
@@ -84,7 +84,7 @@ module up_slide
 					cell_matrix_variable[i+8] = cell_matrix_variable[i+8] + 4'd1;
 					cell_matrix_variable[i+12] = 4'd0;
 					
-					points = points + 1;
+					points = points + 13'd1;
 				
 				end
 

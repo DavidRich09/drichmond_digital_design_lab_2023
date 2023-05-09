@@ -8,56 +8,318 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/simulation/modelsim
-vwin
+Z0 dC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/simulation/modelsim
+vadd_random
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683519802
+Z2 !s110 1683614505
 !i10b 1
-!s100 l@cS3:CAI]gi]0ioZL=6f2
+!s100 >o`ZA:VDBzgg5ePIlaCS<3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IGoI`9HZ=C0RaF?4Ln<R^P1
+IJ[1<KTKP]l<^:1GAK[F8l3
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1683519630
-8D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv
-FD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv
-!i122 0
-L0 1 30
-Z5 OV;L;2020.1;71
+Z5 w1683601963
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv
+!i122 3
+L0 1 36
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1683519801.000000
-!s107 D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4|D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv|
+Z7 !s108 1683614505.000000
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv|
 !i113 1
-Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4
-Z8 tCvgOpt 0
-vwin_tb
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4
+Z10 tCvgOpt 0
+vcheck_matrix_full
 R1
 R2
 !i10b 1
-!s100 `1NY0FgcYjJbjnh=GOZZ23
+!s100 5_M^zn`KfVRcdKKzWDnEA0
 R3
-I5B;g_Dl`MaMdHOaTS`TlC0
+IHTM<262m=B;AoEa@PIXYA2
 R4
 S1
 R0
-w1683519749
-8D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv
-FD:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv
-!i122 1
-L0 1 82
-R5
+w1683610943
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv
+!i122 7
+L0 1 38
+R6
 r1
 !s85 0
 31
-!s108 1683519802.000000
-!s107 D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4|D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv|
-!i113 1
-R6
 R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv|
+!i113 1
 R8
+R9
+R10
+vdown_slide
+R1
+R2
+!i10b 1
+!s100 @?N2ja1=;A@TLCXoYOW1B0
+R3
+IR06;KY<2b:e?iWGSEz[aM3
+R4
+S1
+R0
+Z11 w1683609871
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv
+!i122 2
+Z12 L0 1 101
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv|
+!i113 1
+R8
+R9
+R10
+vhave_move
+R1
+R2
+!i10b 1
+!s100 K3kWK[9OB6TMSNElM3S?z1
+R3
+I12P5[X7bLKJilXWFc]aT[3
+R4
+S1
+R0
+R5
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv
+!i122 8
+L0 1 73
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv|
+!i113 1
+R8
+R9
+R10
+vleft_slide
+R1
+R2
+!i10b 1
+!s100 f4DW2RUZZX6EC]HOcXUkW0
+R3
+IBdW04RD2Of^;^84bDDnMF0
+R4
+S1
+R0
+w1683609872
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv
+!i122 6
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv|
+!i113 1
+R8
+R9
+R10
+vlogic_Module
+R1
+!s110 1683614504
+!i10b 1
+!s100 K[1fmonU7e7BNmAGA=`T00
+R3
+IAoP^OO[TJ]JlAKjRHOB:g2
+R4
+S1
+R0
+w1683614490
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv
+!i122 0
+L0 1 132
+R6
+r1
+!s85 0
+31
+!s108 1683614504.000000
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv|
+!i113 1
+R8
+R9
+R10
+nlogic_@module
+vlogic_Module_tb
+R1
+Z13 !s110 1683614506
+!i10b 1
+!s100 a^6f[E8leOVE^ZIQ3i=201
+R3
+I@VIN;@b;XdHWUlc1?[ZE90
+R4
+S1
+R0
+w1683613908
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv
+!i122 11
+L0 1 79
+R6
+r1
+!s85 0
+31
+Z14 !s108 1683614506.000000
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv|
+!i113 1
+R8
+R9
+R10
+nlogic_@module_tb
+vreset
+R1
+R2
+!i10b 1
+!s100 WKh=V6H3XboA`j00WOcUF3
+R3
+I]NbYmO;Pd7_LWd6mV]2om1
+R4
+S1
+R0
+w1683614380
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv
+!i122 4
+L0 1 25
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv|
+!i113 1
+R8
+R9
+R10
+vright_slide
+R1
+R2
+!i10b 1
+!s100 1`H>HU9DS:mVadHI=VdC;3
+R3
+Ic6Nj>AXlmb?Qg4lWlc1Q;3
+R4
+S1
+R0
+R11
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv
+!i122 5
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv|
+!i113 1
+R8
+R9
+R10
+vup_slide
+R1
+R2
+!i10b 1
+!s100 5b79OO^T?CFzXA_5JfKi?1
+R3
+IQTf708mKN4iFXBdk4UTme2
+R4
+S1
+R0
+w1683609870
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv
+!i122 1
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv|
+!i113 1
+R8
+R9
+R10
+vwin
+R1
+R13
+!i10b 1
+!s100 l@cS3:CAI]gi]0ioZL=6f2
+R3
+I[[57RLBM9HOkBb?`k2H`40
+R4
+S1
+R0
+Z15 w1683601964
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv
+!i122 9
+L0 1 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv|
+!i113 1
+R8
+R9
+R10
+vwin_or_lose
+R1
+R13
+!i10b 1
+!s100 ]DQRgX0GHec2;29V;7E4a3
+R3
+I=`nf[J0Wi]V7YGT9`3S^70
+R4
+S1
+R0
+R15
+8C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv
+FC:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv
+!i122 10
+L0 1 47
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4|C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv|
+!i113 1
+R8
+R9
+R10

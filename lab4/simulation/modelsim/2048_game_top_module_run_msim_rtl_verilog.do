@@ -1,55 +1,25 @@
 transcript on
-if ![file isdirectory verilog_libs] {
-	file mkdir verilog_libs
-}
-
-vlib verilog_libs/altera_ver
-vmap altera_ver ./verilog_libs/altera_ver
-vlog -vlog01compat -work altera_ver {d:/apps/quartuz/quartus/eda/sim_lib/altera_primitives.v}
-
-vlib verilog_libs/lpm_ver
-vmap lpm_ver ./verilog_libs/lpm_ver
-vlog -vlog01compat -work lpm_ver {d:/apps/quartuz/quartus/eda/sim_lib/220model.v}
-
-vlib verilog_libs/sgate_ver
-vmap sgate_ver ./verilog_libs/sgate_ver
-vlog -vlog01compat -work sgate_ver {d:/apps/quartuz/quartus/eda/sim_lib/sgate.v}
-
-vlib verilog_libs/altera_mf_ver
-vmap altera_mf_ver ./verilog_libs/altera_mf_ver
-vlog -vlog01compat -work altera_mf_ver {d:/apps/quartuz/quartus/eda/sim_lib/altera_mf.v}
-
-vlib verilog_libs/altera_lnsim_ver
-vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
-vlog -sv -work altera_lnsim_ver {d:/apps/quartuz/quartus/eda/sim_lib/altera_lnsim.sv}
-
-vlib verilog_libs/cyclonev_ver
-vmap cyclonev_ver ./verilog_libs/cyclonev_ver
-vlog -vlog01compat -work cyclonev_ver {d:/apps/quartuz/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
-vlog -vlog01compat -work cyclonev_ver {d:/apps/quartuz/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
-vlog -vlog01compat -work cyclonev_ver {d:/apps/quartuz/quartus/eda/sim_lib/cyclonev_atoms.v}
-
-vlib verilog_libs/cyclonev_hssi_ver
-vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver
-vlog -vlog01compat -work cyclonev_hssi_ver {d:/apps/quartuz/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
-vlog -vlog01compat -work cyclonev_hssi_ver {d:/apps/quartuz/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
-
-vlib verilog_libs/cyclonev_pcie_hip_ver
-vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver
-vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/apps/quartuz/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
-vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/apps/quartuz/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
-
 if {[file exists rtl_work]} {
 	vdel -lib rtl_work -all
 }
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4 {D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv}
 
-vlog -sv -work work +incdir+D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4 {D:/Proyectos/Repositorios/drichmond_digital_design_lab_2023/lab4/win_tb.sv}
+vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  win_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  logic_Module_tb
 
 add wave *
 view structure
