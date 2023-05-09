@@ -13,13 +13,13 @@ module reset (
 			for (i=0; i<16; i=i+1) begin
 				temp_input[i] = 4'b0;
 			end
-			cell_matrix_out = temp_matrix2;
+			
 			
     end
 	 
 	 add_random random_inst_1 (.cell_matrix_in(temp_input), .cell_matrix_out(temp_matrix1));
     add_random random_inst_2 (.cell_matrix_in(temp_matrix1), .cell_matrix_out(temp_matrix2));
 	 
-	 
+	 assign cell_matrix_out = temp_matrix2;
 
 endmodule

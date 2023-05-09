@@ -36,43 +36,46 @@ module logic_Module_tb;
 
 	initial begin
 		
-		#20;
+		#1000;
 		reset_state = 1;
-		#20;
+		#1000;
 		reset_state = 0;
-		#20;
-//		up_state = 1;
-//		#20;
-//		up_state = 0;
-//		left_state = 1;
-//		#20;
-//		left_state = 0;
-//		right_state = 1;
-//		#20;
-//		right_state = 0;
-//		down_state = 1;
-//		#20;
-//		down_state = 0;
-//		reset_state = 1;
-//		#20;
-//		reset_state = 0;
-//		#20;
-//		up_state = 1;
-//		#20;
-//		up_state = 0;
-//		left_state = 1;
-//		#20;
-//		left_state = 0;
-//		right_state = 1;
-//		#20;
-//		right_state = 0;
-//		down_state = 1;
-//		#20;
-//		down_state = 0;
+
+		
+		up_state = 1;
+		#1000;
+		up_state = 0;
+		left_state = 1;
+		#1000;
+		left_state = 0;
+		right_state = 1;
+		#1000;
+		right_state = 0;
+		down_state = 1;
+		#1000;
+		down_state = 0;
 		reset_state = 1;
-		#20;
+		#1000;
 		reset_state = 0;
-		#20;
+		#1000;
+		up_state = 1;
+		#1000;
+		up_state = 0;
+		left_state = 1;
+		#1000;
+		left_state = 0;
+		right_state = 1;
+		#1000;
+		right_state = 0;
+		down_state = 1;
+		#1000;
+		down_state = 0;
+
+		
+		reset_state = 1;
+		#1000;
+		reset_state = 0;
+		#1000;
 		
 	end
 

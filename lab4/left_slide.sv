@@ -31,58 +31,58 @@ module left_slide
 		
 			for(i=0; i<16; i=i+4) begin
 			
-				//forth row and third row comparison
+				//first row and second row comparison
 				
-				if (cell_matrix_variable[i+3] == 4'd0) begin
-					
-					cell_matrix_variable[i+3] = cell_matrix_variable[i+2];
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
-					cell_matrix_variable[i+1] = cell_matrix_variable[i];
-					cell_matrix_variable[i] = 4'd0;
-					
-				end
-				else if (cell_matrix_variable[i+3] == cell_matrix_variable[i+2]) begin
+				if (cell_matrix_variable[i] == 4'd0) begin
 				
-					cell_matrix_variable[i+3] = cell_matrix_variable[i+3] + 4'd1;
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
-					cell_matrix_variable[i+1] = cell_matrix_variable[i];
-					cell_matrix_variable[i] = 4'd0;
-
-					points = points + 13'd1;
+					cell_matrix_variable[i] = cell_matrix_variable[i+1];
+					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
+					cell_matrix_variable[i+3] = 4'd0;
 					
 				end
+				else if (cell_matrix_variable[i] == cell_matrix_variable[i+1]) begin
 				
-				//third row and second row comparison
-				
-				if (cell_matrix_variable[i+2] == 4'd0) begin
-				
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
-					cell_matrix_variable[i+1] = cell_matrix_variable[i];
-					cell_matrix_variable[i] = 4'd0;
-					
-				end
-				else if (cell_matrix_variable[i+2] == cell_matrix_variable[i+1]) begin
-				
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+1] + 4'd1;
-					cell_matrix_variable[i+1] = cell_matrix_variable[i];
-					cell_matrix_variable[i] = 4'd0;
+					cell_matrix_variable[i] = cell_matrix_variable[i] + 4'd1;
+					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
+					cell_matrix_variable[i+3] = 4'd0;
 					
 					points = points + 13'd1;
 					
 				end
 				
-				//second row and first row comparison
+				//second row and third row comparison
 				
 				if (cell_matrix_variable[i+1] == 4'd0) begin
 				
-					cell_matrix_variable[i+1] = cell_matrix_variable[i];
-					cell_matrix_variable[i] = 4'd0;
-				
+					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
+					cell_matrix_variable[i+3] = 4'd0;
+					
 				end
-				else if (cell_matrix_variable[i+1] == cell_matrix_variable[i]) begin
+				else if (cell_matrix_variable[i+1] == cell_matrix_variable[i+2]) begin
 				
 					cell_matrix_variable[i+1] = cell_matrix_variable[i+1] + 4'd1;
-					cell_matrix_variable[i] = 4'd0;
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
+					cell_matrix_variable[i+3] = 4'd0;
+					
+					points = points + 13'd1;
+					
+				end
+				
+				//third row and forth row comparison
+				
+				if (cell_matrix_variable[i+2] == 4'd0) begin
+				
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
+					cell_matrix_variable[i+3] = 4'd0;
+				
+				end
+				else if (cell_matrix_variable[i+2] == cell_matrix_variable[i+3]) begin
+				
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+2] + 4'd1;
+					cell_matrix_variable[i+3] = 4'd0;
 					
 					points = points + 13'd1;
 				
@@ -91,6 +91,8 @@ module left_slide
 			end
 		
 		end
+		
+	
 		
 	cell_matrix_out = cell_matrix_variable;
 	points_out = points;

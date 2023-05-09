@@ -86,21 +86,29 @@ module logic_Module
 	
 	always @(posedge up_state or posedge down_state or posedge left_state or posedge right_state or posedge reset_state) begin
 		
-		#5;
-		
+		#100;
+		$display("cell_matrix_Up_Wire 1: %b", cell_matrix_Up_Wire);
+		$display("cell_matrix_Down_Wire 1: %b", cell_matrix_Down_Wire);
+		$display("cell_matrix_Left_Wire 1: %b", cell_matrix_Left_Wire);
+		$display("cell_matrix_Right_Wire 1: %b", cell_matrix_Right_Wire);
+
 		if(up_state == 1) begin
+			$display("cell_matrix_Up_Wire 2: %b", cell_matrix_Up_Wire);
 			cell_matrix_Direction_Wire = cell_matrix_Up_Wire;
 			points_Direction_Wire = points_Up_Wire;
 		end
 		else if (down_state == 1) begin
+			$display("cell_matrix_Down_Wire 2: %b", cell_matrix_Down_Wire);
 			cell_matrix_Direction_Wire = cell_matrix_Down_Wire;
 			points_Direction_Wire = points_Down_Wire;
 		end
 		else if (right_state == 1) begin
+			$display("cell_matrix_Right_Wire 2: %b", cell_matrix_Right_Wire);
 			cell_matrix_Direction_Wire = cell_matrix_Right_Wire;
 			points_Direction_Wire = points_Right_Wire;
 		end
 		else if (left_state == 1) begin
+			$display("cell_matrix_Left_Wire 2: %b", cell_matrix_Left_Wire);
 			cell_matrix_Direction_Wire = cell_matrix_Left_Wire;
 			points_Direction_Wire = points_Left_Wire;
 		end
@@ -108,12 +116,10 @@ module logic_Module
 			points_Direction_Wire = 13'd0;
 		end
 		
-
+		#100;
 		
 		if (reset_state == 1) begin
-			$display("cell_matrix: %b", cell_matrix);
 			cell_matrix = cell_matrix_Reset_Wire;
-			$display("cell_matrix_Reset_Wire: %b", cell_matrix_Reset_Wire);
 		end
 		else begin
 			cell_matrix = cell_matrix_Final_Wire;

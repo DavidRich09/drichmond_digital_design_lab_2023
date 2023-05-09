@@ -27,69 +27,68 @@ module right_slide
 		//NOTA: Al analizarlo un rato, creo que con solo 3 iteraciones siempre queda bien, 
 		//pero por si acaso ignoré un caso importante, lo dejo en 4.
 		
-		repeat(4) begin
+repeat(4) begin
 		
 			for(i=0; i<16; i=i+4) begin
 			
-				//first row and second row comparison
+				//forth row and third row comparison
 				
-				if (cell_matrix_variable[i] == 4'd0) begin
-				
-					cell_matrix_variable[i] = cell_matrix_variable[i+1];
-					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
-					cell_matrix_variable[i+3] = 4'd0;
+				if (cell_matrix_variable[i+3] == 4'd0) begin
+					
+					cell_matrix_variable[i+3] = cell_matrix_variable[i+2];
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
+					cell_matrix_variable[i+1] = cell_matrix_variable[i];
+					cell_matrix_variable[i] = 4'd0;
 					
 				end
-				else if (cell_matrix_variable[i] == cell_matrix_variable[i+1]) begin
+				else if (cell_matrix_variable[i+3] == cell_matrix_variable[i+2]) begin
 				
-					cell_matrix_variable[i] = cell_matrix_variable[i] + 4'd1;
-					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
-					cell_matrix_variable[i+3] = 4'd0;
-					
+					cell_matrix_variable[i+3] = cell_matrix_variable[i+3] + 4'd1;
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
+					cell_matrix_variable[i+1] = cell_matrix_variable[i];
+					cell_matrix_variable[i] = 4'd0;
+
 					points = points + 13'd1;
 					
 				end
 				
-				//second row and third row comparison
-				
-				if (cell_matrix_variable[i+1] == 4'd0) begin
-				
-					cell_matrix_variable[i+1] = cell_matrix_variable[i+2];
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
-					cell_matrix_variable[i+3] = 4'd0;
-					
-				end
-				else if (cell_matrix_variable[i+1] == cell_matrix_variable[i+2]) begin
-				
-					cell_matrix_variable[i+1] = cell_matrix_variable[i+1] + 4'd1;
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
-					cell_matrix_variable[i+3] = 4'd0;
-					
-					points = points + 13'd1;
-					
-				end
-				
-				//third row and forth row comparison
+				//third row and second row comparison
 				
 				if (cell_matrix_variable[i+2] == 4'd0) begin
 				
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+3];
-					cell_matrix_variable[i+3] = 4'd0;
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+1];
+					cell_matrix_variable[i+1] = cell_matrix_variable[i];
+					cell_matrix_variable[i] = 4'd0;
+					
+				end
+				else if (cell_matrix_variable[i+2] == cell_matrix_variable[i+1]) begin
+				
+					cell_matrix_variable[i+2] = cell_matrix_variable[i+1] + 4'd1;
+					cell_matrix_variable[i+1] = cell_matrix_variable[i];
+					cell_matrix_variable[i] = 4'd0;
+					
+					points = points + 13'd1;
+					
+				end
+				
+				//second row and first row comparison
+				
+				if (cell_matrix_variable[i+1] == 4'd0) begin
+				
+					cell_matrix_variable[i+1] = cell_matrix_variable[i];
+					cell_matrix_variable[i] = 4'd0;
 				
 				end
-				else if (cell_matrix_variable[i+2] == cell_matrix_variable[i+3]) begin
+				else if (cell_matrix_variable[i+1] == cell_matrix_variable[i]) begin
 				
-					cell_matrix_variable[i+2] = cell_matrix_variable[i+2] + 4'd1;
-					cell_matrix_variable[i+3] = 4'd0;
+					cell_matrix_variable[i+1] = cell_matrix_variable[i+1] + 4'd1;
+					cell_matrix_variable[i] = 4'd0;
 					
 					points = points + 13'd1;
 				
 				end
 
 			end
-		
 		end
 		
 	cell_matrix_out = cell_matrix_variable;

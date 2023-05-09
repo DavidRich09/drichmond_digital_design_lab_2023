@@ -23,7 +23,6 @@ module check_matrix_full(
 	 for (int j = 0; j < 16; j++) begin
 
 		if( temp[j] == 4'd0) begin
-			$display("Valor de aux en la iteración %d: %b", i, aux);
 			aux = 0;
 			break;
 		end
