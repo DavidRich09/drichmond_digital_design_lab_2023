@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at logic_Module.sv(87): always construct contains both blocking and non-blocking assignments File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv Line: 87
+Warning (10268): Verilog HDL information at SyncXY.sv(4): always construct contains both blocking and non-blocking assignments File: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab4/SyncXY.sv Line: 4

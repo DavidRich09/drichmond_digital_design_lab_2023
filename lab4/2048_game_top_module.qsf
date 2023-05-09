@@ -38,8 +38,8 @@
 
 
 set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
-set_global_assignment -name TOP_LEVEL_ENTITY logic_Module
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY game_2048_top_module
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:18:59  MAY 03, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -82,6 +82,21 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME win_tb -section_id win_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME logic_Module_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id logic_Module_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME logic_Module_tb -section_id logic_Module_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE up_slide_tb.sv -section_id up_slide_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE maquina_Estados_tb.sv -section_id maquina_Estados_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE reset_tb.sv -section_id reset_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE right_slide_tb.sv -section_id right_slide_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE check_matrix_full_tb.sv -section_id check_matrix_full_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE have_move_tb.sv -section_id have_move_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE win_tb.sv -section_id win_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE logic_Module_tb.sv -section_id logic_Module_tb
+set_global_assignment -name SYSTEMVERILOG_FILE PintarPantalla.sv
+set_global_assignment -name SYSTEMVERILOG_FILE SyncXY.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux_space.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux_dibujar.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControladorGrafico.sv
+set_global_assignment -name SYSTEMVERILOG_FILE clkdiv.sv
+set_global_assignment -name SYSTEMVERILOG_FILE CheckPos.sv
 set_global_assignment -name SYSTEMVERILOG_FILE logic_Module_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE game_2048_top_module.sv
 set_global_assignment -name SYSTEMVERILOG_FILE maquina_Estados.sv
@@ -104,15 +119,48 @@ set_global_assignment -name SYSTEMVERILOG_FILE have_move_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE win.sv
 set_global_assignment -name SYSTEMVERILOG_FILE win_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE win_or_lose.sv
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_location_assignment PIN_AE12 -to ME_clk
+set_location_assignment PIN_B13 -to blue[0]
+set_location_assignment PIN_G13 -to blue[1]
+set_location_assignment PIN_H13 -to blue[2]
+set_location_assignment PIN_F14 -to blue[3]
+set_location_assignment PIN_H14 -to blue[4]
+set_location_assignment PIN_F15 -to blue[5]
+set_location_assignment PIN_G15 -to blue[6]
+set_location_assignment PIN_J14 -to blue[7]
+set_location_assignment PIN_A11 -to clk_25
+set_location_assignment PIN_J9 -to green[0]
+set_location_assignment PIN_J10 -to green[1]
+set_location_assignment PIN_H12 -to green[2]
+set_location_assignment PIN_G10 -to green[3]
+set_location_assignment PIN_G11 -to green[4]
+set_location_assignment PIN_G12 -to green[5]
+set_location_assignment PIN_F11 -to green[6]
+set_location_assignment PIN_E11 -to green[7]
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_A13 -to red[0]
+set_location_assignment PIN_C13 -to red[1]
+set_location_assignment PIN_E13 -to red[2]
+set_location_assignment PIN_B12 -to red[3]
+set_location_assignment PIN_C12 -to red[4]
+set_location_assignment PIN_D12 -to red[5]
+set_location_assignment PIN_E12 -to red[6]
+set_location_assignment PIN_F13 -to red[7]
+set_location_assignment PIN_F10 -to sync_b
+set_location_assignment PIN_C10 -to sync_blank
+set_location_assignment PIN_B11 -to vga_hsync
+set_location_assignment PIN_D11 -to vga_vsync
+set_location_assignment PIN_AA15 -to down_button_signal
+set_location_assignment PIN_Y16 -to left_button_signal
+set_location_assignment PIN_AA14 -to right_button_signal
+set_location_assignment PIN_W15 -to up_button_signal
+set_location_assignment PIN_AD10 -to reset_switch_signal
+set_location_assignment PIN_AB12 -to win_a
+set_location_assignment PIN_AC12 -to win_b
+set_location_assignment PIN_AF9 -to win_c
+set_location_assignment PIN_AF10 -to win_d
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_FILE up_slide_tb.sv -section_id up_slide_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE maquina_Estados_tb.sv -section_id maquina_Estados_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE reset_tb.sv -section_id reset_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE right_slide_tb.sv -section_id right_slide_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE check_matrix_full_tb.sv -section_id check_matrix_full_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE have_move_tb.sv -section_id have_move_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE win_tb.sv -section_id win_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE logic_Module_tb.sv -section_id logic_Module_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
