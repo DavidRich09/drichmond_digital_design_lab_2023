@@ -81,8 +81,8 @@ always_comb
 assign reset_state = (state == 3'd0);
 assign up_state = (state == 3'd1);	
 assign down_state = (state == 3'd2);
-assign right_state = (state == 3'd3);	
-assign left_state = (state == 3'd4);
+assign right_state = (state == 3'd4);	
+assign left_state = (state == 3'd3);
 assign win_state = (state == 3'd5);	
 assign lose_state = (state == 3'd6);	
 

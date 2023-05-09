@@ -10,217 +10,45 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv}
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:13 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module.sv 
-# -- Compiling module logic_Module
+# Start time: 05:02:46 on May 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados.sv 
+# -- Compiling module maquina_Estados
 # 
 # Top level modules:
-# 	logic_Module
-# End time: 01:49:13 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:13 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv 
-# -- Compiling module up_slide
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/up_slide.sv(7): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	up_slide
-# End time: 01:49:13 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:13 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv 
-# -- Compiling module down_slide
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/down_slide.sv(7): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	down_slide
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv 
-# -- Compiling module add_random
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/add_random.sv(4): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	add_random
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv 
-# -- Compiling module reset
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/reset.sv(3): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	reset
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv 
-# -- Compiling module right_slide
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/right_slide.sv(7): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	right_slide
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv 
-# -- Compiling module left_slide
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/left_slide.sv(7): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	left_slide
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv 
-# -- Compiling module check_matrix_full
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/check_matrix_full.sv(3): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	check_matrix_full
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv 
-# -- Compiling module have_move
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/have_move.sv(3): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	have_move
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv 
-# -- Compiling module win
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win.sv(2): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	win
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv 
-# -- Compiling module win_or_lose
-# ** Warning: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/win_or_lose.sv(4): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
-# 
-# Top level modules:
-# 	win_or_lose
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 01:49:14 on May 09,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/logic_Module_tb.sv 
-# -- Compiling module logic_Module_tb
-# 
-# Top level modules:
-# 	logic_Module_tb
-# End time: 01:49:14 on May 09,2023, Elapsed time: 0:00:00
+# 	maquina_Estados
+# End time: 05:02:46 on May 09,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  logic_Module_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" logic_Module_tb 
-# Start time: 01:49:14 on May 09,2023
+# vlog -sv -work work +incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4 {C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 05:02:46 on May 09,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4" C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/maquina_Estados_tb.sv 
+# -- Compiling module maquina_Estados_tb
+# 
+# Top level modules:
+# 	maquina_Estados_tb
+# End time: 05:02:46 on May 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  maquina_Estados_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" maquina_Estados_tb 
+# Start time: 05:02:47 on May 09,2023
 # Loading sv_std.std
-# Loading work.logic_Module_tb
-# Loading work.logic_Module
-# Loading work.up_slide
-# Loading work.down_slide
-# Loading work.right_slide
-# Loading work.left_slide
-# Loading work.reset
-# Loading work.add_random
-# Loading work.win_or_lose
-# Loading work.have_move
-# Loading work.check_matrix_full
-# Loading work.win
+# Loading work.maquina_Estados_tb
+# Loading work.maquina_Estados
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Joseff01  Hostname: LAPTOP-DBQ7SAL4  ProcessID: 20432
-#           Attempting to use alternate WLF file "./wlftykqk5j".
+#           Attempting to use alternate WLF file "./wlftf8gdfm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftykqk5j
+#           Using alternate file: ./wlftf8gdfm
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# cell_matrix_Up_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Down_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Left_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Right_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Left_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Right_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Up_Wire 2: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Left_Wire 2: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Right_Wire 2: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Down_Wire 2: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Up_Wire 2: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Left_Wire 2: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Right_Wire 2: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# cell_matrix_Down_Wire 2: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Up_Wire 1: 0000000000000000000000000000000000000000000000000001000100000000
-# cell_matrix_Down_Wire 1: 0010000100000000000000100000000000000000000000000000000000000000
-# cell_matrix_Left_Wire 1: 0000000000000000000000000000000100000000000000000000000000000010
-# cell_matrix_Right_Wire 1: 0000000000000000000100000000000000000000000000000001001000000000
-# End time: 01:55:01 on May 09,2023, Elapsed time: 0:05:47
+# End time: 05:03:46 on May 09,2023, Elapsed time: 0:00:59
 # Errors: 0, Warnings: 2
