@@ -72,6 +72,7 @@ module logic_Module
 								win_b,
 								win_c,
 								win_d,
+								reset_state,
 								cell_matrix_Direction_Wire,
 								cell_matrix_WoL_Wire,
 								win_output,
