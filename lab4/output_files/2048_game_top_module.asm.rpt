@@ -1,5 +1,5 @@
 Assembler report for 2048_game_top_module
-Tue May 09 04:45:15 2023
+Tue May 09 11:08:23 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof
+  5. Assembler Device Options: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 09 04:45:15 2023 ;
+; Assembler Status      ; Successful - Tue May 09 11:08:23 2023 ;
 ; Revision Name         ; 2048_game_top_module                  ;
 ; Top-level Entity Name ; game_2048_top_module                  ;
 ; Family                ; Cyclone V                             ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                  ;
-+------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                  ;
-+------------------------------------------------------------------------------------------------------------+
-; D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof ;
-+------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                    ;
++--------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------+
+; C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof ;
++--------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Quartus_proyectos/GIT/Lab2/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                             ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x011CEFF8                                                                                                          ;
-; Checksum       ; 0x011CEFF8                                                                                                          ;
-+----------------+---------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/lab4/output_files/2048_game_top_module.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                               ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x011D9265                                                                                                            ;
+; Checksum       ; 0x011D9265                                                                                                            ;
++----------------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue May 09 04:45:07 2023
+    Info: Processing started: Tue May 09 11:08:09 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off 2048_game -c 2048_game_top_module
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4876 megabytes
-    Info: Processing ended: Tue May 09 04:45:15 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Tue May 09 11:08:23 2023
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:04
 
 

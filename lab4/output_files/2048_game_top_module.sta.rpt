@@ -1,5 +1,5 @@
 Timing Analyzer report for 2048_game_top_module
-Tue May 09 04:45:26 2023
+Tue May 09 11:08:37 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -97,19 +97,29 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 2.73        ;
-; Maximum used               ; 6           ;
+; Average used               ; 3.68        ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  34.8%      ;
-;     Processor 3            ;  34.6%      ;
-;     Processor 4            ;  34.5%      ;
-;     Processor 5            ;  34.4%      ;
-;     Processor 6            ;  34.4%      ;
+;     Processor 2            ;  19.4%      ;
+;     Processor 3            ;  18.7%      ;
+;     Processor 4            ;  18.7%      ;
+;     Processor 5            ;  18.5%      ;
+;     Processor 6            ;  18.5%      ;
+;     Processor 7            ;  18.0%      ;
+;     Processor 8            ;  17.9%      ;
+;     Processor 9            ;  17.7%      ;
+;     Processor 10           ;  17.6%      ;
+;     Processor 11           ;  17.3%      ;
+;     Processor 12           ;  17.3%      ;
+;     Processor 13           ;  17.3%      ;
+;     Processor 14           ;  17.3%      ;
+;     Processor 15           ;  17.3%      ;
+;     Processor 16           ;  17.3%      ;
 +----------------------------+-------------+
 
 
@@ -134,9 +144,9 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                            ; Note                                                 ;
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
-; 252.78 MHz ; 252.78 MHz      ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ;                                                      ;
-; 407.83 MHz ; 393.08 MHz      ; clk                                   ; limit due to low minimum pulse width violation (tcl) ;
-; 880.28 MHz ; 399.36 MHz      ; ME_clk                                ; limit due to low minimum pulse width violation (tcl) ;
+; 229.99 MHz ; 229.99 MHz      ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ;                                                      ;
+; 368.05 MHz ; 368.05 MHz      ; clk                                   ;                                                      ;
+; 881.83 MHz ; 419.82 MHz      ; ME_clk                                ; limit due to low minimum pulse width violation (tcl) ;
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -152,14 +162,14 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------+---------+---------------+
 ; Clock                                 ; Slack   ; End Point TNS ;
 +---------------------------------------+---------+---------------+
-; maquina_Estados:ME|state.011          ; -23.047 ; -1377.764     ;
-; maquina_Estados:ME|state.010          ; -22.792 ; -1360.568     ;
-; maquina_Estados:ME|state.001          ; -22.776 ; -1365.207     ;
-; maquina_Estados:ME|state.100          ; -22.638 ; -1380.493     ;
-; ME_clk                                ; -8.488  ; -51.513       ;
-; maquina_Estados:ME|state.000          ; -4.227  ; -229.810      ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -2.956  ; -75.837       ;
-; clk                                   ; -1.452  ; -2.777        ;
+; maquina_Estados:ME|state.011          ; -23.810 ; -1390.656     ;
+; maquina_Estados:ME|state.010          ; -22.364 ; -1330.296     ;
+; maquina_Estados:ME|state.001          ; -22.351 ; -1317.362     ;
+; maquina_Estados:ME|state.100          ; -22.206 ; -1331.882     ;
+; ME_clk                                ; -7.819  ; -48.565       ;
+; maquina_Estados:ME|state.000          ; -4.607  ; -248.047      ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -3.348  ; -83.375       ;
+; clk                                   ; -1.717  ; -2.697        ;
 +---------------------------------------+---------+---------------+
 
 
@@ -168,14 +178,14 @@ HTML report is unavailable in plain text report export.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -6.851 ; -29.121       ;
-; maquina_Estados:ME|state.000          ; -0.781 ; -1.774        ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.678  ; 0.000         ;
-; clk                                   ; 0.684  ; 0.000         ;
-; maquina_Estados:ME|state.011          ; 1.132  ; 0.000         ;
-; maquina_Estados:ME|state.100          ; 1.138  ; 0.000         ;
-; maquina_Estados:ME|state.010          ; 1.251  ; 0.000         ;
-; maquina_Estados:ME|state.001          ; 1.266  ; 0.000         ;
+; ME_clk                                ; -7.505 ; -16.284       ;
+; maquina_Estados:ME|state.000          ; -0.878 ; -2.068        ;
+; clk                                   ; 0.494  ; 0.000         ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.657  ; 0.000         ;
+; maquina_Estados:ME|state.100          ; 0.962  ; 0.000         ;
+; maquina_Estados:ME|state.010          ; 1.112  ; 0.000         ;
+; maquina_Estados:ME|state.001          ; 1.142  ; 0.000         ;
+; maquina_Estados:ME|state.011          ; 1.555  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -196,14 +206,14 @@ No paths to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; clk                                   ; -0.772 ; -3.840        ;
-; ME_clk                                ; -0.752 ; -6.559        ;
-; maquina_Estados:ME|state.100          ; -0.443 ; -46.673       ;
-; maquina_Estados:ME|state.010          ; -0.409 ; -45.320       ;
-; maquina_Estados:ME|state.011          ; -0.408 ; -47.183       ;
-; maquina_Estados:ME|state.001          ; -0.395 ; -46.140       ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -0.394 ; -13.907       ;
-; maquina_Estados:ME|state.000          ; 0.272  ; 0.000         ;
+; clk                                   ; -0.701 ; -3.081        ;
+; ME_clk                                ; -0.691 ; -5.748        ;
+; maquina_Estados:ME|state.010          ; -0.598 ; -47.758       ;
+; maquina_Estados:ME|state.100          ; -0.543 ; -49.197       ;
+; maquina_Estados:ME|state.001          ; -0.452 ; -43.551       ;
+; maquina_Estados:ME|state.011          ; -0.436 ; -46.562       ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -0.394 ; -14.761       ;
+; maquina_Estados:ME|state.000          ; 0.058  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -218,9 +228,9 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                            ; Note                                                 ;
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
-; 251.0 MHz  ; 251.0 MHz       ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ;                                                      ;
-; 414.25 MHz ; 394.32 MHz      ; clk                                   ; limit due to low minimum pulse width violation (tcl) ;
-; 860.59 MHz ; 387.6 MHz       ; ME_clk                                ; limit due to low minimum pulse width violation (tcl) ;
+; 232.67 MHz ; 232.67 MHz      ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ;                                                      ;
+; 378.36 MHz ; 378.36 MHz      ; clk                                   ;                                                      ;
+; 862.81 MHz ; 414.59 MHz      ; ME_clk                                ; limit due to low minimum pulse width violation (tcl) ;
 +------------+-----------------+---------------------------------------+------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -230,14 +240,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------+---------+---------------+
 ; Clock                                 ; Slack   ; End Point TNS ;
 +---------------------------------------+---------+---------------+
-; maquina_Estados:ME|state.011          ; -22.826 ; -1363.314     ;
-; maquina_Estados:ME|state.100          ; -22.615 ; -1370.455     ;
-; maquina_Estados:ME|state.010          ; -22.507 ; -1347.527     ;
-; maquina_Estados:ME|state.001          ; -22.473 ; -1347.644     ;
-; ME_clk                                ; -8.216  ; -49.930       ;
-; maquina_Estados:ME|state.000          ; -4.068  ; -222.205      ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -2.984  ; -76.214       ;
-; clk                                   ; -1.414  ; -2.717        ;
+; maquina_Estados:ME|state.011          ; -23.572 ; -1376.723     ;
+; maquina_Estados:ME|state.010          ; -22.296 ; -1320.163     ;
+; maquina_Estados:ME|state.001          ; -22.241 ; -1311.420     ;
+; maquina_Estados:ME|state.100          ; -22.203 ; -1318.786     ;
+; ME_clk                                ; -7.709  ; -47.653       ;
+; maquina_Estados:ME|state.000          ; -4.463  ; -237.211      ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -3.298  ; -83.183       ;
+; clk                                   ; -1.643  ; -2.622        ;
 +---------------------------------------+---------+---------------+
 
 
@@ -246,14 +256,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -6.707 ; -27.799       ;
-; maquina_Estados:ME|state.000          ; -0.892 ; -2.319        ;
-; clk                                   ; 0.658  ; 0.000         ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.675  ; 0.000         ;
-; maquina_Estados:ME|state.011          ; 1.145  ; 0.000         ;
-; maquina_Estados:ME|state.100          ; 1.185  ; 0.000         ;
-; maquina_Estados:ME|state.010          ; 1.204  ; 0.000         ;
-; maquina_Estados:ME|state.001          ; 1.362  ; 0.000         ;
+; ME_clk                                ; -7.298 ; -15.360       ;
+; maquina_Estados:ME|state.000          ; -0.821 ; -2.256        ;
+; clk                                   ; 0.477  ; 0.000         ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.635  ; 0.000         ;
+; maquina_Estados:ME|state.100          ; 0.964  ; 0.000         ;
+; maquina_Estados:ME|state.010          ; 1.137  ; 0.000         ;
+; maquina_Estados:ME|state.001          ; 1.221  ; 0.000         ;
+; maquina_Estados:ME|state.011          ; 1.551  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -274,14 +284,14 @@ No paths to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -0.790 ; -6.987        ;
-; clk                                   ; -0.768 ; -3.914        ;
-; maquina_Estados:ME|state.100          ; -0.421 ; -45.749       ;
-; maquina_Estados:ME|state.010          ; -0.410 ; -45.252       ;
-; maquina_Estados:ME|state.011          ; -0.394 ; -45.839       ;
-; maquina_Estados:ME|state.001          ; -0.394 ; -44.804       ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -0.394 ; -13.689       ;
-; maquina_Estados:ME|state.000          ; 0.284  ; 0.000         ;
+; ME_clk                                ; -0.706 ; -6.125        ;
+; clk                                   ; -0.696 ; -3.137        ;
+; maquina_Estados:ME|state.010          ; -0.580 ; -47.259       ;
+; maquina_Estados:ME|state.100          ; -0.518 ; -48.545       ;
+; maquina_Estados:ME|state.011          ; -0.435 ; -45.884       ;
+; maquina_Estados:ME|state.001          ; -0.430 ; -43.141       ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -0.394 ; -14.762       ;
+; maquina_Estados:ME|state.000          ; 0.015  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -296,14 +306,14 @@ No synchronizer chains to report.
 +---------------------------------------+---------+---------------+
 ; Clock                                 ; Slack   ; End Point TNS ;
 +---------------------------------------+---------+---------------+
-; maquina_Estados:ME|state.100          ; -13.809 ; -817.213      ;
-; maquina_Estados:ME|state.001          ; -13.738 ; -813.616      ;
-; maquina_Estados:ME|state.011          ; -13.733 ; -816.174      ;
-; maquina_Estados:ME|state.010          ; -13.692 ; -810.945      ;
-; ME_clk                                ; -5.881  ; -35.311       ;
-; maquina_Estados:ME|state.000          ; -2.485  ; -130.063      ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -1.277  ; -32.443       ;
-; clk                                   ; -0.673  ; -0.843        ;
+; maquina_Estados:ME|state.011          ; -13.998 ; -818.741      ;
+; maquina_Estados:ME|state.100          ; -13.339 ; -786.137      ;
+; maquina_Estados:ME|state.010          ; -13.087 ; -777.876      ;
+; maquina_Estados:ME|state.001          ; -13.016 ; -773.657      ;
+; ME_clk                                ; -5.941  ; -35.027       ;
+; maquina_Estados:ME|state.000          ; -2.699  ; -141.384      ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -1.639  ; -37.639       ;
+; clk                                   ; -0.907  ; -0.917        ;
 +---------------------------------------+---------+---------------+
 
 
@@ -312,14 +322,14 @@ No synchronizer chains to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -3.824 ; -15.844       ;
-; maquina_Estados:ME|state.000          ; -0.441 ; -2.401        ;
-; clk                                   ; 0.348  ; 0.000         ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.356  ; 0.000         ;
-; maquina_Estados:ME|state.001          ; 0.558  ; 0.000         ;
-; maquina_Estados:ME|state.010          ; 0.576  ; 0.000         ;
-; maquina_Estados:ME|state.100          ; 0.578  ; 0.000         ;
-; maquina_Estados:ME|state.011          ; 0.655  ; 0.000         ;
+; ME_clk                                ; -4.290 ; -8.473        ;
+; maquina_Estados:ME|state.000          ; -0.740 ; -3.172        ;
+; clk                                   ; 0.264  ; 0.000         ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.314  ; 0.000         ;
+; maquina_Estados:ME|state.010          ; 0.420  ; 0.000         ;
+; maquina_Estados:ME|state.100          ; 0.467  ; 0.000         ;
+; maquina_Estados:ME|state.001          ; 0.531  ; 0.000         ;
+; maquina_Estados:ME|state.011          ; 0.766  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -340,14 +350,14 @@ No paths to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -0.735 ; -5.254        ;
-; clk                                   ; -0.679 ; -2.953        ;
-; maquina_Estados:ME|state.100          ; -0.200 ; -6.826        ;
-; maquina_Estados:ME|state.010          ; -0.163 ; -6.227        ;
-; maquina_Estados:ME|state.011          ; -0.160 ; -6.828        ;
-; maquina_Estados:ME|state.001          ; -0.149 ; -5.862        ;
+; ME_clk                                ; -0.654 ; -4.472        ;
+; clk                                   ; -0.639 ; -2.370        ;
+; maquina_Estados:ME|state.010          ; -0.336 ; -6.806        ;
+; maquina_Estados:ME|state.100          ; -0.280 ; -8.960        ;
+; maquina_Estados:ME|state.001          ; -0.201 ; -4.552        ;
+; maquina_Estados:ME|state.011          ; -0.190 ; -6.171        ;
 ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.058  ; 0.000         ;
-; maquina_Estados:ME|state.000          ; 0.264  ; 0.000         ;
+; maquina_Estados:ME|state.000          ; 0.220  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -362,14 +372,14 @@ No synchronizer chains to report.
 +---------------------------------------+---------+---------------+
 ; Clock                                 ; Slack   ; End Point TNS ;
 +---------------------------------------+---------+---------------+
-; maquina_Estados:ME|state.100          ; -12.366 ; -735.829      ;
-; maquina_Estados:ME|state.001          ; -12.351 ; -730.822      ;
-; maquina_Estados:ME|state.011          ; -12.349 ; -734.391      ;
-; maquina_Estados:ME|state.010          ; -12.307 ; -728.167      ;
-; ME_clk                                ; -4.921  ; -30.180       ;
-; maquina_Estados:ME|state.000          ; -2.161  ; -112.450      ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -1.166  ; -29.666       ;
-; clk                                   ; -0.557  ; -0.645        ;
+; maquina_Estados:ME|state.011          ; -12.618 ; -736.707      ;
+; maquina_Estados:ME|state.100          ; -12.002 ; -706.305      ;
+; maquina_Estados:ME|state.010          ; -11.775 ; -702.181      ;
+; maquina_Estados:ME|state.001          ; -11.720 ; -696.495      ;
+; ME_clk                                ; -4.860  ; -29.665       ;
+; maquina_Estados:ME|state.000          ; -2.347  ; -122.829      ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -1.486  ; -34.421       ;
+; clk                                   ; -0.748  ; -0.748        ;
 +---------------------------------------+---------+---------------+
 
 
@@ -378,14 +388,14 @@ No synchronizer chains to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -3.755 ; -15.204       ;
-; maquina_Estados:ME|state.000          ; -0.385 ; -2.231        ;
-; clk                                   ; 0.314  ; 0.000         ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.326  ; 0.000         ;
-; maquina_Estados:ME|state.001          ; 0.535  ; 0.000         ;
-; maquina_Estados:ME|state.010          ; 0.537  ; 0.000         ;
-; maquina_Estados:ME|state.100          ; 0.563  ; 0.000         ;
-; maquina_Estados:ME|state.011          ; 0.603  ; 0.000         ;
+; ME_clk                                ; -4.156 ; -8.344        ;
+; maquina_Estados:ME|state.000          ; -0.654 ; -3.011        ;
+; clk                                   ; 0.236  ; 0.000         ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.274  ; 0.000         ;
+; maquina_Estados:ME|state.010          ; 0.385  ; 0.000         ;
+; maquina_Estados:ME|state.100          ; 0.430  ; 0.000         ;
+; maquina_Estados:ME|state.001          ; 0.511  ; 0.000         ;
+; maquina_Estados:ME|state.011          ; 0.740  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -406,14 +416,14 @@ No paths to report.
 +---------------------------------------+--------+---------------+
 ; Clock                                 ; Slack  ; End Point TNS ;
 +---------------------------------------+--------+---------------+
-; ME_clk                                ; -0.716 ; -5.254        ;
-; clk                                   ; -0.653 ; -2.839        ;
-; maquina_Estados:ME|state.100          ; -0.116 ; -3.386        ;
-; maquina_Estados:ME|state.010          ; -0.106 ; -3.161        ;
-; maquina_Estados:ME|state.001          ; -0.082 ; -2.407        ;
-; maquina_Estados:ME|state.011          ; -0.081 ; -3.065        ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.078  ; 0.000         ;
-; maquina_Estados:ME|state.000          ; 0.317  ; 0.000         ;
+; ME_clk                                ; -0.640 ; -4.618        ;
+; clk                                   ; -0.625 ; -2.380        ;
+; maquina_Estados:ME|state.010          ; -0.233 ; -3.863        ;
+; maquina_Estados:ME|state.100          ; -0.185 ; -5.352        ;
+; maquina_Estados:ME|state.011          ; -0.122 ; -3.076        ;
+; maquina_Estados:ME|state.001          ; -0.122 ; -2.106        ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 0.076  ; 0.000         ;
+; maquina_Estados:ME|state.000          ; 0.242  ; 0.000         ;
 +---------------------------------------+--------+---------------+
 
 
@@ -428,24 +438,24 @@ No synchronizer chains to report.
 +----------------------------------------+-----------+---------+----------+---------+---------------------+
 ; Clock                                  ; Setup     ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------------+-----------+---------+----------+---------+---------------------+
-; Worst-case Slack                       ; -23.047   ; -6.851  ; N/A      ; N/A     ; -0.790              ;
-;  ME_clk                                ; -8.488    ; -6.851  ; N/A      ; N/A     ; -0.790              ;
-;  VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -2.984    ; 0.326   ; N/A      ; N/A     ; -0.394              ;
-;  clk                                   ; -1.452    ; 0.314   ; N/A      ; N/A     ; -0.772              ;
-;  maquina_Estados:ME|state.000          ; -4.227    ; -0.892  ; N/A      ; N/A     ; 0.264               ;
-;  maquina_Estados:ME|state.001          ; -22.776   ; 0.535   ; N/A      ; N/A     ; -0.395              ;
-;  maquina_Estados:ME|state.010          ; -22.792   ; 0.537   ; N/A      ; N/A     ; -0.410              ;
-;  maquina_Estados:ME|state.011          ; -23.047   ; 0.603   ; N/A      ; N/A     ; -0.408              ;
-;  maquina_Estados:ME|state.100          ; -22.638   ; 0.563   ; N/A      ; N/A     ; -0.443              ;
-; Design-wide TNS                        ; -5843.969 ; -30.895 ; 0.0      ; 0.0     ; -209.622            ;
-;  ME_clk                                ; -51.513   ; -29.121 ; N/A      ; N/A     ; -6.987              ;
-;  VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -76.214   ; 0.000   ; N/A      ; N/A     ; -13.907             ;
-;  clk                                   ; -2.777    ; 0.000   ; N/A      ; N/A     ; -3.914              ;
-;  maquina_Estados:ME|state.000          ; -229.810  ; -2.401  ; N/A      ; N/A     ; 0.000               ;
-;  maquina_Estados:ME|state.001          ; -1365.207 ; 0.000   ; N/A      ; N/A     ; -46.140             ;
-;  maquina_Estados:ME|state.010          ; -1360.568 ; 0.000   ; N/A      ; N/A     ; -45.320             ;
-;  maquina_Estados:ME|state.011          ; -1377.764 ; 0.000   ; N/A      ; N/A     ; -47.183             ;
-;  maquina_Estados:ME|state.100          ; -1380.493 ; 0.000   ; N/A      ; N/A     ; -46.673             ;
+; Worst-case Slack                       ; -23.810   ; -7.505  ; N/A      ; N/A     ; -0.706              ;
+;  ME_clk                                ; -7.819    ; -7.505  ; N/A      ; N/A     ; -0.706              ;
+;  VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -3.348    ; 0.274   ; N/A      ; N/A     ; -0.394              ;
+;  clk                                   ; -1.717    ; 0.236   ; N/A      ; N/A     ; -0.701              ;
+;  maquina_Estados:ME|state.000          ; -4.607    ; -0.878  ; N/A      ; N/A     ; 0.015               ;
+;  maquina_Estados:ME|state.001          ; -22.351   ; 0.511   ; N/A      ; N/A     ; -0.452              ;
+;  maquina_Estados:ME|state.010          ; -22.364   ; 0.385   ; N/A      ; N/A     ; -0.598              ;
+;  maquina_Estados:ME|state.011          ; -23.810   ; 0.740   ; N/A      ; N/A     ; -0.436              ;
+;  maquina_Estados:ME|state.100          ; -22.206   ; 0.430   ; N/A      ; N/A     ; -0.543              ;
+; Design-wide TNS                        ; -5752.88  ; -18.352 ; 0.0      ; 0.0     ; -210.658            ;
+;  ME_clk                                ; -48.565   ; -16.284 ; N/A      ; N/A     ; -6.125              ;
+;  VGA_Main_Module:VGA|clkdiv:div|clk_25 ; -83.375   ; 0.000   ; N/A      ; N/A     ; -14.762             ;
+;  clk                                   ; -2.697    ; 0.000   ; N/A      ; N/A     ; -3.137              ;
+;  maquina_Estados:ME|state.000          ; -248.047  ; -3.172  ; N/A      ; N/A     ; 0.000               ;
+;  maquina_Estados:ME|state.001          ; -1317.362 ; 0.000   ; N/A      ; N/A     ; -43.551             ;
+;  maquina_Estados:ME|state.010          ; -1330.296 ; 0.000   ; N/A      ; N/A     ; -47.758             ;
+;  maquina_Estados:ME|state.011          ; -1390.656 ; 0.000   ; N/A      ; N/A     ; -46.562             ;
+;  maquina_Estados:ME|state.100          ; -1331.882 ; 0.000   ; N/A      ; N/A     ; -49.197             ;
 +----------------------------------------+-----------+---------+----------+---------+---------------------+
 
 
@@ -498,9 +508,9 @@ No synchronizer chains to report.
 ; ME_clk              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; reset_switch_signal ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; up_button_signal    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; right_button_signal ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; down_button_signal  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; left_button_signal  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; right_button_signal ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clk                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 +---------------------+--------------+-----------------+-----------------+
 
@@ -661,8 +671,8 @@ No synchronizer chains to report.
 ; clk                                   ; clk                                   ; 3            ; 0            ; 0        ; 0        ;
 ; maquina_Estados:ME|state.001          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
 ; maquina_Estados:ME|state.010          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 192      ; 128      ;
-; maquina_Estados:ME|state.011          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
-; maquina_Estados:ME|state.100          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 64       ; 0        ;
+; maquina_Estados:ME|state.011          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 64       ; 0        ;
+; maquina_Estados:ME|state.100          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.001          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.010          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.011          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
@@ -673,7 +683,7 @@ No synchronizer chains to report.
 ; maquina_Estados:ME|state.011          ; ME_clk                                ; 6            ; 6            ; 0        ; 0        ;
 ; maquina_Estados:ME|state.100          ; ME_clk                                ; 6            ; 6            ; 0        ; 0        ;
 ; ME_clk                                ; ME_clk                                ; 2            ; 0            ; 0        ; 0        ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 2275         ; 0            ; 0        ; 0        ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 2418         ; 0            ; 0        ; 0        ;
 +---------------------------------------+---------------------------------------+--------------+--------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -686,8 +696,8 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; clk                                   ; clk                                   ; 3            ; 0            ; 0        ; 0        ;
 ; maquina_Estados:ME|state.001          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
 ; maquina_Estados:ME|state.010          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 192      ; 128      ;
-; maquina_Estados:ME|state.011          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
-; maquina_Estados:ME|state.100          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 64       ; 0        ;
+; maquina_Estados:ME|state.011          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 64       ; 0        ;
+; maquina_Estados:ME|state.100          ; maquina_Estados:ME|state.000          ; 0            ; 0            ; 128      ; 64       ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.001          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.010          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
 ; maquina_Estados:ME|state.000          ; maquina_Estados:ME|state.011          ; > 2147483647 ; > 2147483647 ; 0        ; 0        ;
@@ -698,7 +708,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; maquina_Estados:ME|state.011          ; ME_clk                                ; 6            ; 6            ; 0        ; 0        ;
 ; maquina_Estados:ME|state.100          ; ME_clk                                ; 6            ; 6            ; 0        ; 0        ;
 ; ME_clk                                ; ME_clk                                ; 2            ; 0            ; 0        ; 0        ;
-; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 2275         ; 0            ; 0        ; 0        ;
+; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; VGA_Main_Module:VGA|clkdiv:div|clk_25 ; 2418         ; 0            ; 0        ; 0        ;
 +---------------------------------------+---------------------------------------+--------------+--------------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -859,11 +869,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue May 09 04:45:16 2023
+    Info: Processing started: Tue May 09 11:08:24 2023
 Info: Command: quartus_sta 2048_game -c 2048_game_top_module
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 64 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
@@ -874,178 +884,178 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk
     Info (332105): create_clock -period 1.000 -name ME_clk ME_clk
     Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.000 maquina_Estados:ME|state.000
+    Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.011 maquina_Estados:ME|state.011
+    Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.010 maquina_Estados:ME|state.010
     Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.100 maquina_Estados:ME|state.100
     Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.001 maquina_Estados:ME|state.001
-    Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.010 maquina_Estados:ME|state.010
-    Info (332105): create_clock -period 1.000 -name maquina_Estados:ME|state.011 maquina_Estados:ME|state.011
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -23.047
+Info (332146): Worst-case setup slack is -23.810
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -23.047           -1377.764 maquina_Estados:ME|state.011 
-    Info (332119):   -22.792           -1360.568 maquina_Estados:ME|state.010 
-    Info (332119):   -22.776           -1365.207 maquina_Estados:ME|state.001 
-    Info (332119):   -22.638           -1380.493 maquina_Estados:ME|state.100 
-    Info (332119):    -8.488             -51.513 ME_clk 
-    Info (332119):    -4.227            -229.810 maquina_Estados:ME|state.000 
-    Info (332119):    -2.956             -75.837 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):    -1.452              -2.777 clk 
-Info (332146): Worst-case hold slack is -6.851
+    Info (332119):   -23.810           -1390.656 maquina_Estados:ME|state.011 
+    Info (332119):   -22.364           -1330.296 maquina_Estados:ME|state.010 
+    Info (332119):   -22.351           -1317.362 maquina_Estados:ME|state.001 
+    Info (332119):   -22.206           -1331.882 maquina_Estados:ME|state.100 
+    Info (332119):    -7.819             -48.565 ME_clk 
+    Info (332119):    -4.607            -248.047 maquina_Estados:ME|state.000 
+    Info (332119):    -3.348             -83.375 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):    -1.717              -2.697 clk 
+Info (332146): Worst-case hold slack is -7.505
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.851             -29.121 ME_clk 
-    Info (332119):    -0.781              -1.774 maquina_Estados:ME|state.000 
-    Info (332119):     0.678               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.684               0.000 clk 
-    Info (332119):     1.132               0.000 maquina_Estados:ME|state.011 
-    Info (332119):     1.138               0.000 maquina_Estados:ME|state.100 
-    Info (332119):     1.251               0.000 maquina_Estados:ME|state.010 
-    Info (332119):     1.266               0.000 maquina_Estados:ME|state.001 
+    Info (332119):    -7.505             -16.284 ME_clk 
+    Info (332119):    -0.878              -2.068 maquina_Estados:ME|state.000 
+    Info (332119):     0.494               0.000 clk 
+    Info (332119):     0.657               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.962               0.000 maquina_Estados:ME|state.100 
+    Info (332119):     1.112               0.000 maquina_Estados:ME|state.010 
+    Info (332119):     1.142               0.000 maquina_Estados:ME|state.001 
+    Info (332119):     1.555               0.000 maquina_Estados:ME|state.011 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.772
+Info (332146): Worst-case minimum pulse width slack is -0.701
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.772              -3.840 clk 
-    Info (332119):    -0.752              -6.559 ME_clk 
-    Info (332119):    -0.443             -46.673 maquina_Estados:ME|state.100 
-    Info (332119):    -0.409             -45.320 maquina_Estados:ME|state.010 
-    Info (332119):    -0.408             -47.183 maquina_Estados:ME|state.011 
-    Info (332119):    -0.395             -46.140 maquina_Estados:ME|state.001 
-    Info (332119):    -0.394             -13.907 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.272               0.000 maquina_Estados:ME|state.000 
+    Info (332119):    -0.701              -3.081 clk 
+    Info (332119):    -0.691              -5.748 ME_clk 
+    Info (332119):    -0.598             -47.758 maquina_Estados:ME|state.010 
+    Info (332119):    -0.543             -49.197 maquina_Estados:ME|state.100 
+    Info (332119):    -0.452             -43.551 maquina_Estados:ME|state.001 
+    Info (332119):    -0.436             -46.562 maquina_Estados:ME|state.011 
+    Info (332119):    -0.394             -14.761 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.058               0.000 maquina_Estados:ME|state.000 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -22.826
+Info (332146): Worst-case setup slack is -23.572
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -22.826           -1363.314 maquina_Estados:ME|state.011 
-    Info (332119):   -22.615           -1370.455 maquina_Estados:ME|state.100 
-    Info (332119):   -22.507           -1347.527 maquina_Estados:ME|state.010 
-    Info (332119):   -22.473           -1347.644 maquina_Estados:ME|state.001 
-    Info (332119):    -8.216             -49.930 ME_clk 
-    Info (332119):    -4.068            -222.205 maquina_Estados:ME|state.000 
-    Info (332119):    -2.984             -76.214 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):    -1.414              -2.717 clk 
-Info (332146): Worst-case hold slack is -6.707
+    Info (332119):   -23.572           -1376.723 maquina_Estados:ME|state.011 
+    Info (332119):   -22.296           -1320.163 maquina_Estados:ME|state.010 
+    Info (332119):   -22.241           -1311.420 maquina_Estados:ME|state.001 
+    Info (332119):   -22.203           -1318.786 maquina_Estados:ME|state.100 
+    Info (332119):    -7.709             -47.653 ME_clk 
+    Info (332119):    -4.463            -237.211 maquina_Estados:ME|state.000 
+    Info (332119):    -3.298             -83.183 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):    -1.643              -2.622 clk 
+Info (332146): Worst-case hold slack is -7.298
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.707             -27.799 ME_clk 
-    Info (332119):    -0.892              -2.319 maquina_Estados:ME|state.000 
-    Info (332119):     0.658               0.000 clk 
-    Info (332119):     0.675               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     1.145               0.000 maquina_Estados:ME|state.011 
-    Info (332119):     1.185               0.000 maquina_Estados:ME|state.100 
-    Info (332119):     1.204               0.000 maquina_Estados:ME|state.010 
-    Info (332119):     1.362               0.000 maquina_Estados:ME|state.001 
+    Info (332119):    -7.298             -15.360 ME_clk 
+    Info (332119):    -0.821              -2.256 maquina_Estados:ME|state.000 
+    Info (332119):     0.477               0.000 clk 
+    Info (332119):     0.635               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.964               0.000 maquina_Estados:ME|state.100 
+    Info (332119):     1.137               0.000 maquina_Estados:ME|state.010 
+    Info (332119):     1.221               0.000 maquina_Estados:ME|state.001 
+    Info (332119):     1.551               0.000 maquina_Estados:ME|state.011 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.790
+Info (332146): Worst-case minimum pulse width slack is -0.706
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.790              -6.987 ME_clk 
-    Info (332119):    -0.768              -3.914 clk 
-    Info (332119):    -0.421             -45.749 maquina_Estados:ME|state.100 
-    Info (332119):    -0.410             -45.252 maquina_Estados:ME|state.010 
-    Info (332119):    -0.394             -45.839 maquina_Estados:ME|state.011 
-    Info (332119):    -0.394             -44.804 maquina_Estados:ME|state.001 
-    Info (332119):    -0.394             -13.689 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.284               0.000 maquina_Estados:ME|state.000 
+    Info (332119):    -0.706              -6.125 ME_clk 
+    Info (332119):    -0.696              -3.137 clk 
+    Info (332119):    -0.580             -47.259 maquina_Estados:ME|state.010 
+    Info (332119):    -0.518             -48.545 maquina_Estados:ME|state.100 
+    Info (332119):    -0.435             -45.884 maquina_Estados:ME|state.011 
+    Info (332119):    -0.430             -43.141 maquina_Estados:ME|state.001 
+    Info (332119):    -0.394             -14.762 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.015               0.000 maquina_Estados:ME|state.000 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -13.809
+Info (332146): Worst-case setup slack is -13.998
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -13.809            -817.213 maquina_Estados:ME|state.100 
-    Info (332119):   -13.738            -813.616 maquina_Estados:ME|state.001 
-    Info (332119):   -13.733            -816.174 maquina_Estados:ME|state.011 
-    Info (332119):   -13.692            -810.945 maquina_Estados:ME|state.010 
-    Info (332119):    -5.881             -35.311 ME_clk 
-    Info (332119):    -2.485            -130.063 maquina_Estados:ME|state.000 
-    Info (332119):    -1.277             -32.443 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):    -0.673              -0.843 clk 
-Info (332146): Worst-case hold slack is -3.824
+    Info (332119):   -13.998            -818.741 maquina_Estados:ME|state.011 
+    Info (332119):   -13.339            -786.137 maquina_Estados:ME|state.100 
+    Info (332119):   -13.087            -777.876 maquina_Estados:ME|state.010 
+    Info (332119):   -13.016            -773.657 maquina_Estados:ME|state.001 
+    Info (332119):    -5.941             -35.027 ME_clk 
+    Info (332119):    -2.699            -141.384 maquina_Estados:ME|state.000 
+    Info (332119):    -1.639             -37.639 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):    -0.907              -0.917 clk 
+Info (332146): Worst-case hold slack is -4.290
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.824             -15.844 ME_clk 
-    Info (332119):    -0.441              -2.401 maquina_Estados:ME|state.000 
-    Info (332119):     0.348               0.000 clk 
-    Info (332119):     0.356               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.558               0.000 maquina_Estados:ME|state.001 
-    Info (332119):     0.576               0.000 maquina_Estados:ME|state.010 
-    Info (332119):     0.578               0.000 maquina_Estados:ME|state.100 
-    Info (332119):     0.655               0.000 maquina_Estados:ME|state.011 
+    Info (332119):    -4.290              -8.473 ME_clk 
+    Info (332119):    -0.740              -3.172 maquina_Estados:ME|state.000 
+    Info (332119):     0.264               0.000 clk 
+    Info (332119):     0.314               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.420               0.000 maquina_Estados:ME|state.010 
+    Info (332119):     0.467               0.000 maquina_Estados:ME|state.100 
+    Info (332119):     0.531               0.000 maquina_Estados:ME|state.001 
+    Info (332119):     0.766               0.000 maquina_Estados:ME|state.011 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.735
+Info (332146): Worst-case minimum pulse width slack is -0.654
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.735              -5.254 ME_clk 
-    Info (332119):    -0.679              -2.953 clk 
-    Info (332119):    -0.200              -6.826 maquina_Estados:ME|state.100 
-    Info (332119):    -0.163              -6.227 maquina_Estados:ME|state.010 
-    Info (332119):    -0.160              -6.828 maquina_Estados:ME|state.011 
-    Info (332119):    -0.149              -5.862 maquina_Estados:ME|state.001 
+    Info (332119):    -0.654              -4.472 ME_clk 
+    Info (332119):    -0.639              -2.370 clk 
+    Info (332119):    -0.336              -6.806 maquina_Estados:ME|state.010 
+    Info (332119):    -0.280              -8.960 maquina_Estados:ME|state.100 
+    Info (332119):    -0.201              -4.552 maquina_Estados:ME|state.001 
+    Info (332119):    -0.190              -6.171 maquina_Estados:ME|state.011 
     Info (332119):     0.058               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.264               0.000 maquina_Estados:ME|state.000 
+    Info (332119):     0.220               0.000 maquina_Estados:ME|state.000 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.366
+Info (332146): Worst-case setup slack is -12.618
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.366            -735.829 maquina_Estados:ME|state.100 
-    Info (332119):   -12.351            -730.822 maquina_Estados:ME|state.001 
-    Info (332119):   -12.349            -734.391 maquina_Estados:ME|state.011 
-    Info (332119):   -12.307            -728.167 maquina_Estados:ME|state.010 
-    Info (332119):    -4.921             -30.180 ME_clk 
-    Info (332119):    -2.161            -112.450 maquina_Estados:ME|state.000 
-    Info (332119):    -1.166             -29.666 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):    -0.557              -0.645 clk 
-Info (332146): Worst-case hold slack is -3.755
+    Info (332119):   -12.618            -736.707 maquina_Estados:ME|state.011 
+    Info (332119):   -12.002            -706.305 maquina_Estados:ME|state.100 
+    Info (332119):   -11.775            -702.181 maquina_Estados:ME|state.010 
+    Info (332119):   -11.720            -696.495 maquina_Estados:ME|state.001 
+    Info (332119):    -4.860             -29.665 ME_clk 
+    Info (332119):    -2.347            -122.829 maquina_Estados:ME|state.000 
+    Info (332119):    -1.486             -34.421 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):    -0.748              -0.748 clk 
+Info (332146): Worst-case hold slack is -4.156
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.755             -15.204 ME_clk 
-    Info (332119):    -0.385              -2.231 maquina_Estados:ME|state.000 
-    Info (332119):     0.314               0.000 clk 
-    Info (332119):     0.326               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.535               0.000 maquina_Estados:ME|state.001 
-    Info (332119):     0.537               0.000 maquina_Estados:ME|state.010 
-    Info (332119):     0.563               0.000 maquina_Estados:ME|state.100 
-    Info (332119):     0.603               0.000 maquina_Estados:ME|state.011 
+    Info (332119):    -4.156              -8.344 ME_clk 
+    Info (332119):    -0.654              -3.011 maquina_Estados:ME|state.000 
+    Info (332119):     0.236               0.000 clk 
+    Info (332119):     0.274               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.385               0.000 maquina_Estados:ME|state.010 
+    Info (332119):     0.430               0.000 maquina_Estados:ME|state.100 
+    Info (332119):     0.511               0.000 maquina_Estados:ME|state.001 
+    Info (332119):     0.740               0.000 maquina_Estados:ME|state.011 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.716
+Info (332146): Worst-case minimum pulse width slack is -0.640
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.716              -5.254 ME_clk 
-    Info (332119):    -0.653              -2.839 clk 
-    Info (332119):    -0.116              -3.386 maquina_Estados:ME|state.100 
-    Info (332119):    -0.106              -3.161 maquina_Estados:ME|state.010 
-    Info (332119):    -0.082              -2.407 maquina_Estados:ME|state.001 
-    Info (332119):    -0.081              -3.065 maquina_Estados:ME|state.011 
-    Info (332119):     0.078               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
-    Info (332119):     0.317               0.000 maquina_Estados:ME|state.000 
+    Info (332119):    -0.640              -4.618 ME_clk 
+    Info (332119):    -0.625              -2.380 clk 
+    Info (332119):    -0.233              -3.863 maquina_Estados:ME|state.010 
+    Info (332119):    -0.185              -5.352 maquina_Estados:ME|state.100 
+    Info (332119):    -0.122              -3.076 maquina_Estados:ME|state.011 
+    Info (332119):    -0.122              -2.106 maquina_Estados:ME|state.001 
+    Info (332119):     0.076               0.000 VGA_Main_Module:VGA|clkdiv:div|clk_25 
+    Info (332119):     0.242               0.000 maquina_Estados:ME|state.000 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5225 megabytes
-    Info: Processing ended: Tue May 09 04:45:26 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 5353 megabytes
+    Info: Processing ended: Tue May 09 11:08:37 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 

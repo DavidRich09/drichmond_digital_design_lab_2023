@@ -7,10 +7,10 @@ module up_slide_tb;
 	logic [12:0] points_out;
 
 
-	down_slide downModule
+	up_slide upModule
 	
 	(
-	  .down_state(up_state),
+	  .up_state(up_state),
 	  .points_in(points_in),
 	  .cell_matrix_in(cell_matrix_in),
 	  .cell_matrix_out(cell_matrix_out),
