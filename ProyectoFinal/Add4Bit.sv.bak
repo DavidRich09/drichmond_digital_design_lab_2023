@@ -1,0 +1,8 @@
+module Add4Bit #(parameter N = 4) (
+    input [N-1:0] a,
+    output [N-1:0] s
+);
+
+    assign s = a + 4;
+
+endmodule
