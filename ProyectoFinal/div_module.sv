@@ -11,7 +11,7 @@ module div_module #(parameter N=4) (
    always_comb begin
       if (b != 0) begin
          result = a / b;
-         neg_flag = result[N-1];
+         neg_flag = 'b0;
          zr_flag = (result == 0);
          cry_flag = '0;
          of_flag = '0;
