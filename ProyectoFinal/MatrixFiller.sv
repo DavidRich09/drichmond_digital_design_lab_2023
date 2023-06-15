@@ -1,13 +1,14 @@
 module MatrixFiller
 (
 	input qb,
-	output logic address
+	output logic address,
 	output logic matrix
 	
 );
   
   logic [7:0] in_matrix [0:255][0:255];
 
+  /*
   
   function void fillMatrix;
     
@@ -24,5 +25,6 @@ module MatrixFiller
       end
     end
   endfunction
+  */
  endmodule
  

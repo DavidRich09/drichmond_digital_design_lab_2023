@@ -1,6 +1,6 @@
 module CheckAlg(
 	
-	input logic qb
+	input logic qb,
 	output logic flag
 
 );

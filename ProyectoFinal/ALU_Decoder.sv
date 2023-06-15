@@ -16,30 +16,30 @@ module ALU_Decoder
 			
 				4'b0100 : begin //suma
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b0000;
-						flag_w <= 2'b00;
+						alu_control = 4'b0000;
+						flag_w = 2'b00;
 					end
 					else begin
-						alu_control <= 4'b0000;
-						flag_w <= 2'b11;
+						alu_control = 4'b0000;
+						flag_w = 2'b11;
 					end
 				end
 				
 				4'b0010 : begin //resta
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b0001;
-						flag_w <= 2'b00;
+						alu_control = 4'b0001;
+						flag_w = 2'b00;
 					end
 					else begin
-						alu_control <= 4'b0001;
-						flag_w <= 2'b11;
+						alu_control = 4'b0001;
+						flag_w = 2'b11;
 					end
 				end
 				
 				4'b0000 : begin //and
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b0011;
-						flag_w <= 2'b00;
+						alu_control = 4'b0011;
+						flag_w = 2'b00;
 					end
 					else begin
 						alu_control <= 4'b0011;
@@ -49,40 +49,40 @@ module ALU_Decoder
 				
 				4'b1100 : begin //or
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b0100;
-						flag_w <= 2'b00;
+						alu_control = 4'b0100;
+						flag_w = 2'b00;
 					end
 					else begin
-						alu_control <= 4'b0100;
-						flag_w <= 2'b10;
+						alu_control = 4'b0100;
+						flag_w = 2'b10;
 					end
 				end
 				
 				4'b1110 : begin //mult
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b1010;
-						flag_w <= 2'b00;
+						alu_control = 4'b1010;
+						flag_w = 2'b00;
 					end
 					else begin
-						alu_control <= 4'b1010;
-						flag_w <= 2'b11;
+						alu_control = 4'b1010;
+						flag_w = 2'b11;
 					end
 				end
 				
-				2'b1111 : begin //div
+				4'b1111 : begin //div
 					if (funct[0] == 2'd0) begin
-						alu_control <= 4'b1011;
-						flag_w <= 2'b00;
+						alu_control = 4'b1011;
+						flag_w = 2'b00;
 					end
 					else begin
-						alu_control <= 4'b1011;
-						flag_w <= 2'b11;
+						alu_control = 4'b1011;
+						flag_w = 2'b11;
 					end
 				end
 				
 				default: begin
-					alu_control <= 4'bxxxx;
-					flag_w <= 2'bxx;
+					alu_control = 4'bxxxx;
+					flag_w = 2'bxx;
 				end
 			
 			endcase

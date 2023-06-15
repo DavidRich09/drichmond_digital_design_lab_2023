@@ -38,6 +38,21 @@ module cond_logic_tb;
 		clk = 1'b1;
 		reset = 1'b0;
 		
+		test = 32'b11100010000010001000000000000001;
+		
+		Cond = test[31:28];
+		ALUFlags = 4'b0000;
+		FlagW = 2'b11;
+		pcs = 1'b0;
+		mem_w = 1'b1;
+		reg_w = 1'b0;
+		
+		#100;
+		
+		clk = 1'b0;
+		clk = 1'b1;
+		reset = 1'b0;
+		
 		Cond = test[31:28];
 		ALUFlags = 4'b0000;
 		FlagW = 2'b11;

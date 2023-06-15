@@ -17,6 +17,5 @@ module Control_Unit
 	
 	cond_logic CL(clk, reset, Cond, ALUFlags,flag_w,pcs,reg_w,mem_w, PCSrc, RegWrite, MemWrite);
 	
-	
 
 	endmodule	

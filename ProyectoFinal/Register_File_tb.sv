@@ -3,6 +3,7 @@ module Register_File_tb;
     // Parámetros del testbench
     logic clk;
     logic WE3;
+	 logic rst;
     logic [3:0] A1, A2, A3;
     logic [31:0] WD3, R15;
     logic [31:0] RD1, RD2;
@@ -11,6 +12,7 @@ module Register_File_tb;
     RegisterFile dut (
         .clk(clk),
         .WE3(WE3),
+		  .rst(rst),
         .A1(A1),
         .A2(A2),
         .A3(A3),
@@ -28,6 +30,7 @@ module Register_File_tb;
     // Inicialización de señales
     initial begin
         clk = 0;
+		  rst = 0;
         WE3 = 0;
         A1 = 0;
         A2 = 0;

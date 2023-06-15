@@ -19,7 +19,7 @@ module mult_module #(parameter N=4) (
       result = temp[N-1:0];
       neg_flag = 'b0;
       zr_flag = (result == 0);
-      cry_flag = (temp > ((1 << (2*N)) - 1));
-      of_flag = ((a[N-1] == b[N-1]) && (result[N-1] != a[N-1]));
+      cry_flag = 'b0;
+      of_flag = 'b0;
    end
 endmodule
