@@ -1,4 +1,4 @@
-module Register_File
+module RegisterFile
 
 (	
 	input logic clk, WE3,

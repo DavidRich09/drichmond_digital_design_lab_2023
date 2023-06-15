@@ -14,11 +14,11 @@ module ARMV4_Processor
 	
 	assign ALUFlags = {neg_flag, zr_flag, cry_flag, of_flag};
 	
-	Register_File rf(clk, RegWrite, RA1, RA2, Instr[15:12], Result, PCPlus8, SrcA, WriteData);
+	RegisterFile rf(clk, RegWrite, RA1, RA2, Instr[15:12], Result, PCPlus8, SrcA, WriteData);
 	
 	ALU #(.N(32)) alu(SrcA, SrcB, ALUControl, neg_flag, zr_flag, cry_flag, of_flag, ALUResult);
 
-	Processor_RAM ram(WriteData,"address_b",clk,ALUResult,"data_b",MemWrite,"wren_b",ReadData,"q_b");
+	Processor_RAM ram(WriteData,0,clk,ALUResult,0,MemWrite,0,ReadData,0);
 	
 	Processor_ROM rom(PC, clk, Instr);
 	
@@ -41,7 +41,6 @@ module ARMV4_Processor
 	Extend_24_to_32 extend1(Instr[23:0],Extlmm);
 	
 	Control_Unit CU (clk,0,Instr[27:26],Instr[25:20],Instr[15:12],Instr[31:28],ALUFlags,ALUControl,RegSrc,imm_src,PCSrc, RegWrite, MemWrite, Mem2Reg, ALUScr);
-	
 
 
 endmodule

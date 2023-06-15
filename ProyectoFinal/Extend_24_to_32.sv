@@ -1,4 +1,4 @@
-module Extend	
+module Extend_24_to_32
 
 (
 	input logic [23:0] in,   

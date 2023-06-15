@@ -10,46 +10,529 @@
 # Copying D:/Apps/Quartus/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:02 on Jun 15,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v 
+# -- Compiling module Processor_RAM
+# 
+# Top level modules:
+# 	Processor_RAM
+# End time: 03:50:02 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:02 on Jun 15,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v 
+# -- Compiling module Processor_ROM
+# 
+# Top level modules:
+# 	Processor_ROM
+# End time: 03:50:02 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:02 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv 
+# -- Compiling module xor_module
+# -- Compiling module xor_gate_single
+# 
+# Top level modules:
+# 	xor_module
+# End time: 03:50:02 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:02 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv 
+# -- Compiling module substractor_nbits
+# 
+# Top level modules:
+# 	substractor_nbits
+# End time: 03:50:02 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:02 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv 
+# -- Compiling module shifter_nbits
+# 
+# Top level modules:
+# 	shifter_nbits
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv 
+# -- Compiling module or_module
+# -- Compiling module or_gate_single
+# 
+# Top level modules:
+# 	or_module
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv 
+# -- Compiling module not_module
+# -- Compiling module not_gate_single
+# 
+# Top level modules:
+# 	not_module
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv 
+# -- Compiling module mux_12to1
+# 
+# Top level modules:
+# 	mux_12to1
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv 
+# -- Compiling module full_substractor
+# 
+# Top level modules:
+# 	full_substractor
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv 
+# -- Compiling module deco_2_3
+# 
+# Top level modules:
+# 	deco_2_3
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv 
+# -- Compiling module and_module
+# -- Compiling module and_gate_single
+# 
+# Top level modules:
+# 	and_module
+# End time: 03:50:03 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:03 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv 
+# -- Compiling module adder_nbits
+# 
+# Top level modules:
+# 	adder_nbits
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv 
+# -- Compiling module mux_2_1
+# 
+# Top level modules:
+# 	mux_2_1
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv 
+# -- Compiling module Add4Bit
+# 
+# Top level modules:
+# 	Add4Bit
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv 
+# -- Compiling module cond_logic
+# -- Compiling module flip_flop_reset
+# 
+# Top level modules:
+# 	cond_logic
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv 
+# -- Compiling module cond_check
+# 
+# Top level modules:
+# 	cond_check
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:22:03 on Jun 13,2023
+# Start time: 03:50:04 on Jun 15,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv 
 # -- Compiling module mult_module
 # 
 # Top level modules:
 # 	mult_module
-# End time: 19:22:03 on Jun 13,2023, Elapsed time: 0:00:00
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv}
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:22:03 on Jun 13,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv 
-# -- Compiling module mult_module_tb
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv 
+# -- Compiling module div_module
 # 
 # Top level modules:
-# 	mult_module_tb
-# End time: 19:22:03 on Jun 13,2023, Elapsed time: 0:00:00
+# 	div_module
+# End time: 03:50:04 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:04 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv 
+# -- Compiling module Control_Unit_Decoder
+# 
+# Top level modules:
+# 	Control_Unit_Decoder
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/PC_Logic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/PC_Logic.sv 
+# -- Compiling module PC_Logic
+# 
+# Top level modules:
+# 	PC_Logic
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Main_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Main_Decoder.sv 
+# -- Compiling module Main_Decoder
+# 
+# Top level modules:
+# 	Main_Decoder
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv 
+# -- Compiling module ALU_Decoder
+# ** Warning: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv(72): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	ALU_Decoder
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/RegisterFile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/RegisterFile.sv 
+# -- Compiling module RegisterFile
+# 
+# Top level modules:
+# 	RegisterFile
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv 
+# -- Compiling module ARMV4_Processor
+# 
+# Top level modules:
+# 	ARMV4_Processor
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/simple_ff.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:05 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/simple_ff.sv 
+# -- Compiling module simple_ff
+# 
+# Top level modules:
+# 	simple_ff
+# End time: 03:50:05 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Extend_24_to_32.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:06 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Extend_24_to_32.sv 
+# -- Compiling module Extend_24_to_32
+# 
+# Top level modules:
+# 	Extend_24_to_32
+# End time: 03:50:06 on Jun 15,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mult_module_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mult_module_tb 
-# Start time: 19:22:03 on Jun 13,2023
-# Loading sv_std.std
-# Loading work.mult_module_tb
-# Loading work.mult_module
+# vlog -sv -work work +incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal {D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:06 on Jun 15,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal" D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor_tb.sv 
+# -- Compiling module ARMV4_Processor_tb
 # 
-# add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: luisr  Hostname: RICHMOND  ProcessID: 21112
-#           Attempting to use alternate WLF file "./wlftmqmtvh".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmqmtvh
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-add wave -position end  sim:/mult_module_tb/dut/temp
-# End time: 19:43:44 on Jun 13,2023, Elapsed time: 0:21:41
-# Errors: 0, Warnings: 2
+# Top level modules:
+# 	ARMV4_Processor_tb
+# End time: 03:50:06 on Jun 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ARMV4_Processor_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ARMV4_Processor_tb 
+# Start time: 03:50:06 on Jun 15,2023
+# Loading sv_std.std
+# Loading work.ARMV4_Processor_tb
+# Loading work.ARMV4_Processor
+# Loading work.RegisterFile
+# Loading work.ALU
+# Loading work.mux_12to1
+# Loading work.adder_nbits
+# Loading work.substractor_nbits
+# Loading work.not_module
+# Loading work.and_module
+# Loading work.or_module
+# Loading work.xor_module
+# Loading work.mult_module
+# Loading work.div_module
+# Loading work.shifter_nbits
+# Loading work.deco_2_3
+# Loading work.Processor_RAM
+# Loading altera_mf_ver.altsyncram
+# Loading work.Processor_ROM
+# Loading work.Add4Bit
+# Loading work.mux_2_1
+# Loading work.simple_ff
+# Loading work.Extend_24_to_32
+# Loading work.Control_Unit
+# Loading work.Control_Unit_Decoder
+# Loading work.PC_Logic
+# Loading work.Main_Decoder
+# Loading work.ALU_Decoder
+# Loading work.cond_logic
+# Loading work.flip_flop_reset
+# Loading work.cond_check
+# Loading work.full_adder
+# Loading work.full_substractor
+# Loading work.not_gate_single
+# Loading work.and_gate_single
+# Loading work.or_gate_single
+# Loading work.xor_gate_single
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 's'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_suma'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_rest'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_not'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_and'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_or'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_xor'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_right_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_right_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_left_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_left_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_mult'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_div'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/muxresult File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/adder/generate_N_bit_Adder[0]/genblk1/f File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'c_in'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/substractor/generate_N_bit_Adder[0]/genblk1/f File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_suma'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_rest'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_not'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_and'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_or'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_xor'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_mult'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_div'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_neg_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_suma'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_rest'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_not'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_and'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_or'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_xor'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_mult'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_div'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_zr_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_suma'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_rest'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_not'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_and'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_or'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_xor'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_mult'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_div'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_cry_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 42
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_suma'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_rest'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_not'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_and'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_or'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'out_xor'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_right_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_ar'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_left_lo'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_mult'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'out_div'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/alu/mux_of_flag File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (32) for port 'address_a'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/ram File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (20) does not match connection size (32) for port 'address_b'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v(42).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/ram File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'wren_b'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/ram File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 21
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'q_b'.
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/ram File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 21
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'address'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v(41).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/rom File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'a'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/muxRegSrc0 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/muxRegSrc0 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'a'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/muxRegSrc1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'b'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/muxRegSrc1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (4) for port 'out'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/muxRegSrc1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 33
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'extend1'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/extend1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'ImmSrc'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Extend_24_to_32.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/extend1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 41
+# ** Warning: (vsim-3722) D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv(41): [TFMPC] - Missing connection for port 'out'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'reset'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/CU File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'alu_control'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/CU File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'imm_src'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/CU File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'alu_control'. The port definition is at: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /ARMV4_Processor_tb/dut/CU/cud/alu_decoder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 20
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Processor_Image_run_msim_rtl_verilog.do PAUSED at line 40
+# End time: 03:51:37 on Jun 15,2023, Elapsed time: 0:01:31
+# Errors: 1, Warnings: 84
