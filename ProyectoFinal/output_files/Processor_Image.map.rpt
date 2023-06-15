@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Processor_Image
-Thu Jun 15 03:49:43 2023
+Thu Jun 15 05:18:56 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,8 +10,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_06p2:auto_generated
-  6. Source assignments for Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_k4g1:auto_generated
+  5. Source assignments for Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_0up2:auto_generated
+  6. Source assignments for Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_dle1:auto_generated
   7. Parameter Settings for User Entity Instance: ALU:alu
   8. Parameter Settings for User Entity Instance: ALU:alu|mux_12to1:muxresult
   9. Parameter Settings for User Entity Instance: ALU:alu|adder_nbits:adder
@@ -40,23 +40,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  32. Parameter Settings for User Entity Instance: Control_Unit:CU|cond_logic:CL|flip_flop_reset:ff_0
  33. altsyncram Parameter Settings by Entity Instance
  34. Analysis & Elaboration Settings
- 35. Port Connectivity Checks: "Control_Unit:CU|Control_Unit_Decoder:cud|ALU_Decoder:alu_decoder"
- 36. Port Connectivity Checks: "Control_Unit:CU"
- 37. Port Connectivity Checks: "Extend_24_to_32:extend1"
- 38. Port Connectivity Checks: "mux_2_1:muxRegSrc1"
- 39. Port Connectivity Checks: "mux_2_1:muxRegSrc0"
- 40. Port Connectivity Checks: "Processor_ROM:rom"
- 41. Port Connectivity Checks: "Processor_RAM:ram"
- 42. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_of_flag"
- 43. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_cry_flag"
- 44. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_zr_flag"
- 45. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_neg_flag"
- 46. Port Connectivity Checks: "ALU:alu|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f"
- 47. Port Connectivity Checks: "ALU:alu|adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f"
- 48. Port Connectivity Checks: "ALU:alu|mux_12to1:muxresult"
- 49. Port Connectivity Checks: "ALU:alu"
- 50. Analysis & Elaboration Messages
- 51. Analysis & Elaboration Suppressed Messages
+ 35. Port Connectivity Checks: "Control_Unit:CU|Control_Unit_Decoder:cud"
+ 36. Port Connectivity Checks: "mux_2_1:muxRegSrc0"
+ 37. Port Connectivity Checks: "Processor_ROM:rom"
+ 38. Port Connectivity Checks: "Processor_RAM:ram"
+ 39. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_of_flag"
+ 40. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_cry_flag"
+ 41. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_zr_flag"
+ 42. Port Connectivity Checks: "ALU:alu|mux_12to1:mux_neg_flag"
+ 43. Port Connectivity Checks: "ALU:alu|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f"
+ 44. Port Connectivity Checks: "ALU:alu|adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f"
+ 45. Analysis & Elaboration Messages
+ 46. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -83,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Jun 15 03:49:43 2023       ;
+; Analysis & Elaboration Status ; Successful - Thu Jun 15 05:18:56 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Processor_Image                             ;
 ; Top-level Entity Name         ; ARMV4_Processor                             ;
@@ -103,8 +98,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -125,7 +120,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 +---------------------------------------------------------------------------------------------------------+
-; Source assignments for Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_06p2:auto_generated ;
+; Source assignments for Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_0up2:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                        ;
 +---------------------------------+--------------------+------+-------------------------------------------+
@@ -134,7 +129,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 +---------------------------------------------------------------------------------------------------------+
-; Source assignments for Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_k4g1:auto_generated ;
+; Source assignments for Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_dle1:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                        ;
 +---------------------------------+--------------------+------+-------------------------------------------+
@@ -157,7 +152,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; Parameter Name ; Value ; Type                                            ;
 +----------------+-------+-------------------------------------------------+
-; N              ; 4     ; Signed Integer                                  ;
+; N              ; 32    ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -257,7 +252,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; N              ; 4     ; Signed Integer                                     ;
+; N              ; 1     ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -267,7 +262,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; N              ; 4     ; Signed Integer                                    ;
+; N              ; 1     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -277,7 +272,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                               ;
 +----------------+-------+----------------------------------------------------+
-; N              ; 4     ; Signed Integer                                     ;
+; N              ; 1     ; Signed Integer                                     ;
 +----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -287,7 +282,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------+
 ; Parameter Name ; Value ; Type                                              ;
 +----------------+-------+---------------------------------------------------+
-; N              ; 4     ; Signed Integer                                    ;
+; N              ; 1     ; Signed Integer                                    ;
 +----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -309,7 +304,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; NUMWORDS_A                         ; 600000               ; Signed Integer                     ;
 ; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                            ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_A                     ; CLEAR0               ; Untyped                            ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                            ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                            ;
@@ -325,7 +320,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_ACLR_B                      ; NONE                 ; Untyped                            ;
 ; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
 ; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                            ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                            ;
+; OUTDATA_ACLR_B                     ; CLEAR0               ; Untyped                            ;
 ; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                            ;
 ; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                            ;
 ; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                     ;
@@ -348,7 +343,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_06p2      ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_0up2      ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -369,8 +364,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTHAD_A                          ; 9                    ; Signed Integer                     ;
 ; NUMWORDS_A                         ; 512                  ; Signed Integer                     ;
 ; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                            ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                            ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                            ;
+; ADDRESS_ACLR_A                     ; CLEAR0               ; Untyped                            ;
+; OUTDATA_ACLR_A                     ; CLEAR0               ; Untyped                            ;
 ; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                            ;
 ; INDATA_ACLR_A                      ; NONE                 ; Untyped                            ;
 ; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                            ;
@@ -409,7 +404,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_k4g1      ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_dle1      ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -449,7 +444,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------+
 ; Parameter Name ; Value ; Type                                   ;
 +----------------+-------+----------------------------------------+
-; N              ; 32    ; Signed Integer                         ;
+; N              ; 4     ; Signed Integer                         ;
 +----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -459,7 +454,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------+
 ; Parameter Name ; Value ; Type                                   ;
 +----------------+-------+----------------------------------------+
-; N              ; 32    ; Signed Integer                         ;
+; N              ; 4     ; Signed Integer                         ;
 +----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -622,59 +617,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Control_Unit:CU|Control_Unit_Decoder:cud|ALU_Decoder:alu_decoder"                                                                     ;
-+-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                        ;
-+-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------+
-; alu_control ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (2 bits) it drives; bit(s) "alu_control[3..2]" have no fanouts ;
-+-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Control_Unit:CU"                                                                                                                                                                          ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; reset       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; reset[-1]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; alu_control ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "alu_control[1..1]" have no fanouts                                                     ;
-; imm_src     ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "imm_src[1..1]" have no fanouts                                                         ;
-; imm_src     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+-------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Control_Unit:CU|Control_Unit_Decoder:cud"                                                  ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; alu_control ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Extend_24_to_32:extend1"                                                                                                                                                             ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; ImmSrc ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (2 bits) it drives.  The 30 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:muxRegSrc1"                                                                                                                         ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                                     ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; a    ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "a[31..4]" will be connected to GND. ;
-; b    ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "b[31..4]" will be connected to GND. ;
-; out  ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (4 bits) it drives; bit(s) "out[31..4]" have no fanouts                    ;
-+------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux_2_1:muxRegSrc0"                                                                                                                             ;
-+----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                                                     ;
-+----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; a        ; Input  ; Warning  ; Input port expression (4 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "a[31..4]" will be connected to GND. ;
-; b[3..0]  ; Input  ; Info     ; Stuck at VCC                                                                                                                                ;
-; b[31..4] ; Input  ; Info     ; Stuck at GND                                                                                                                                ;
-; out      ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (4 bits) it drives; bit(s) "out[31..4]" have no fanouts                    ;
-+----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux_2_1:muxRegSrc0"                                                                                                                                                                  ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; b       ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; b[3..0] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -697,108 +656,73 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; data_b           ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
 ; wren_b           ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts.  ;
 ; wren_b[-1]       ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; q_b              ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "q_b[31..1]" have no fanouts                                                            ;
 ; q_b              ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                 ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_of_flag"                                                                                                                                                              ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out           ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[3..1]" have no fanouts                                                             ;
-; out_suma      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_suma[3..1]" will be connected to GND.                                   ;
-; out_rest      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_rest[3..1]" will be connected to GND.                                   ;
-; out_not       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_not[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_and       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_and[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_or        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_or[3..0]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_xor       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_xor[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_right_ar  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_ar[3..1]" will be connected to GND.                               ;
-; out_right_lo  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_lo[3..1]" will be connected to GND.                               ;
-; out_left_ar   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_ar[3..1]" will be connected to GND.                                ;
-; out_left_lo   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_lo[3..1]" will be connected to GND.                                ;
-; out_mult      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_mult[3..1]" will be connected to GND.                                   ;
-; out_div       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_div[3..1]" will be connected to GND.                                    ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_of_flag"                                                                                                                                                          ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_not    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_not[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_and    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_and[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_or     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_or[0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_xor    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_xor[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_cry_flag"                                                                                                                                                             ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out           ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[3..1]" have no fanouts                                                             ;
-; out_suma      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_suma[3..1]" will be connected to GND.                                   ;
-; out_rest      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_rest[3..1]" will be connected to GND.                                   ;
-; out_not       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_not[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_and       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_and[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_or        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_or[3..0]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_xor       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_xor[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_right_ar  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_ar[3..1]" will be connected to GND.                               ;
-; out_right_lo  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_lo[3..1]" will be connected to GND.                               ;
-; out_left_ar   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_ar[3..1]" will be connected to GND.                                ;
-; out_left_lo   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_lo[3..1]" will be connected to GND.                                ;
-; out_mult      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_mult[3..1]" will be connected to GND.                                   ;
-; out_div       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_div[3..1]" will be connected to GND.                                    ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_cry_flag"                                                                                                                                                         ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_not    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_not[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_and    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_and[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_or     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_or[0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_xor    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_xor[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_zr_flag"                                                                                                                                                              ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out           ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[3..1]" have no fanouts                                                             ;
-; out_suma      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_suma[3..1]" will be connected to GND.                                   ;
-; out_rest      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_rest[3..1]" will be connected to GND.                                   ;
-; out_not       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_not[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_and       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_and[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_or        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_or[3..0]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_xor       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_xor[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_right_ar  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_ar[3..1]" will be connected to GND.                               ;
-; out_right_lo  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_lo[3..1]" will be connected to GND.                               ;
-; out_left_ar   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_ar[3..1]" will be connected to GND.                                ;
-; out_left_lo   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_lo[3..1]" will be connected to GND.                                ;
-; out_mult      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_mult[3..1]" will be connected to GND.                                   ;
-; out_div       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_div[3..1]" will be connected to GND.                                    ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_zr_flag"                                                                                                                                                          ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_not    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_not[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_and    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_and[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_or     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_or[0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_xor    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_xor[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_neg_flag"                                                                                                                                                             ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out           ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[3..1]" have no fanouts                                                             ;
-; out_suma      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_suma[3..1]" will be connected to GND.                                   ;
-; out_rest      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_rest[3..1]" will be connected to GND.                                   ;
-; out_not       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_not[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_and       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_and[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_or        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_or[3..0]  ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_xor       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_xor[3..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; out_right_ar  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_ar[3..1]" will be connected to GND.                               ;
-; out_right_lo  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_right_lo[3..1]" will be connected to GND.                               ;
-; out_left_ar   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_ar[3..1]" will be connected to GND.                                ;
-; out_left_lo   ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_left_lo[3..1]" will be connected to GND.                                ;
-; out_mult      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_mult[3..1]" will be connected to GND.                                   ;
-; out_div       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "out_div[3..1]" will be connected to GND.                                    ;
-+---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu|mux_12to1:mux_neg_flag"                                                                                                                                                         ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; out_not    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_not[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_and    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_and[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_or     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_or[0]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; out_xor    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; out_xor[0] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -821,155 +745,125 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|mux_12to1:muxresult"                                                                                                                                                               ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; out          ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (32 bits) it drives.  The 28 most-significant bit(s) in the port expression will be connected to GND.            ;
-; out_suma     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_rest     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_not      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_and      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_or       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_xor      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_right_ar ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_right_lo ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_left_ar  ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_left_lo  ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_mult     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; out_div      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu"                                                                                                                                 ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                   ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
-; s    ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "s[3..1]" will be connected to GND. ;
-+------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 15 03:49:30 2023
+    Info: Processing started: Thu Jun 15 05:18:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor_Image -c Processor_Image --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file xor_module.sv
-    Info (12023): Found entity 1: xor_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 1
-    Info (12023): Found entity 2: xor_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 20
+    Info (12023): Found entity 1: xor_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 1
+    Info (12023): Found entity 2: xor_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file substractor_nbits.sv
-    Info (12023): Found entity 1: substractor_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 1
+    Info (12023): Found entity 1: substractor_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter_nbits.sv
-    Info (12023): Found entity 1: shifter_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 1
+    Info (12023): Found entity 1: shifter_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file or_module.sv
-    Info (12023): Found entity 1: or_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 1
-    Info (12023): Found entity 2: or_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 20
+    Info (12023): Found entity 1: or_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 1
+    Info (12023): Found entity 2: or_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 20
 Info (12021): Found 2 design units, including 2 entities, in source file not_module.sv
-    Info (12023): Found entity 1: not_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 1
-    Info (12023): Found entity 2: not_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 20
+    Info (12023): Found entity 1: not_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 1
+    Info (12023): Found entity 2: not_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file mux_10to1.sv
-    Info (12023): Found entity 1: mux_12to1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv Line: 1
+    Info (12023): Found entity 1: mux_12to1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_substractor.sv
-    Info (12023): Found entity 1: full_substractor File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv Line: 1
+    Info (12023): Found entity 1: full_substractor File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file display_converter.sv
-    Info (12023): Found entity 1: display_converter File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/display_converter.sv Line: 1
+    Info (12023): Found entity 1: display_converter File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/display_converter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco_2_4.sv
-    Info (12023): Found entity 1: deco_2_3 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv Line: 1
+    Info (12023): Found entity 1: deco_2_3 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file and_module.sv
-    Info (12023): Found entity 1: and_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 1
-    Info (12023): Found entity 2: and_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 19
+    Info (12023): Found entity 1: and_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 1
+    Info (12023): Found entity 2: and_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_nbits.sv
-    Info (12023): Found entity 1: adder_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 1
+    Info (12023): Found entity 1: adder_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_1.sv
-    Info (12023): Found entity 1: mux_2_1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv Line: 1
+    Info (12023): Found entity 1: mux_2_1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4_1.sv
-    Info (12023): Found entity 1: mux_4_1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_4_1.sv Line: 1
+    Info (12023): Found entity 1: mux_4_1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_4_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add4bit.sv
-    Info (12023): Found entity 1: Add4Bit File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv Line: 1
+    Info (12023): Found entity 1: Add4Bit File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file cond_logic.sv
-    Info (12023): Found entity 1: cond_logic File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 1
-    Info (12023): Found entity 2: flip_flop_reset File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 28
+    Info (12023): Found entity 1: cond_logic File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 1
+    Info (12023): Found entity 2: flip_flop_reset File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file cond_check.sv
-    Info (12023): Found entity 1: cond_check File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 1
+    Info (12023): Found entity 1: cond_check File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mult_module.sv
-    Info (12023): Found entity 1: mult_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv Line: 1
+    Info (12023): Found entity 1: mult_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div_module.sv
-    Info (12023): Found entity 1: div_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv Line: 1
+    Info (12023): Found entity 1: div_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div_module_tb.sv
-    Info (12023): Found entity 1: div_module_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module_tb.sv Line: 1
+    Info (12023): Found entity 1: div_module_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/div_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mult_module_tb.sv
-    Info (12023): Found entity 1: mult_module_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv Line: 1
+    Info (12023): Found entity 1: mult_module_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit_decoder.sv
-    Info (12023): Found entity 1: Control_Unit_Decoder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor_image.sv
-    Info (12023): Found entity 1: Processor_Image File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_Image.sv Line: 1
+    Info (12023): Found entity 1: Processor_Image File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_Image.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc_logic.sv
-    Info (12023): Found entity 1: PC_Logic File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/PC_Logic.sv Line: 1
+    Info (12023): Found entity 1: PC_Logic File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/PC_Logic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main_decoder.sv
-    Info (12023): Found entity 1: Main_Decoder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Main_Decoder.sv Line: 1
-Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(72): truncated literal to match 2 bits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 72
+    Info (12023): Found entity 1: Main_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Main_Decoder.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(72): truncated literal to match 2 bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 72
 Info (12021): Found 1 design units, including 1 entities, in source file alu_decoder.sv
-    Info (12023): Found entity 1: ALU_Decoder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 1
+    Info (12023): Found entity 1: ALU_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
-    Info (12023): Found entity 1: Control_Unit File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 1
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit_tb.sv
-    Info (12023): Found entity 1: control_unit_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 1
+    Info (12023): Found entity 1: control_unit_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile.sv
-    Info (12023): Found entity 1: RegisterFile File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/RegisterFile.sv Line: 1
+    Info (12023): Found entity 1: RegisterFile File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/RegisterFile.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file armv4_processor.sv
-    Info (12023): Found entity 1: ARMV4_Processor File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 1
+    Info (12023): Found entity 1: ARMV4_Processor File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file simple_ff.sv
-    Info (12023): Found entity 1: simple_ff File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/simple_ff.sv Line: 1
+    Info (12023): Found entity 1: simple_ff File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/simple_ff.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend_24_to_32.sv
-    Info (12023): Found entity 1: Extend_24_to_32 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Extend_24_to_32.sv Line: 1
+    Info (12023): Found entity 1: Extend_24_to_32 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Extend_24_to_32.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file register_file_tb.sv
-    Info (12023): Found entity 1: Register_File_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Register_File_tb.sv Line: 1
+    Info (12023): Found entity 1: Register_File_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Register_File_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor_ram.v
-    Info (12023): Found entity 1: Processor_RAM File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 40
+    Info (12023): Found entity 1: Processor_RAM File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file processor_rom.v
-    Info (12023): Found entity 1: Processor_ROM File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at cond_check.sv(7): created implicit net for "overflow" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at ARMV4_Processor.sv(43): created implicit net for "imm_src" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 43
+    Info (12023): Found entity 1: Processor_ROM File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 40
+Warning (10236): Verilog HDL Implicit Net warning at cond_check.sv(7): created implicit net for "overflow" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 7
 Info (12127): Elaborating entity "ARMV4_Processor" for the top level hierarchy
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:rf" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 17
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 19
-Info (12128): Elaborating entity "mux_12to1" for hierarchy "ALU:alu|mux_12to1:muxresult" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
-Info (12128): Elaborating entity "adder_nbits" for hierarchy "ALU:alu|adder_nbits:adder" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 29
-Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 31
-Info (12128): Elaborating entity "full_adder" for hierarchy "ALU:alu|adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 23
-Info (12128): Elaborating entity "substractor_nbits" for hierarchy "ALU:alu|substractor_nbits:substractor" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 30
-Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(28): truncated value with size 32 to match size of target (1) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 28
-Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(31): truncated value with size 32 to match size of target (1) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 31
-Info (12128): Elaborating entity "full_substractor" for hierarchy "ALU:alu|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 23
-Info (12128): Elaborating entity "not_module" for hierarchy "ALU:alu|not_module:notmodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 31
-Info (12128): Elaborating entity "not_gate_single" for hierarchy "ALU:alu|not_module:notmodule|not_gate_single:generate_bit_to_bit[0].notgate" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 11
-Info (12128): Elaborating entity "and_module" for hierarchy "ALU:alu|and_module:andmodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 32
-Info (12128): Elaborating entity "and_gate_single" for hierarchy "ALU:alu|and_module:andmodule|and_gate_single:generate_bit_to_bit[0].gateand" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 11
-Info (12128): Elaborating entity "or_module" for hierarchy "ALU:alu|or_module:ormodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 33
-Info (12128): Elaborating entity "or_gate_single" for hierarchy "ALU:alu|or_module:ormodule|or_gate_single:generate_bit_to_bit[0].gateor" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 11
-Info (12128): Elaborating entity "xor_module" for hierarchy "ALU:alu|xor_module:xormodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 34
-Info (12128): Elaborating entity "xor_gate_single" for hierarchy "ALU:alu|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[0].gatexor" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 11
-Info (12128): Elaborating entity "mult_module" for hierarchy "ALU:alu|mult_module:multmodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 35
-Info (12128): Elaborating entity "div_module" for hierarchy "ALU:alu|div_module:divmodule" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 36
-Info (12128): Elaborating entity "shifter_nbits" for hierarchy "ALU:alu|shifter_nbits:shifter" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 38
-Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 52
-Info (12128): Elaborating entity "deco_2_3" for hierarchy "ALU:alu|shifter_nbits:shifter|deco_2_3:deco" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 24
-Info (12128): Elaborating entity "Processor_RAM" for hierarchy "Processor_RAM:ram" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 21
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 98
-Info (12130): Elaborated megafunction instantiation "Processor_RAM:ram|altsyncram:altsyncram_component" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 98
-Info (12133): Instantiated megafunction "Processor_RAM:ram|altsyncram:altsyncram_component" with the following parameter: File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 98
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:rf" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 20
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 22
+Info (12128): Elaborating entity "mux_12to1" for hierarchy "ALU:alu|mux_12to1:muxresult" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 24
+Info (12128): Elaborating entity "adder_nbits" for hierarchy "ALU:alu|adder_nbits:adder" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(28): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at adder_nbits.sv(31): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 31
+Info (12128): Elaborating entity "full_adder" for hierarchy "ALU:alu|adder_nbits:adder|full_adder:generate_N_bit_Adder[0].f" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 23
+Info (12128): Elaborating entity "substractor_nbits" for hierarchy "ALU:alu|substractor_nbits:substractor" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(28): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at substractor_nbits.sv(31): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 31
+Info (12128): Elaborating entity "full_substractor" for hierarchy "ALU:alu|substractor_nbits:substractor|full_substractor:generate_N_bit_Adder[0].f" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 23
+Info (12128): Elaborating entity "not_module" for hierarchy "ALU:alu|not_module:notmodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 31
+Info (12128): Elaborating entity "not_gate_single" for hierarchy "ALU:alu|not_module:notmodule|not_gate_single:generate_bit_to_bit[0].notgate" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 11
+Info (12128): Elaborating entity "and_module" for hierarchy "ALU:alu|and_module:andmodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 32
+Info (12128): Elaborating entity "and_gate_single" for hierarchy "ALU:alu|and_module:andmodule|and_gate_single:generate_bit_to_bit[0].gateand" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 11
+Info (12128): Elaborating entity "or_module" for hierarchy "ALU:alu|or_module:ormodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 33
+Info (12128): Elaborating entity "or_gate_single" for hierarchy "ALU:alu|or_module:ormodule|or_gate_single:generate_bit_to_bit[0].gateor" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 11
+Info (12128): Elaborating entity "xor_module" for hierarchy "ALU:alu|xor_module:xormodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 34
+Info (12128): Elaborating entity "xor_gate_single" for hierarchy "ALU:alu|xor_module:xormodule|xor_gate_single:generate_bit_to_bit[0].gatexor" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 11
+Info (12128): Elaborating entity "mult_module" for hierarchy "ALU:alu|mult_module:multmodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 35
+Info (12128): Elaborating entity "div_module" for hierarchy "ALU:alu|div_module:divmodule" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 36
+Info (12128): Elaborating entity "shifter_nbits" for hierarchy "ALU:alu|shifter_nbits:shifter" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at shifter_nbits.sv(52): truncated value with size 32 to match size of target (1) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 52
+Info (12128): Elaborating entity "deco_2_3" for hierarchy "ALU:alu|shifter_nbits:shifter|deco_2_3:deco" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 24
+Info (12128): Elaborating entity "mux_12to1" for hierarchy "ALU:alu|mux_12to1:mux_neg_flag" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 40
+Info (12128): Elaborating entity "Processor_RAM" for hierarchy "Processor_RAM:ram" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 24
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 101
+Info (12130): Elaborated megafunction instantiation "Processor_RAM:ram|altsyncram:altsyncram_component" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 101
+Info (12133): Instantiated megafunction "Processor_RAM:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 101
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -982,8 +876,8 @@ Info (12133): Instantiated megafunction "Processor_RAM:ram|altsyncram:altsyncram
     Info (12134): Parameter "numwords_a" = "600000"
     Info (12134): Parameter "numwords_b" = "600000"
     Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_aclr_a" = "CLEAR0"
+    Info (12134): Parameter "outdata_aclr_b" = "CLEAR0"
     Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
     Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
@@ -997,398 +891,78 @@ Info (12133): Instantiated megafunction "Processor_RAM:ram|altsyncram:altsyncram
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_06p2.tdf
-    Info (12023): Found entity 1: altsyncram_06p2 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_06p2.tdf Line: 32
-Info (12128): Elaborating entity "altsyncram_06p2" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_06p2:auto_generated" File: d:/apps/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0up2.tdf
+    Info (12023): Found entity 1: altsyncram_0up2 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_0up2.tdf Line: 32
+Info (12128): Elaborating entity "altsyncram_0up2" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_0up2:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_4na.tdf
-    Info (12023): Found entity 1: decode_4na File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/decode_4na.tdf Line: 23
-Info (12128): Elaborating entity "decode_4na" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_06p2:auto_generated|decode_4na:decode2" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_06p2.tdf Line: 49
+    Info (12023): Found entity 1: decode_4na File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/decode_4na.tdf Line: 23
+Info (12128): Elaborating entity "decode_4na" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_0up2:auto_generated|decode_4na:decode2" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_0up2.tdf Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1jb.tdf
-    Info (12023): Found entity 1: mux_1jb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/mux_1jb.tdf Line: 23
-Info (12128): Elaborating entity "mux_1jb" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_06p2:auto_generated|mux_1jb:mux4" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_06p2.tdf Line: 51
-Info (12128): Elaborating entity "Processor_ROM" for hierarchy "Processor_ROM:rom" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 23
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Processor_ROM:rom|altsyncram:altsyncram_component" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 82
-Info (12130): Elaborated megafunction instantiation "Processor_ROM:rom|altsyncram:altsyncram_component" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 82
-Info (12133): Instantiated megafunction "Processor_ROM:rom|altsyncram:altsyncram_component" with the following parameter: File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 82
-    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12023): Found entity 1: mux_1jb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/mux_1jb.tdf Line: 23
+Info (12128): Elaborating entity "mux_1jb" for hierarchy "Processor_RAM:ram|altsyncram:altsyncram_component|altsyncram_0up2:auto_generated|mux_1jb:mux4" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_0up2.tdf Line: 52
+Info (12128): Elaborating entity "Processor_ROM" for hierarchy "Processor_ROM:rom" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 26
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Processor_ROM:rom|altsyncram:altsyncram_component" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 85
+Info (12130): Elaborated megafunction instantiation "Processor_ROM:rom|altsyncram:altsyncram_component" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 85
+Info (12133): Instantiated megafunction "Processor_ROM:rom|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_ROM.v Line: 85
+    Info (12134): Parameter "address_aclr_a" = "CLEAR0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "ROM_contents.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "512"
     Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_a" = "CLEAR0"
     Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
     Info (12134): Parameter "widthad_a" = "9"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k4g1.tdf
-    Info (12023): Found entity 1: altsyncram_k4g1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_k4g1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_k4g1" for hierarchy "Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_k4g1:auto_generated" File: d:/apps/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "Add4Bit" for hierarchy "Add4Bit:FirstAdd4" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 25
-Info (12128): Elaborating entity "mux_2_1" for hierarchy "mux_2_1:muxPCSrc" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 29
-Info (12128): Elaborating entity "simple_ff" for hierarchy "simple_ff:ff" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 39
-Info (12128): Elaborating entity "Extend_24_to_32" for hierarchy "Extend_24_to_32:extend1" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 41
-Info (12128): Elaborating entity "Control_Unit" for hierarchy "Control_Unit:CU" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 43
-Info (12128): Elaborating entity "Control_Unit_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 16
-Info (12128): Elaborating entity "PC_Logic" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|PC_Logic:pc_logic" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 16
-Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|Main_Decoder:main_decoder" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 18
-Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|ALU_Decoder:alu_decoder" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 20
-Warning (10240): Verilog HDL Always Construct warning at ALU_Decoder.sv(13): inferring latch(es) for variable "alu_control", which holds its previous value in one or more paths through the always construct File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Warning (10240): Verilog HDL Always Construct warning at ALU_Decoder.sv(13): inferring latch(es) for variable "flag_w", which holds its previous value in one or more paths through the always construct File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "flag_w[0]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "flag_w[1]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "alu_control[0]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "alu_control[1]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "alu_control[2]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (10041): Inferred latch for "alu_control[3]" at ALU_Decoder.sv(13) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
-Info (12128): Elaborating entity "cond_logic" for hierarchy "Control_Unit:CU|cond_logic:CL" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 18
-Info (12128): Elaborating entity "flip_flop_reset" for hierarchy "Control_Unit:CU|cond_logic:CL|flip_flop_reset:ff_1" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 13
-Info (12128): Elaborating entity "cond_check" for hierarchy "Control_Unit:CU|cond_logic:CL|cond_check:cc" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dle1.tdf
+    Info (12023): Found entity 1: altsyncram_dle1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/db/altsyncram_dle1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_dle1" for hierarchy "Processor_ROM:rom|altsyncram:altsyncram_component|altsyncram_dle1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "Add4Bit" for hierarchy "Add4Bit:FirstAdd4" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 28
+Info (12128): Elaborating entity "mux_2_1" for hierarchy "mux_2_1:muxPCSrc" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 32
+Info (12128): Elaborating entity "mux_2_1" for hierarchy "mux_2_1:muxRegSrc0" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 34
+Info (12128): Elaborating entity "simple_ff" for hierarchy "simple_ff:ff" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 42
+Info (12128): Elaborating entity "Extend_24_to_32" for hierarchy "Extend_24_to_32:extend1" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 44
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "Control_Unit:CU" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 46
+Info (12128): Elaborating entity "Control_Unit_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 16
+Info (12128): Elaborating entity "PC_Logic" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|PC_Logic:pc_logic" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 16
+Info (12128): Elaborating entity "Main_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|Main_Decoder:main_decoder" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 18
+Info (12128): Elaborating entity "ALU_Decoder" for hierarchy "Control_Unit:CU|Control_Unit_Decoder:cud|ALU_Decoder:alu_decoder" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 20
+Warning (10240): Verilog HDL Always Construct warning at ALU_Decoder.sv(13): inferring latch(es) for variable "alu_control", which holds its previous value in one or more paths through the always construct File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Warning (10240): Verilog HDL Always Construct warning at ALU_Decoder.sv(13): inferring latch(es) for variable "flag_w", which holds its previous value in one or more paths through the always construct File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "flag_w[0]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "flag_w[1]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "alu_control[0]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "alu_control[1]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "alu_control[2]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (10041): Inferred latch for "alu_control[3]" at ALU_Decoder.sv(13) File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 13
+Info (12128): Elaborating entity "cond_logic" for hierarchy "Control_Unit:CU|cond_logic:CL" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 18
+Info (12128): Elaborating entity "flip_flop_reset" for hierarchy "Control_Unit:CU|cond_logic:CL|flip_flop_reset:ff_1" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 13
+Info (12128): Elaborating entity "cond_check" for hierarchy "Control_Unit:CU|cond_logic:CL|cond_check:cc" File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 18
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
+    Warning (12110): Net "ALUControl[3]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[2]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[1]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[0]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "Extlmm[31]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[30]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[29]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[28]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[27]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[26]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[25]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[24]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[23]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[22]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[21]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[20]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[19]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[18]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[17]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[16]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[15]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[14]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[13]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[12]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[11]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[10]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[9]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[8]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[7]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[6]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[5]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[4]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[3]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[2]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[1]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-    Warning (12110): Net "Extlmm[0]" is missing source, defaulting to GND File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 13
-Warning (12241): 15 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/output_files/Processor_Image.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 342 warnings
-    Info: Peak virtual memory: 4993 megabytes
-    Info: Processing ended: Thu Jun 15 03:49:43 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:17
+    Warning (12110): Net "ALUControl[3]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[2]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[1]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+    Warning (12110): Net "ALUControl[0]" is missing source, defaulting to GND File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ARMV4_Processor.sv Line: 14
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (144001): Generated suppressed messages file C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/output_files/Processor_Image.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4984 megabytes
+    Info: Processing ended: Thu Jun 15 05:18:56 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:10
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/output_files/Processor_Image.map.smsg.
+The suppressed messages can be found in C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/output_files/Processor_Image.map.smsg.
 
 

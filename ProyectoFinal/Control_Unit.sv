@@ -4,12 +4,12 @@ module Control_Unit
 	input logic clk, reset,
    input logic [1:0] op,        
 	input logic [5:0] funct,
-	input logic [3:0] rd, Cond, ALUFlags,
-	output logic [1:0] alu_control, reg_src, imm_src,
+	input logic [3:0] rd, Cond, ALUFlags, alu_control,
+	output logic [1:0] reg_src, imm_src,
 	output logic PCSrc, RegWrite, MemWrite, mem_to_reg, alu_src
 	
 );
-	
+	 
 	logic [1:0] flag_w;
 	logic pcs,reg_w,mem_w;
 	

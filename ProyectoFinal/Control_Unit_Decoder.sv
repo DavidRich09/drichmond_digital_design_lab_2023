@@ -5,8 +5,8 @@ module Control_Unit_Decoder
 	input logic [5:0] funct,
 	input logic [3:0] rd,
 	output logic pcs,reg_w,mem_w,mem_to_reg,alu_src,
-	output logic [1:0] flag_w, imm_src, reg_src, alu_control
-
+	output logic [1:0] flag_w, imm_src, reg_src,
+	output logic [3:0] alu_control
 );
 	
 	logic branch;
