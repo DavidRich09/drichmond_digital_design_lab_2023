@@ -1,5 +1,5 @@
-module mux_12to1 #(parameter N=4)(output [N-1:0] out, 
-											 input [N-1:0] out_suma, out_rest, out_not, out_and, out_or, out_xor, out_right_ar, out_right_lo, out_left_ar, out_left_lo, out_mult, out_div,
+module mux_10to1 #(parameter N=4)(output [N-1:0] out, 
+											 input [N-1:0] out_suma, out_rest, out_not, out_and, out_or, out_xor, out_right_ar, out_right_lo, out_left_ar, out_left_lo, 
 											 input [3:0] select);
 
 logic [N-1:0] out_alu;
@@ -18,8 +18,6 @@ always_comb
         4'b0111: out_alu = out_right_lo;
         4'b1000: out_alu = out_left_ar;
         4'b1001: out_alu = out_left_lo;
-		  4'b1010: out_alu = out_mult;
-        4'b1011: out_alu = out_div;
         default: out_alu = out_suma;
     endcase
 end

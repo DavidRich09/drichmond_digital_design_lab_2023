@@ -14,68 +14,68 @@ module ALU_Decoder
 		
 			case(funct[4:1])
 			
-				2'b0100 : begin //suma
+				2'b0100 : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 0000;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 0000
+						alu_control = ????;
 						flag_w = 2'b11;
 					end
 				end
 				
-				2'b0010 : begin //resta
+				2'b0010 : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 0001;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 0001;
+						alu_control = ????;
 						flag_w = 2'b11;
 					end
 				end
 				
-				2'b0000 : begin //and
+				2'b0000 : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 0011;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 0011;
+						alu_control = ????;
 						flag_w = 2'b10;
 					end
 				end
 				
-				2'b1100 : begin //or
+				2'b1100 : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 0100;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 0100;
+						alu_control = ????;
 						flag_w = 2'b10;
 					end
 				end
 				
-				2'b1110 : begin //mult
+				2'b (MULT_NUMBER) : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 1010;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 1010;
+						alu_control = ????;
 						flag_w = 2'b11;
 					end
 				end
 				
-				2'b1111 : begin //div
+				2'b (DIV_NUMBER) : begin
 					if (funct[0] == 2'd0) begin
-						alu_control = 1011;
+						alu_control = ????;
 						flag_w = 2'b00;
 					end
 					else
-						alu_control = 1011;
+						alu_control = ????;
 						flag_w = 2'b11;
 					end
 				end
