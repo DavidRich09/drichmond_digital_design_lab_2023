@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Processor_Image
-Tue Jun 13 19:21:47 2023
+Analysis & Synthesis report for Processor_Image
+Wed Jun 14 20:41:15 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,11 +7,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |mult_module
-  5. Analysis & Elaboration Settings
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
 
 
 
@@ -35,57 +34,31 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Jun 13 19:21:47 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; Processor_Image                             ;
-; Top-level Entity Name         ; mult_module                                 ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |mult_module ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; N              ; 4     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Jun 14 20:41:15 2023           ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; Processor_Image                             ;
+; Top-level Entity Name       ; Control_Unit                                ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; mult_module        ; Processor_Image    ;
+; Top-level entity name                                                           ; Control_Unit       ; Processor_Image    ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,72 +139,113 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 13 19:21:38 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor_Image -c Processor_Image --analysis_and_elaboration
+    Info: Processing started: Wed Jun 14 20:41:09 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor_Image -c Processor_Image
+Warning (125092): Tcl Script File Processor_ROM.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE Processor_ROM.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file xor_module.sv
-    Info (12023): Found entity 1: xor_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 1
-    Info (12023): Found entity 2: xor_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 20
+    Info (12023): Found entity 1: xor_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 1
+    Info (12023): Found entity 2: xor_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/xor_module.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file substractor_nbits.sv
-    Info (12023): Found entity 1: substractor_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 1
+    Info (12023): Found entity 1: substractor_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/substractor_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shifter_nbits.sv
-    Info (12023): Found entity 1: shifter_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 1
+    Info (12023): Found entity 1: shifter_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/shifter_nbits.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file or_module.sv
-    Info (12023): Found entity 1: or_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 1
-    Info (12023): Found entity 2: or_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 20
+    Info (12023): Found entity 1: or_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 1
+    Info (12023): Found entity 2: or_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/or_module.sv Line: 20
 Info (12021): Found 2 design units, including 2 entities, in source file not_module.sv
-    Info (12023): Found entity 1: not_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 1
-    Info (12023): Found entity 2: not_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 20
+    Info (12023): Found entity 1: not_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 1
+    Info (12023): Found entity 2: not_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/not_module.sv Line: 20
 Info (12021): Found 1 design units, including 1 entities, in source file mux_10to1.sv
-    Info (12023): Found entity 1: mux_10to1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv Line: 1
+    Info (12023): Found entity 1: mux_12to1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_10to1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_substractor.sv
-    Info (12023): Found entity 1: full_substractor File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv Line: 1
+    Info (12023): Found entity 1: full_substractor File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/full_substractor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.sv
-    Info (12023): Found entity 1: full_adder File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv Line: 1
+    Info (12023): Found entity 1: full_adder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/full_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file display_converter.sv
-    Info (12023): Found entity 1: display_converter File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/display_converter.sv Line: 1
+    Info (12023): Found entity 1: display_converter File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/display_converter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file deco_2_4.sv
-    Info (12023): Found entity 1: deco_2_3 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv Line: 1
+    Info (12023): Found entity 1: deco_2_3 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/deco_2_4.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file and_module.sv
-    Info (12023): Found entity 1: and_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 1
-    Info (12023): Found entity 2: and_gate_single File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 19
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: ALU File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 1
+    Info (12023): Found entity 1: and_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 1
+    Info (12023): Found entity 2: and_gate_single File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/and_module.sv Line: 19
+Error (10170): Verilog HDL syntax error at ALU.sv(38) near text: ")"; mismatched closing parenthesis . Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 38
+Error (10170): Verilog HDL syntax error at ALU.sv(38) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 38
+Error (10112): Ignored design unit "ALU" at ALU.sv(1) due to previous errors File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file alu.sv
 Info (12021): Found 1 design units, including 1 entities, in source file adder_nbits.sv
-    Info (12023): Found entity 1: adder_nbits File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 1
+    Info (12023): Found entity 1: adder_nbits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/adder_nbits.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_1.sv
-    Info (12023): Found entity 1: mux_2_1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv Line: 1
+    Info (12023): Found entity 1: mux_2_1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_2_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_4_1.sv
-    Info (12023): Found entity 1: mux_4_1 File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mux_4_1.sv Line: 1
+    Info (12023): Found entity 1: mux_4_1 File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mux_4_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add4bit.sv
-    Info (12023): Found entity 1: Add4Bit File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv Line: 1
+    Info (12023): Found entity 1: Add4Bit File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Add4Bit.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file cond_logic.sv
-    Info (12023): Found entity 1: cond_logic File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 1
-    Info (12023): Found entity 2: flip_flop_reset File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 27
+    Info (12023): Found entity 1: cond_logic File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 1
+    Info (12023): Found entity 2: flip_flop_reset File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_logic.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file cond_check.sv
-    Info (12023): Found entity 1: cond_check File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 1
+    Info (12023): Found entity 1: cond_check File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mult_module.sv
-    Info (12023): Found entity 1: mult_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv Line: 1
+    Info (12023): Found entity 1: mult_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div_module.sv
-    Info (12023): Found entity 1: div_module File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv Line: 1
+    Info (12023): Found entity 1: div_module File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/div_module.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file div_module_tb.sv
-    Info (12023): Found entity 1: div_module_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/div_module_tb.sv Line: 1
+    Info (12023): Found entity 1: div_module_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/div_module_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mult_module_tb.sv
-    Info (12023): Found entity 1: mult_module_tb File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at cond_check.sv(7): created implicit net for "overflow" File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/cond_check.sv Line: 7
-Info (12127): Elaborating entity "mult_module" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at mult_module.sv(16): truncated value with size 32 to match size of target (8) File: D:/Repositorios/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module.sv Line: 16
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Tue Jun 13 19:21:47 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:15
+    Info (12023): Found entity 1: mult_module_tb File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/mult_module_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit_decoder.sv
+    Info (12023): Found entity 1: Control_Unit_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit_Decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file processor_image.sv
+    Info (12023): Found entity 1: Processor_Image File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_Image.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc_logic.sv
+    Info (12023): Found entity 1: PC_Logic File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/PC_Logic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main_decoder.sv
+    Info (12023): Found entity 1: Main_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Main_Decoder.sv Line: 1
+Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(17): truncated literal to match 2 bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 17
+Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(50): truncated literal to match 2 bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 50
+Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(61): truncated literal to match 2 bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 61
+Warning (10229): Verilog HDL Expression warning at ALU_Decoder.sv(72): truncated literal to match 2 bits File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 72
+Info (12021): Found 1 design units, including 1 entities, in source file alu_decoder.sv
+    Info (12023): Found entity 1: ALU_Decoder File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/ALU_Decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.sv
+    Info (12023): Found entity 1: Control_Unit File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Control_Unit.sv Line: 1
+Error (10170): Verilog HDL syntax error at control_unit_tb.sv(5) near text: "logic";  expecting an identifier ("logic" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 5
+Error (10170): Verilog HDL syntax error at control_unit_tb.sv(8) near text: "logic";  expecting an identifier ("logic" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 8
+Error (10170): Verilog HDL syntax error at control_unit_tb.sv(9) near text: "logic";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 9
+Error (10170): Verilog HDL syntax error at control_unit_tb.sv(12) near text: "Control_Unit";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 12
+Error (10112): Ignored design unit "control_unit_tb" at control_unit_tb.sv(1) due to previous errors File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/control_unit_tb.sv Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file control_unit_tb.sv
+Info (12021): Found 1 design units, including 1 entities, in source file processor_ram.v
+    Info (12023): Found entity 1: Processor_RAM File: C:/Users/Joseff01/Documents/Git/drichmond_digital_design_lab_2023/ProyectoFinal/Processor_RAM.v Line: 40
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 6 warnings
+    Error: Peak virtual memory: 4769 megabytes
+    Error: Processing ended: Wed Jun 14 20:41:15 2023
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:08
 
 

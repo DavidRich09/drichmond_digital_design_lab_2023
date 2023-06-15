@@ -29,7 +29,7 @@ module Main_Decoder
 					reg_src = 2'b00;
 					alu_op = 1;
 				end
-				else
+				else begin
 					branch = 0;
 					mem_to_reg = 0;
 					mem_w = 0;
@@ -51,8 +51,8 @@ module Main_Decoder
 					reg_w = 0;
 					reg_src = 2'b10;
 					alu_op = 0;
-				end
-				else
+				end 
+				else begin
 					branch = 0;
 					mem_to_reg = 1;
 					mem_w = 0;

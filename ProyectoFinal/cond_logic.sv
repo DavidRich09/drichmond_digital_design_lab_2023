@@ -1,7 +1,7 @@
 module cond_logic(input logic clk, reset,
                   input logic [3:0] Cond, ALUFlags,
 						input logic [1:0] FlagW,
-						input logic PCS, RegW, MemW,
+						input logic PCS, RegW, MemW
 						);
 						
 	logic [1:0] FlagWrite;

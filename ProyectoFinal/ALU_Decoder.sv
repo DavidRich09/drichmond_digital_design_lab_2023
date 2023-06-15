@@ -19,8 +19,8 @@ module ALU_Decoder
 						alu_control = 0000;
 						flag_w = 2'b00;
 					end
-					else
-						alu_control = 0000
+					else begin
+						alu_control = 0000;
 						flag_w = 2'b11;
 					end
 				end
@@ -30,7 +30,7 @@ module ALU_Decoder
 						alu_control = 0001;
 						flag_w = 2'b00;
 					end
-					else
+					else begin
 						alu_control = 0001;
 						flag_w = 2'b11;
 					end
@@ -41,7 +41,7 @@ module ALU_Decoder
 						alu_control = 0011;
 						flag_w = 2'b00;
 					end
-					else
+					else begin
 						alu_control = 0011;
 						flag_w = 2'b10;
 					end
@@ -52,7 +52,7 @@ module ALU_Decoder
 						alu_control = 0100;
 						flag_w = 2'b00;
 					end
-					else
+					else begin
 						alu_control = 0100;
 						flag_w = 2'b10;
 					end
@@ -63,7 +63,7 @@ module ALU_Decoder
 						alu_control = 1010;
 						flag_w = 2'b00;
 					end
-					else
+					else begin
 						alu_control = 1010;
 						flag_w = 2'b11;
 					end
@@ -74,7 +74,7 @@ module ALU_Decoder
 						alu_control = 1011;
 						flag_w = 2'b00;
 					end
-					else
+					else begin
 						alu_control = 1011;
 						flag_w = 2'b11;
 					end
