@@ -10,8 +10,7 @@ module ALU
 	output logic zr_flag,
 	output logic cry_flag,
 	output logic of_flag,
-	output logic [N-1:0] result,
-	output [6:0] led_disp
+	output logic [N-1:0] result
 	
 );
 
@@ -21,8 +20,6 @@ module ALU
 	wire [19:0] module_flags_out;
 	
 	wire [1:0] d;
-	
-	display_converter hex_converter(result[3],result[2],result[1],result[0],led_disp);
 	
 	mux_12to1 muxresult(result,out_suma,out_rest, out_not, out_and, out_or, out_xor, out_shifter, out_shifter, out_shifter, out_shifter, out_mult, out_div,s);
 	
@@ -35,7 +32,7 @@ module ALU
 	and_module #(.N(N)) andmodule(a,b,out_and);
 	or_module #(.N(N)) ormodule(a,b,out_or);
 	xor_module #(.N(N)) xormodule(a,b,out_xor);
-	mult_module #(.N(N)) multmodule (a,b,out_mult,module_flags_out[12],module_flags_out[13],module_flags_out[14],module_flags_out[15]));
+	mult_module #(.N(N)) multmodule (a,b,out_mult,module_flags_out[12],module_flags_out[13],module_flags_out[14],module_flags_out[15]);
 	div_module #(.N(N)) divmodule (a,b,out_div,module_flags_out[16],module_flags_out[17],module_flags_out[18],module_flags_out[19]);
 	
 	shifter_nbits #(.N(N)) shifter(a,d,out_shifter,module_flags_out[8],module_flags_out[9],module_flags_out[10],module_flags_out[11]);
