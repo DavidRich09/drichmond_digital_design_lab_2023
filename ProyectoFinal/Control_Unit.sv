@@ -15,6 +15,8 @@ module Control_Unit
 	
 	Control_Unit_Decoder cud(op,funct,rd,pcs,reg_w,mem_w,mem_to_reg,alu_src,flag_w,imm_src, reg_src, alu_control);
 	
-	cond_logic CL(clk, reset, Cond, ALUFlags,flag_w,pcs,reg_w,mem_w, PCSrc, RegWrite, MemWrite);
+	cond_logic CL(clk,reset,Cond,ALUFlags,flag_w,pcs,reg_w,mem_w);
 	
+	
+
 	endmodule	

@@ -1,0 +1,14 @@
+module div_module #(parameter N=4) (
+   input logic [N-1:0] a,        
+   input logic [N-1:0] b,
+   output logic [N-1:0] result,
+   output logic neg_flag,
+   output logic zr_flag,
+   output logic cry_flag,
+   output logic of_flag
+);
+   
+	assign result = a / b;
+	
+	
+endmodule
