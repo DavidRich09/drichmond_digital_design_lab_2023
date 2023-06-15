@@ -1,0 +1,22 @@
+module ARMV4_Processor	
+
+(	
+	input logic clk
+);	
+
+	logic RegWrite, ALUControl, neg_flag, zr_flag, cry_flag, of_flag;
+	
+	logic [3:0] RA1, RA1;
+	
+	logic [31:0] Result, SrcA, SrcB, RD2_Wire, PCPlus8, PCPlus4, ALUResult;
+	
+	Register_File rf(clk, RegWrite, RA1, RA2, XXXXXXXX, Result, PCPlus8, SrcA, RD2_Wire)
+	
+	ALU #(.N(32)) alu(SrcA, SrcB, ALUControl, neg_flag, zr_flag, cry_flag, of_flag, ALUResult);
+
+	
+
+
+
+
+endmodule

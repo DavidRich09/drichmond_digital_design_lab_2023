@@ -1,0 +1,13 @@
+module Control_Unit	
+
+(	
+	input logic clk, reset,
+   input logic [1:0] op,        
+	input logic [5:0] funct,
+	input logic [3:0] rd, Cond, ALUFlags,
+	output logic [1:0] alu_control, reg_scr, immsrc
+	output logic PCSrc, RegWrite, MemWrite, mem_to_reg, alu_src
+	
+);
+	
+	
